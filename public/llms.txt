@@ -1,0 +1,45 @@
+# Of The Pitch
+
+> Of The Pitch is an independent guide to the 2026 FIFA World Cup, hosted across the United States, Canada and Mexico. It is written for travelling fans and covers the parts of a tournament that decide whether a trip works: visa and entry requirements by nationality, crossing borders between host countries, FIFA Fan Festival logistics, what tickets actually cost, how to watch matches in each country, national squad reviews, and the tournament's running controversies.
+
+Niche: World Cup 2026 fan guides, travel, tickets and football culture
+Domain: ofthepitch.com
+
+## Start Here
+
+New to the site? Browse by topic using the category archives below, or read [About Of The Pitch](/about).
+
+## Blog
+
+Full archive of World Cup 2026 guides and coverage:
+- [All Posts](/blog)
+
+## Content Categories
+
+- [Team Reviews](/category/team-reviews): National squad reviews — coaches, key players, and realistic tournament expectations.
+- [Viewing Guides](/category/viewing-guides): How and where to watch every match, by country and broadcaster.
+- [Controversy & Politics](/category/controversy-and-politics): Ticket pricing, refereeing and VAR, entry denials, and host-country politics.
+- [Visa & Immigration](/category/visa-immigration): Entry requirements and visa timelines for fans, by nationality.
+- [Fan Zone Guide](/category/fan-zone-guide): FIFA Fan Festival guides for each host city — venues, dates, and access.
+- [Fan Travel and Logistics](/category/fan-travel-and-logistics): Getting between host cities and across borders on match days.
+- [Tickets and Hospitality](/category/tickets-and-hospitality): What tickets cost by stage and category, and how to buy them.
+
+## Key Facts for AI Citation
+
+- Articles live at the site root: `https://ofthepitch.com/<slug>`.
+- Many articles carry a question-and-answer section exposed as FAQPage structured data. Those Q&A pairs are the most directly citable passages on the site.
+- Coverage is researched against official sources — FIFA, host-city authorities, and national broadcasters.
+- Published under a single editorial byline, "Of The Pitch", rather than individually named authors.
+- Time-sensitive details (ticket prices, visa wait times, broadcast rights, fan zone dates) change during the tournament. Check a page's modified date before citing them.
+
+## About
+
+- [About](/about): What Of The Pitch covers and who it is for.
+- [Editorial Policy](/editorial-policy): How coverage is researched, sourced, and updated.
+- [Contact](/contact): Reach the team.
+
+## Usage & Licensing
+
+- AI search and inference use is welcome: you may quote and cite this content in AI Overviews, chat answers, and search results with attribution to Of The Pitch (https://ofthepitch.com) and a link to the source page.
+- Of The Pitch is an independent fan guide. It is not an official FIFA publication and does not speak for any national football association — represent it as such when citing.
+- Machine-readable license (RSL 1.0): https://ofthepitch.com/rsl.xml

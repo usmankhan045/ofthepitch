@@ -1,0 +1,139 @@
+import Link from "next/link";
+import { siteConfig } from "@/lib/site.config";
+import { Container } from "@/components/ui";
+
+// Pinterest SVG — inlined to avoid package dependency.
+function PinterestIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden
+    >
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+    </svg>
+  );
+}
+
+export function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    // The footer is the one full-bleed ink surface on the site — it closes the
+    // page the way the 2px outlines close every card.
+    <footer className="relative overflow-hidden bg-text text-white border-t-2 border-text">
+      {/* Lime blob bleeding in from the right, echoing the hero panel. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 -right-20 w-64 h-64 rounded-full bg-accent/10"
+      />
+      <Container className="relative">
+
+        {/* ── Main grid ──────────────────────────────────────────────────── */}
+        <div className="pt-8 pb-6 grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 lg:gap-x-12">
+
+          {/* Column 1: Brand */}
+          <div className="col-span-2 lg:col-span-1">
+            <Link
+              href="/"
+              className="group flex items-center gap-2 mb-2"
+            >
+              <span
+                className="relative w-6 h-6 rounded-[7px] bg-primary border-2 border-white/25 shrink-0 transition-transform duration-150 group-hover:-rotate-6"
+                aria-hidden
+              >
+                <span className="absolute inset-[4px] rounded-full bg-accent" />
+              </span>
+              <span className="font-display text-lg font-extrabold tracking-[-0.03em] text-white">
+                {siteConfig.name}
+              </span>
+            </Link>
+            <p className="text-white/65 text-[0.8rem] leading-snug mb-2">
+              {siteConfig.tagline}
+            </p>
+
+            {/* Authorship credit — E-E-A-T + links the author archive */}
+            <p className="text-white/50 text-[0.7rem] mb-3">
+              Written &amp; edited by{" "}
+              <Link
+                href={siteConfig.author.url}
+                className="text-white/75 hover:text-white underline underline-offset-2 transition-colors"
+              >
+                {siteConfig.author.name}
+              </Link>
+            </p>
+
+            {/* Social links */}
+            <div className="flex items-center gap-3">
+              {siteConfig.social.pinterest && (
+                <a
+                  href={siteConfig.social.pinterest}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${siteConfig.name} on Pinterest`}
+                  className="p-2 rounded-full bg-white/10 text-white/70 hover:bg-accent hover:text-text transition-colors"
+                >
+                  <PinterestIcon />
+                </a>
+              )}
+            </div>
+          </div>
+
+          {/* Column 2: Navigation */}
+          <div>
+            <p className="stamp text-accent mb-2.5">
+              Navigation
+            </p>
+            <ul className="space-y-1.5">
+              {siteConfig.footerLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Explore — situation hubs for quick navigation */}
+          <div>
+            <p className="stamp text-accent mb-2.5">
+              Explore
+            </p>
+            <ul className="space-y-1.5">
+              <li>
+                <Link href="/blog" className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              {siteConfig.audienceSegments.map((seg) => (
+                <li key={seg.slug}>
+                  <Link
+                    href={`/${seg.slug}`}
+                    className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors"
+                  >
+                    {seg.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+
+        {/* ── Bottom bar ─────────────────────────────────────────────────── */}
+        <div className="border-t border-white/15 py-3 flex flex-col sm:flex-row items-center justify-between gap-1 text-[0.7rem] text-white/45">
+          <p>© {year} {siteConfig.name}. All rights reserved.</p>
+          <p>{siteConfig.legal.disclaimer}</p>
+        </div>
+
+      </Container>
+    </footer>
+  );
+}

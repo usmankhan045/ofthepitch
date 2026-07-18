@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* ─── Theme bridge ────────────────────────────────────────────────────────────
+   CSS custom properties are injected at runtime by the root layout via
+   generateThemeCSS() (lib/theme.ts). The @theme block maps those runtime
+   values → Tailwind 4 utilities: bg-primary, text-accent, font-display, etc.
+   Changing siteConfig.theme.* and rebuilding restyles the entire site.
+   ─────────────────────────────────────────────────────────────────────────── */
+@theme inline {
+  --color-primary:      var(--color-primary);
+  --color-accent:       var(--color-accent);
+  --color-background:   var(--color-background);
+  --color-text:         var(--color-text);
+  --color-muted:        var(--color-muted);
+  --color-success:      var(--color-success);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-surface:      var(--color-surface);
+  --color-line:         var(--color-line);
+
+  --font-display: var(--font-display);
+  --font-body:    var(--font-body);
+  --font-mono:    var(--font-mono);
+
+  --radius: var(--radius);
+}
+
+/* ─── Base styles ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headlines are set tight and heavy — the loudest element in the system.
+   Negative tracking at display sizes is what makes the grotesk read as a
+   deliberate typographic choice rather than a default sans. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+/* Smaller headings need less negative tracking or they close up. */
+h4, h5, h6 {
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+code, pre, kbd, samp {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+/* ─── Signature element 1: Stamp ──────────────────────────────────────────────
+   The small uppercase mono meta-label. Eyebrows, tags, and section labels all
+   share it, so the site's "voice at small sizes" is consistent everywhere.
+   @utility is valid here because "stamp" is a plain alphanumeric class name.
+   ─────────────────────────────────────────────────────────────────────────── */
+@utility stamp {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ─── Signature element 2: Hard shadow ────────────────────────────────────────
+   Depth in this system is never blurred. A solid, un-blurred offset behind a
+   2px ink outline reads like a printed sheet lifted off the page — the single
+   move that separates "bold daylight" from a generic flat theme.
+   ─────────────────────────────────────────────────────────────────────────── */
+@utility hard {
+  border: 2px solid var(--color-text);
+  box-shadow: 6px 6px 0 var(--color-text);
+}
+
+@utility hard-primary {
+  border: 2px solid var(--color-text);
+  box-shadow: 6px 6px 0 var(--color-primary);
+}
+
+@utility hard-accent {
+  border: 2px solid var(--color-text);
+  box-shadow: 6px 6px 0 var(--color-accent);
+}
+
+/* Interactive surfaces press *into* their shadow on hover — the offset shrinks
+   as the element translates by the same amount, so the card appears to be
+   pushed toward the page. Suppressed for reduced-motion users below. */
+@utility hard-press {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.hard-press:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 var(--shadow-color, var(--color-text));
+}
+
+.hard-press:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 var(--shadow-color, var(--color-text));
+}
+
+/* ─── Signature element 3: Highlight mark ─────────────────────────────────────
+   A lime block set behind a phrase and rotated a degree and a half, as though
+   swiped with a marker. Reserved for the single most important phrase on a
+   page — usually a few words inside the H1.
+   ─────────────────────────────────────────────────────────────────────────── */
+.mark {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding: 0 0.12em;
+  border-radius: 0.35rem;
+  transform: rotate(-1.5deg);
+}
+
+/* ─── Motion preferences ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .hard-press:hover,
+  .hard-press:active {
+    transform: none;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Mobile: center flowing page text ────────────────────────────────────────
+   On phones (< 640px), the site's marketing/section copy is center-aligned for a
+   balanced look on a narrow screen. Reading-focused content stays left-aligned
+   for legibility: narrow "swc-read" containers (blog articles, legal pages),
+   list items, and tables. Card interiors keep their own left alignment via the
+   `text-left` on the Card base. Any element with its own text-* utility keeps
+   that alignment, since a directly-applied class beats an inherited value.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 639px) {
+  main { text-align: center; }
+
+  main .swc-read,
+  main ul,
+  main ol,
+  main table {
+    text-align: left;
+  }
+}
+
+/* ─── Ledger divider line ────────────────────────────────────────────────────
+   Regular CSS class (not @utility) because it uses ::after pseudo-element.
+   Applied via className="ledger-line" in SectionDivider when no label is set.
+   ─────────────────────────────────────────────────────────────────────────── */
+.ledger-line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--color-line);
+  margin-top: 0.25rem;
+}
