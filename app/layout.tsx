@@ -3,6 +3,7 @@ import "./globals.css";
 import { siteConfig } from "@/lib/site.config";
 import { getSiteFonts } from "@/lib/fonts";
 import { generateThemeCSS } from "@/lib/theme";
+import { getSiteSettings } from "@/lib/settings";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
@@ -58,19 +59,34 @@ export default async function RootLayout({
     // DB not yet configured — render nav without the Categories dropdown
   }
 
+  // Brand, nav and theme, with admin overrides applied over site.config.ts.
+  // getSiteSettings() never throws — it falls back to config on any failure,
+  // because an exception in the root layout would take down every page.
+  const settings = await getSiteSettings();
+
   return (
     <html lang="en" className={`${fonts.variables} h-full`}>
       <head>
-        {/* Inject theme CSS vars — change siteConfig.theme.colors to restyle the whole site */}
-        <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
+        {/* Inject theme CSS vars. Defaults come from siteConfig.theme.colors;
+            the admin Settings screen can override them per-site at runtime. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `:root { ${generateThemeCSS(settings.themeColors)} }`,
+          }}
+        />
         {/* Machine-readable content license (RSL 1.0) for AI/LLM crawlers */}
         <link rel="license" href="/rsl.xml" type="application/rsl+xml" />
         <JsonLd data={[websiteSchema(), organizationSchema(), personSchema()]} />
       </head>
       <body className="flex flex-col min-h-full antialiased bg-background text-text">
-        <Header categories={categories} />
+        <Header categories={categories} nav={settings.nav} name={settings.name} />
         {children}
-        <Footer />
+        <Footer
+          name={settings.name}
+          tagline={settings.tagline}
+          social={settings.social}
+          footerLinks={settings.footerLinks}
+        />
       </body>
     </html>
   );

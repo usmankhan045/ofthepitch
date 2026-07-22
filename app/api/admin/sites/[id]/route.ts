@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { z } from "zod";
 import { authenticate } from "@/lib/auth";
-import { getSupabaseAdmin } from "@/lib/supabase";
+import { getSupabaseAdmin, getCurrentSiteId } from "@/lib/supabase";
 
 export const dynamic = "force-dynamic";
 
@@ -36,16 +36,30 @@ export async function PUT(
     );
   }
 
+  // This deployment may only edit its OWN site row.
+  //
+  // The `sites` table is the tenant registry for a Supabase project shared with
+  // several other live sites. Without this check, anyone holding
+  // ADMIN_API_TOKEN could rewrite another tenant's `deploy_url` — repointing
+  // its revalidation webhooks — or rename it outright.
+  const currentSiteId = await getCurrentSiteId();
+  if (id !== currentSiteId) {
+    return Response.json(
+      { error: "This deployment can only modify its own site." },
+      { status: 403 }
+    );
+  }
+
   const { data, error } = await getSupabaseAdmin()
     .from("sites")
     .update(parsed.data)
-    .eq("id", id)
+    .eq("id", currentSiteId)
     .select()
     .single();
 
   if (error) {
     console.error("[PUT /api/admin/sites/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+    return Response.json({ error: "Could not update site." }, { status: 500 });
   }
 
   if (!data) {

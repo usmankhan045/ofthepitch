@@ -303,3 +303,169 @@ export async function getRelatedPosts(params: {
 
   return results.slice(0, limit);
 }
+
+// ── Printables ───────────────────────────────────────────────────────────────
+
+/**
+ * Log a given warning only once per process.
+ *
+ * A production build renders all 76 posts, so a per-post console.error about a
+ * missing table produces 76 identical lines and buries anything real.
+ */
+const warned = new Set<string>();
+function warnOnce(key: string, message: string): void {
+  if (warned.has(key)) return;
+  warned.add(key);
+  console.warn(message);
+}
+
+export interface Printable {
+  id: string;
+  slug: string;
+  title: string;
+  description: string | null;
+  file_url: string | null;
+  thumbnail_url: string | null;
+  category_id: string | null;
+  /** Drives the aspect ratio of the on-page preview. */
+  orientation: "portrait" | "landscape";
+  created_at: string;
+  updated_at: string | null;
+  categories?: { slug: string; name: string } | null;
+}
+
+export async function getPrintables(categoryId?: string): Promise<Printable[]> {
+  const siteId = await getCurrentSiteId();
+
+  let query = supabaseAdmin
+    .from("printables")
+    .select("*, categories(slug, name)")
+    .eq("site_id", siteId)
+    .order("created_at", { ascending: false });
+
+  if (categoryId) query = query.eq("category_id", categoryId);
+
+  const { data, error } = await query;
+  if (error) throw error;
+  return (data ?? []) as Printable[];
+}
+
+export async function getPrintableBySlug(slug: string): Promise<Printable | null> {
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("printables")
+    .select("*, categories(slug, name)")
+    .eq("site_id", siteId)
+    .eq("slug", slug)
+    .maybeSingle();
+
+  if (error) throw error;
+  return (data as Printable) ?? null;
+}
+
+/**
+ * Printables attached to a post, in the admin's chosen order.
+ *
+ * Returns [] rather than throwing when the join table is missing (migration 005
+ * not yet applied) — a post page must still render without its downloads.
+ */
+export async function getPrintablesForPost(postId: string): Promise<Printable[]> {
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("post_printables")
+    .select("sort_order, printables(*, categories(slug, name))")
+    .eq("post_id", postId)
+    .order("sort_order", { ascending: true });
+
+  if (error) {
+    // Warn once per process. A build renders every post, and 76 copies of the
+    // same "table is missing" line would bury any genuine error in the output.
+    warnOnce("post_printables", `[getPrintablesForPost] ${error.message}`);
+    return [];
+  }
+
+  return ((data ?? []) as unknown as Array<{ printables: Printable | null }>)
+    .map((row) => row.printables)
+    // The join filters only on post_id; scope the resolved printables to this
+    // site too, so a stray cross-tenant link can never surface another site's
+    // download on our page. `printables(*)` includes site_id.
+    .filter(
+      (p): p is Printable =>
+        Boolean(p) && (p as { site_id?: string }).site_id === siteId
+    );
+}
+
+/** Posts that feature a given printable — powers "used in" on its detail page. */
+export async function getPostsForPrintable(
+  printableId: string,
+  limit = 6
+): Promise<Array<Pick<Post, "id" | "title" | "slug">>> {
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("post_printables")
+    .select("posts(id, title, slug, status, site_id)")
+    .eq("printable_id", printableId)
+    .limit(limit);
+
+  if (error) {
+    warnOnce("post_printables", `[getPostsForPrintable] ${error.message}`);
+    return [];
+  }
+
+  return ((data ?? []) as unknown as Array<{
+    posts: (Pick<Post, "id" | "title" | "slug"> & {
+      status: string;
+      site_id: string;
+    }) | null;
+  }>)
+    .map((row) => row.posts)
+    // Only ever surface live posts belonging to this site.
+    .filter(
+      (p): p is Pick<Post, "id" | "title" | "slug"> & {
+        status: string;
+        site_id: string;
+      } => Boolean(p) && p!.status === "published" && p!.site_id === siteId
+    )
+    .map(({ id, title, slug }) => ({ id, title, slug }));
+}
+
+/**
+ * Printables referenced by `{{printable:slug}}` in a post body.
+ *
+ * An inline mention doesn't require attaching the printable to the post, so
+ * these have to be resolved from the body text — otherwise every un-attached
+ * mention would render with generic placeholder copy instead of its real title.
+ */
+export async function getPrintablesMentionedIn(
+  content: string | null | undefined
+): Promise<Printable[]> {
+  if (!content) return [];
+
+  const slugs = Array.from(
+    new Set(
+      Array.from(content.matchAll(/\{\{printable:\s*([a-z0-9-]+)\s*\}\}/gi)).map(
+        (m) => m[1].toLowerCase()
+      )
+    )
+  );
+
+  if (slugs.length === 0) return [];
+
+  const siteId = await getCurrentSiteId();
+
+  const { data, error } = await supabaseAdmin
+    .from("printables")
+    .select("*, categories(slug, name)")
+    .eq("site_id", siteId)
+    .in("slug", slugs);
+
+  if (error) {
+    warnOnce("printables-mentioned", `[getPrintablesMentionedIn] ${error.message}`);
+    return [];
+  }
+
+  return (data ?? []) as Printable[];
+}

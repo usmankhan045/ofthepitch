@@ -143,8 +143,14 @@ export default async function BlogIndexPage({ searchParams }: Props) {
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {posts.map((post) => (
-                  <PostCard key={post.id} post={post} as="h2" meta="date" />
+                {posts.map((post, i) => (
+                  <PostCard
+                    key={post.id}
+                    post={post}
+                    as="h2"
+                    meta="date"
+                    priority={i === 0}
+                  />
                 ))}
               </div>
 

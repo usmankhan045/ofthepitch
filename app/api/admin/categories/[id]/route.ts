@@ -1,15 +1,58 @@
 import { NextRequest } from "next/server";
 import { z } from "zod";
+
 import { authenticate } from "@/lib/auth";
-import { getSupabaseAdmin } from "@/lib/supabase";
+import { getCategoryById } from "@/lib/admin/data";
+import {
+  AdminError,
+  updateCategory,
+  deleteCategory,
+} from "@/lib/admin/mutations";
+import type { CategoryInput } from "@/lib/admin/mutations";
 
 export const dynamic = "force-dynamic";
+
+/**
+ * Single-category REST API.
+ *
+ * Scoped and validated through lib/admin/mutations.ts — see the note in
+ * app/api/admin/posts/[id]/route.ts. These statements previously ran as
+ * `.eq("id", id)` with no site_id filter against a SHARED Supabase project.
+ *
+ * DELETE additionally now refuses to remove a category that still has posts,
+ * rather than surfacing a raw foreign-key violation.
+ */
 
 const CategoryUpdateSchema = z.object({
   slug: z.string().min(1).optional(),
   name: z.string().min(1).optional(),
-  description: z.string().optional(),
+  description: z.string().nullable().optional(),
 });
+
+type CategoryPatch = z.infer<typeof CategoryUpdateSchema>;
+type ExistingCategory = NonNullable<
+  Awaited<ReturnType<typeof getCategoryById>>
+>;
+
+function mergeIntoInput(
+  existing: ExistingCategory,
+  patch: CategoryPatch
+): CategoryInput {
+  return {
+    slug: patch.slug ?? existing.slug,
+    name: patch.name ?? existing.name,
+    description:
+      patch.description !== undefined ? patch.description : existing.description,
+  };
+}
+
+function errorResponse(err: unknown) {
+  if (err instanceof AdminError) {
+    return Response.json({ error: err.message }, { status: 400 });
+  }
+  console.error("[/api/admin/categories/[id]]", err);
+  return Response.json({ error: "Internal error." }, { status: 500 });
+}
 
 export async function GET(
   request: NextRequest,
@@ -19,22 +62,12 @@ export async function GET(
   if (authError) return authError;
 
   const { id } = await params;
+  const category = await getCategoryById(id);
 
-  const { data, error } = await getSupabaseAdmin()
-    .from("categories")
-    .select("*")
-    .eq("id", id)
-    .single();
-
-  if (error?.code === "PGRST116") {
+  if (!category) {
     return Response.json({ error: "Category not found." }, { status: 404 });
   }
-  if (error) {
-    console.error("[GET /api/admin/categories/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
-  }
-
-  return Response.json({ category: data });
+  return Response.json({ category });
 }
 
 export async function PUT(
@@ -61,22 +94,20 @@ export async function PUT(
     );
   }
 
-  const { data, error } = await getSupabaseAdmin()
-    .from("categories")
-    .update(parsed.data)
-    .eq("id", id)
-    .select()
-    .single();
-
-  if (error?.code === "PGRST116") {
+  const existing = await getCategoryById(id);
+  if (!existing) {
     return Response.json({ error: "Category not found." }, { status: 404 });
   }
-  if (error) {
-    console.error("[PUT /api/admin/categories/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
-  }
 
-  return Response.json({ category: data });
+  try {
+    const category = await updateCategory(
+      id,
+      mergeIntoInput(existing, parsed.data)
+    );
+    return Response.json({ category });
+  } catch (err) {
+    return errorResponse(err);
+  }
 }
 
 export async function DELETE(
@@ -88,15 +119,15 @@ export async function DELETE(
 
   const { id } = await params;
 
-  const { error } = await getSupabaseAdmin()
-    .from("categories")
-    .delete()
-    .eq("id", id);
-
-  if (error) {
-    console.error("[DELETE /api/admin/categories/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+  const existing = await getCategoryById(id);
+  if (!existing) {
+    return Response.json({ error: "Category not found." }, { status: 404 });
   }
 
-  return Response.json({ deleted: true, id });
+  try {
+    await deleteCategory(id);
+    return Response.json({ deleted: true });
+  } catch (err) {
+    return errorResponse(err);
+  }
 }

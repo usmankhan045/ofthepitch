@@ -55,7 +55,33 @@ function ChevronIcon({ className }: { className?: string }) {
   );
 }
 
-export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
+type NavItem = { label: string; href: string };
+
+/**
+ * Nav hrefs come from admin settings and may point off-site. Only a same-origin
+ * path gets client-side `<Link>` routing and active-state highlighting; anything
+ * carrying a scheme (`https:`, `mailto:`, `tel:`) or a protocol-relative `//`
+ * opens as a plain external anchor. Routing an absolute URL through `<Link>` and
+ * `pathname.startsWith()` would break both navigation and the active state.
+ */
+function isInternalHref(href: string): boolean {
+  return href.startsWith("/") && !href.startsWith("//");
+}
+
+/**
+ * `nav` and `name` are supplied by the root layout from the admin Settings
+ * screen. Both default to site.config.ts, so the header renders identically if
+ * settings are unavailable or nothing has been overridden.
+ */
+export function Header({
+  categories = [],
+  nav = navLinks,
+  name = siteConfig.name,
+}: {
+  categories?: CategoryLink[];
+  nav?: readonly NavItem[];
+  name?: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [catOpen, setCatOpen] = useState(false);          // desktop dropdown
   const [mobileCatOpen, setMobileCatOpen] = useState(false); // mobile accordion
@@ -115,7 +141,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
           <Link
             href="/"
             className="group flex items-center gap-2.5 shrink-0"
-            aria-label={`${siteConfig.name} home`}
+            aria-label={`${name} home`}
           >
             <span
               className="relative w-7 h-7 rounded-[9px] bg-primary border-2 border-text shrink-0 transition-transform duration-150 group-hover:-rotate-6"
@@ -124,28 +150,39 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
               <span className="absolute inset-[5px] rounded-full bg-accent" />
             </span>
             <span className="font-display text-[1.35rem] font-extrabold tracking-[-0.03em] text-text">
-              {siteConfig.name}
+              {name}
             </span>
           </Link>
 
           {/* ── Desktop nav ──────────────────────────────────────────────── */}
           <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
-            {navLinks.map((link) => {
+            {nav.map((link) => {
+              const internal = isInternalHref(link.href);
               const isActive =
-                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-              const navLink = (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "px-3.5 py-2 rounded-full text-[0.95rem] font-medium transition-colors duration-150",
-                    isActive
-                      ? "text-text bg-accent"
-                      : "text-muted hover:text-text hover:bg-text/[0.06]"
-                  )}
-                >
+                internal &&
+                (link.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(link.href));
+              const linkClass = cn(
+                "px-3.5 py-2 rounded-full text-[0.95rem] font-medium transition-colors duration-150",
+                isActive
+                  ? "text-text bg-accent"
+                  : "text-muted hover:text-text hover:bg-text/[0.06]"
+              );
+              const navLink = internal ? (
+                <Link key={link.href} href={link.href} className={linkClass}>
                   {link.label}
                 </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClass}
+                >
+                  {link.label}
+                </a>
               );
 
               // Inject the Categories dropdown immediately after the Blog link.
@@ -248,22 +285,33 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
               className="py-4 flex flex-col gap-0.5"
               aria-label="Mobile navigation"
             >
-              {navLinks.map((link) => {
+              {nav.map((link) => {
+                const internal = isInternalHref(link.href);
                 const isActive =
-                  link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-                const navLink = (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      "px-4 py-3 rounded-full text-base font-medium transition-colors",
-                      isActive
-                        ? "text-text bg-accent"
-                        : "text-text hover:bg-text/[0.06]"
-                    )}
-                  >
+                  internal &&
+                  (link.href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(link.href));
+                const linkClass = cn(
+                  "px-4 py-3 rounded-full text-base font-medium transition-colors",
+                  isActive
+                    ? "text-text bg-accent"
+                    : "text-text hover:bg-text/[0.06]"
+                );
+                const navLink = internal ? (
+                  <Link key={link.href} href={link.href} className={linkClass}>
                     {link.label}
                   </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkClass}
+                  >
+                    {link.label}
+                  </a>
                 );
 
                 // Categories accordion after the Blog link.

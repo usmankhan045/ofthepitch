@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
   if (authError) return authError;
 
   const siteId =
-    request.nextUrl.searchParams.get("site_id") ?? (await getCurrentSiteId());
+    await getCurrentSiteId();
 
   const { data, error } = await getSupabaseAdmin()
     .from("subscribers")
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
 
   if (error) {
     console.error("[GET /api/admin/subscribers]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+    return Response.json({ error: "Could not load subscribers." }, { status: 500 });
   }
 
   return Response.json({ subscribers: data, total: data?.length ?? 0 });

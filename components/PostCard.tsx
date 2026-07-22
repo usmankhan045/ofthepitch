@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { previewImageUrl } from "@/lib/admin/preview-image";
 import { Card, CardTitle, CardBody, Tag } from "@/components/ui";
 import type { Post } from "@/lib/queries";
 import { cn, postPath } from "@/lib/utils";
@@ -24,6 +25,12 @@ interface PostCardProps {
   meta?: Meta;
   /** `sizes` for the cover image; set it to match the grid's column count. */
   sizes?: string;
+  /**
+   * Mark the cover as the LCP image — set it on the first card of an
+   * above-the-fold grid so Next preloads it instead of lazy-loading. Without
+   * this the first generated card is the largest paint yet loads late.
+   */
+  priority?: boolean;
   className?: string;
 }
 
@@ -40,6 +47,7 @@ export function PostCard({
   as = "h3",
   meta = "read",
   sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
+  priority = false,
   className,
 }: PostCardProps) {
   // Placeholder posts (homepage fallback content) have no real detail page.
@@ -50,7 +58,19 @@ export function PostCard({
       ? post.slug
       : postPath(post.slug);
 
-  const hasCover = Boolean(post.featured_image_url);
+  // Posts saved without a featured image fall back to a generated card built
+  // from the title and category, so every listing has artwork. Placeholder
+  // posts are excluded — they have no real title to render into a card.
+  const coverUrl = isPlaceholder
+    ? post.featured_image_url
+    : previewImageUrl({
+        title: post.title,
+        slug: post.slug,
+        featured_image_url: post.featured_image_url,
+        categories: post.categories,
+      });
+
+  const hasCover = Boolean(coverUrl);
 
   return (
     <Link href={href} className="group block h-full focus-visible:outline-none">
@@ -64,14 +84,18 @@ export function PostCard({
         )}
       >
         {/* Cover — bleeds to the card's inner edge, under the 2px outline. */}
-        {post.featured_image_url && (
+        {coverUrl && (
           <div className="relative -mt-6 -mx-6 mb-4 aspect-[1200/630] overflow-hidden border-b-2 border-text bg-primary/[0.05]">
             <Image
-              src={post.featured_image_url}
+              src={coverUrl}
               alt=""
               fill
               className="object-cover"
               sizes={sizes}
+              priority={priority}
+              // The generated card is produced on demand by /api/og; there is
+              // nothing for the image optimiser to improve on.
+              unoptimized={!post.featured_image_url}
             />
           </div>
         )}

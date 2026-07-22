@@ -2,17 +2,19 @@ import { NextRequest } from "next/server";
 import { z } from "zod";
 import { authenticate } from "@/lib/auth";
 import { getSupabaseAdmin, getCurrentSiteId } from "@/lib/supabase";
+// Shared with the dashboard's media library so the two can't drift apart. This
+// route previously hardcoded "media", a bucket that does not exist in this
+// project, so every upload through it failed.
+import { MEDIA_BUCKET, ALLOWED_TYPES, MAX_UPLOAD_BYTES } from "@/lib/admin/media";
 
 export const dynamic = "force-dynamic";
 
 const MediaUploadSchema = z.object({
-  site_id: z.string().uuid().optional(),
   filename: z.string().min(1, "filename is required"),
   data: z.string().min(1, "data (base64) is required"),
   content_type: z.string().optional(),
 });
 
-const MEDIA_BUCKET = "media";
 
 export async function POST(request: NextRequest) {
   const authError = authenticate(request);
@@ -33,7 +35,7 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const siteId = parsed.data.site_id ?? (await getCurrentSiteId());
+  const siteId = await getCurrentSiteId();
 
   const { data: site } = await getSupabaseAdmin()
     .from("sites")
@@ -48,12 +50,37 @@ export async function POST(request: NextRequest) {
   const base64Data = parsed.data.data.replace(/^data:[^;]+;base64,/, "");
   const buffer = Buffer.from(base64Data, "base64");
 
-  const contentType =
-    parsed.data.content_type ??
-    inferContentType(parsed.data.filename) ??
-    "application/octet-stream";
+  if (buffer.byteLength > MAX_UPLOAD_BYTES) {
+    return Response.json(
+      { error: `File exceeds the ${MAX_UPLOAD_BYTES / 1024 / 1024}MB limit.` },
+      { status: 413 }
+    );
+  }
 
-  const storagePath = `${site.slug}/${Date.now()}-${parsed.data.filename}`;
+  // The bucket is PUBLIC, so a caller-supplied content_type is untrusted: an
+  // uploaded HTML/SVG file served with text/html would be stored XSS on our own
+  // origin. Ignore anything outside the allowlist and derive the type from the
+  // filename extension, rejecting what we can't classify as an image or PDF.
+  const claimed = parsed.data.content_type;
+  const inferred = inferContentType(parsed.data.filename);
+  const contentType =
+    claimed && ALLOWED_TYPES.has(claimed) ? claimed : inferred;
+
+  if (!contentType || !ALLOWED_TYPES.has(contentType)) {
+    return Response.json(
+      { error: "Unsupported file type. Upload a JPEG, PNG, GIF, WebP, AVIF or PDF." },
+      { status: 415 }
+    );
+  }
+
+  // Normalise the filename so a caller can't traverse out of the site folder or
+  // inject characters that need URL-escaping.
+  const safeName = parsed.data.filename
+    .replace(/^.*[\\/]/, "")
+    .replace(/[^a-zA-Z0-9._-]/g, "-")
+    .slice(-100);
+
+  const storagePath = `${site.slug}/${Date.now()}-${safeName}`;
 
   const { error: uploadError } = await getSupabaseAdmin()
     .storage
@@ -62,7 +89,7 @@ export async function POST(request: NextRequest) {
 
   if (uploadError) {
     console.error("[POST /api/admin/media]", uploadError);
-    return Response.json({ error: uploadError.message }, { status: 500 });
+    return Response.json({ error: "Upload failed." }, { status: 500 });
   }
 
   const { data: publicUrlData } = getSupabaseAdmin()

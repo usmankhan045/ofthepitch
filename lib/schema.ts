@@ -198,7 +198,9 @@ export function digitalDocumentSchema(printable: {
   file_url?: string | null;
   thumbnail_url?: string | null;
 }) {
-  const url = `${BASE_URL}/free-printables/${printable.slug}`;
+  // Printables live at /printables/<slug>. The upstream template used
+  // /free-printables; this helper kept that path while having no callers.
+  const url = `${BASE_URL}/printables/${printable.slug}`;
   const absolutize = (u: string) => (u.startsWith("http") ? u : `${BASE_URL}${u}`);
   const fileUrl = printable.file_url ? absolutize(printable.file_url) : undefined;
   const thumbUrl = printable.thumbnail_url ? absolutize(printable.thumbnail_url) : undefined;

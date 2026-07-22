@@ -2,8 +2,7 @@ import { NextRequest } from "next/server";
 import { z } from "zod";
 import { authenticate } from "@/lib/auth";
 import { getSupabaseAdmin, getCurrentSiteId } from "@/lib/supabase";
-import { revalidateForSite, audienceTagsToPaths } from "@/lib/revalidatePortfolio";
-import { postPath } from "@/lib/utils";
+import { AdminError, createPost } from "@/lib/admin/mutations";
 
 export const dynamic = "force-dynamic";
 
@@ -12,8 +11,10 @@ const FaqItemSchema = z.object({
   answer: z.string().min(1),
 });
 
+// NOTE: `site_id` is deliberately NOT accepted from the caller. It used to be,
+// which let a token holder insert rows into another tenant of this shared
+// Supabase project. The site is always resolved server-side.
 const PostCreateSchema = z.object({
-  site_id: z.string().uuid().optional(),
   title: z.string().min(1, "title is required"),
   slug: z.string().min(1, "slug is required"),
   content: z.string().optional(),
@@ -34,7 +35,8 @@ export async function GET(request: NextRequest) {
   if (authError) return authError;
 
   const sp = request.nextUrl.searchParams;
-  const siteId = sp.get("site_id") ?? (await getCurrentSiteId());
+  // Always this site — a caller-supplied site_id would expose other tenants.
+  const siteId = await getCurrentSiteId();
   const status = sp.get("status");
   const categoryId = sp.get("category");
   const audienceTag = sp.get("audience_tag");
@@ -52,7 +54,7 @@ export async function GET(request: NextRequest) {
   const { data, error } = await query;
   if (error) {
     console.error("[GET /api/admin/posts]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+    return Response.json({ error: "Could not load posts." }, { status: 500 });
   }
 
   return Response.json({ posts: data });
@@ -77,47 +79,17 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const siteId = parsed.data.site_id ?? (await getCurrentSiteId());
-  const payload = { ...parsed.data, site_id: siteId };
-
-  if (payload.status === "published" && !payload.published_at) {
-    payload.published_at = new Date().toISOString();
+  // Write through the shared mutation layer: it scopes to this site, compiles
+  // the MDX before storing it, enforces slug rules and revalidates. Writing
+  // directly here previously bypassed all four.
+  try {
+    const post = await createPost(parsed.data);
+    return Response.json({ post }, { status: 201 });
+  } catch (err) {
+    if (err instanceof AdminError) {
+      return Response.json({ error: err.message }, { status: 400 });
+    }
+    console.error("[POST /api/admin/posts]", err);
+    return Response.json({ error: "Internal error." }, { status: 500 });
   }
-
-  const { data, error } = await getSupabaseAdmin()
-    .from("posts")
-    .insert(payload)
-    .select("*, categories(slug, name)")
-    .single();
-
-  if (error) {
-    console.error("[POST /api/admin/posts]", error);
-    return Response.json({ error: error.message }, { status: 500 });
-  }
-
-  await revalidatePost(siteId, data.slug, data.category_id, data.audience_tags ?? []);
-
-  return Response.json({ post: data }, { status: 201 });
-}
-
-async function revalidatePost(
-  siteId: string,
-  slug: string,
-  categoryId: string | null,
-  audienceTags: string[]
-) {
-  const paths = ["/blog", postPath(slug)];
-
-  if (categoryId) {
-    const { data: cat } = await getSupabaseAdmin()
-      .from("categories")
-      .select("slug")
-      .eq("id", categoryId)
-      .single();
-    if (cat) paths.push(`/category/${cat.slug}`);
-  }
-
-  paths.push(...audienceTagsToPaths(audienceTags));
-
-  await revalidateForSite(siteId, paths);
 }

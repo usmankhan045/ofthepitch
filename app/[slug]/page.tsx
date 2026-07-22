@@ -7,6 +7,8 @@ import {
   getPageBySlug,
   getPublishedPosts,
   getRelatedPosts,
+  getPrintablesForPost,
+  getPrintablesMentionedIn,
 } from "@/lib/queries";
 import {
   Container,
@@ -15,16 +17,32 @@ import {
   CardTitle,
   CardBody,
   SectionDivider,
+  PrintableCallout,
 } from "@/components/ui";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { JsonLd } from "@/components/JsonLd";
 import { AuthorBox } from "@/components/AuthorBox";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
+import {
+  absolutePreviewImageUrl,
+  previewImageUrl,
+} from "@/lib/admin/preview-image";
 import { siteConfig } from "@/lib/site.config";
 import { cn, postPath } from "@/lib/utils";
 
 export const revalidate = 3600;
+
+/**
+ * Does the body mention this printable inline? Must match the SAME pattern
+ * `expandShortcodes()` and `getPrintablesMentionedIn()` use — whitespace-tolerant
+ * and case-insensitive — or an attached printable also mentioned as
+ * `{{printable: slug }}` would render both inline and again at the foot.
+ */
+function mentionsPrintable(content: string | null | undefined, slug: string): boolean {
+  if (!content) return false;
+  return new RegExp(`\\{\\{printable:\\s*${slug}\\s*\\}\\}`, "i").test(content);
+}
 
 // Posts and standalone pages both live at the site root (`/my-post`), matching
 // the URL structure WordPress served and Google indexed. Static routes such as
@@ -83,9 +101,15 @@ export async function generateMetadata({
         publishedTime: post.published_at ?? undefined,
         modifiedTime: post.updated_at,
         authors: [siteConfig.author.name],
-        images: ogImages(post.featured_image_url, title),
+        // Absolute URL, and the generated card when no image was chosen — so a
+        // shared link always previews with artwork rather than the site default.
+        images: ogImages(absolutePreviewImageUrl(post), title),
       },
-      twitter: { title, description, ...twitterImages(post.featured_image_url) },
+      twitter: {
+        title,
+        description,
+        ...twitterImages(absolutePreviewImageUrl(post)),
+      },
     };
   } catch {
     return {};
@@ -128,6 +152,21 @@ export default async function BlogPostPage({
     });
   } catch {
     // non-critical
+  }
+
+  // Printables shown on this post come from two independent places:
+  //   - attached in the admin sidebar  → rendered as callouts after the article
+  //   - mentioned inline via {{printable:slug}} → rendered at that exact point
+  // A mention does not require an attachment, so both are resolved and merged;
+  // otherwise an un-attached mention would fall back to generic placeholder copy.
+  const [attached, mentioned] = await Promise.all([
+    getPrintablesForPost(post.id),
+    getPrintablesMentionedIn(post.content),
+  ]);
+
+  const printables = attached.slice();
+  for (const m of mentioned) {
+    if (!printables.some((p) => p.id === m.id)) printables.push(m);
   }
 
   const hasFaq = post.faq_items && post.faq_items.length > 0;
@@ -239,20 +278,28 @@ export default async function BlogPostPage({
       </section>
 
       {/* ── Featured image ─────────────────────────────────────────────────── */}
-      {post.featured_image_url && (
-        <Container width="narrow" className="mt-2">
-          <div className="relative w-full aspect-[16/9] max-h-[420px] overflow-hidden rounded-2xl bg-primary/[0.05] shadow-sm">
-            <Image
-              src={post.featured_image_url}
-              alt={post.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-              priority
-            />
-          </div>
-        </Container>
-      )}
+      {/* Falls back to a generated card when no image was chosen, so every post
+          has a hero. The 1200x630 ratio matches what /api/og produces. */}
+      <Container width="narrow" className="mt-2">
+        <div
+          className={cn(
+            "relative w-full overflow-hidden rounded-2xl bg-primary/[0.05] shadow-sm",
+            post.featured_image_url
+              ? "aspect-[16/9] max-h-[420px]"
+              : "aspect-[1200/630]"
+          )}
+        >
+          <Image
+            src={previewImageUrl(post)}
+            alt={post.featured_image_url ? post.title : ""}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+            priority
+            unoptimized={!post.featured_image_url}
+          />
+        </div>
+      </Container>
 
       {/* ── Article body ───────────────────────────────────────────────────── */}
       <article className="py-12 sm:py-16">
@@ -284,7 +331,41 @@ export default async function BlogPostPage({
           )}
 
           {/* Main content */}
-          {post.content && <MarkdownContent content={post.content} />}
+          {post.content && (
+            <MarkdownContent content={post.content} printables={printables} />
+          )}
+
+          {/* Attached downloads. A {{printable:slug}} mention places one
+              mid-article; anything attached but not mentioned inline lands
+              here, so nothing an admin attaches goes unshown. */}
+          {attached.length > 0 && (
+            <section className="mt-10" aria-labelledby="post-printables">
+              <h2
+                id="post-printables"
+                className="mb-4 font-display text-2xl font-bold leading-snug text-text"
+              >
+                {attached.length === 1
+                  ? "Free printable for this guide"
+                  : "Free printables for this guide"}
+              </h2>
+              <div className="space-y-4">
+                {attached
+                  // Skip ones already rendered inline by a shortcode mention.
+                  .filter((p) => !mentionsPrintable(post.content, p.slug))
+                  .map((p) => (
+                    <PrintableCallout
+                      key={p.id}
+                      title={p.title}
+                      description={
+                        p.description ??
+                        "Download it free — no email required."
+                      }
+                      href={`/printables/${p.slug}`}
+                    />
+                  ))}
+              </div>
+            </section>
+          )}
 
           {/* FAQ section */}
           {hasFaq && (
@@ -339,7 +420,9 @@ export default async function BlogPostPage({
               {relatedPosts.map((related) => (
                 <Link
                   key={related.id}
-                  href={`/blog/${related.slug}`}
+                  // Posts live at the site root, not under /blog — a hardcoded
+                  // /blog/<slug> here 404'd every related link. Use postPath().
+                  href={postPath(related.slug)}
                   className="group block h-full focus-visible:outline-none"
                 >
                   <Card

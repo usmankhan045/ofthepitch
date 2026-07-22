@@ -13,7 +13,8 @@ export async function GET(request: NextRequest) {
   const authError = authenticate(request);
   if (authError) return authError;
 
-  const siteIdFilter = request.nextUrl.searchParams.get("site_id");
+  // site_id is intentionally not caller-controlled — shared project.
+  const siteIdFilter: string | null = null;
 
   let sitesQuery = getSupabaseAdmin()
     .from("sites")
@@ -27,7 +28,7 @@ export async function GET(request: NextRequest) {
   const { data: sites, error: sitesError } = await sitesQuery;
   if (sitesError) {
     console.error("[GET /api/admin/audit] sites", sitesError);
-    return Response.json({ error: sitesError.message }, { status: 500 });
+    return Response.json({ error: "Could not load audit data." }, { status: 500 });
   }
 
   const siteIds = (sites ?? []).map((s) => s.id);
@@ -52,7 +53,7 @@ export async function GET(request: NextRequest) {
 
   if (postsResult.error) {
     console.error("[GET /api/admin/audit] posts", postsResult.error);
-    return Response.json({ error: postsResult.error.message }, { status: 500 });
+    return Response.json({ error: "Could not load audit data." }, { status: 500 });
   }
 
   const allPosts = postsResult.data ?? [];

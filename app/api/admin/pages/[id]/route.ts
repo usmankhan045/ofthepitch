@@ -1,18 +1,54 @@
 import { NextRequest } from "next/server";
 import { z } from "zod";
+
 import { authenticate } from "@/lib/auth";
-import { getSupabaseAdmin } from "@/lib/supabase";
-import { revalidateForSite } from "@/lib/revalidatePortfolio";
+import { getPageById } from "@/lib/admin/data";
+import { AdminError, updatePage, deletePage } from "@/lib/admin/mutations";
+import type { PageInput } from "@/lib/admin/mutations";
 
 export const dynamic = "force-dynamic";
 
+/**
+ * Single-page REST API.
+ *
+ * Scoped and validated through lib/admin/mutations.ts — see the note in
+ * app/api/admin/posts/[id]/route.ts. These statements previously ran as
+ * `.eq("id", id)` with no site_id filter against a SHARED Supabase project,
+ * and skipped MDX compile-checking on `content`.
+ */
+
 const PageUpdateSchema = z.object({
   slug: z.string().min(1).optional(),
-  title: z.string().optional(),
-  content: z.string().optional(),
-  seo_title: z.string().optional(),
-  seo_description: z.string().optional(),
+  title: z.string().nullable().optional(),
+  content: z.string().nullable().optional(),
+  seo_title: z.string().nullable().optional(),
+  seo_description: z.string().nullable().optional(),
 });
+
+type PagePatch = z.infer<typeof PageUpdateSchema>;
+type ExistingPage = NonNullable<Awaited<ReturnType<typeof getPageById>>>;
+
+function mergeIntoInput(existing: ExistingPage, patch: PagePatch): PageInput {
+  return {
+    slug: patch.slug ?? existing.slug,
+    title: patch.title !== undefined ? patch.title : existing.title,
+    content: patch.content !== undefined ? patch.content : existing.content,
+    seo_title:
+      patch.seo_title !== undefined ? patch.seo_title : existing.seo_title,
+    seo_description:
+      patch.seo_description !== undefined
+        ? patch.seo_description
+        : existing.seo_description,
+  };
+}
+
+function errorResponse(err: unknown) {
+  if (err instanceof AdminError) {
+    return Response.json({ error: err.message }, { status: 400 });
+  }
+  console.error("[/api/admin/pages/[id]]", err);
+  return Response.json({ error: "Internal error." }, { status: 500 });
+}
 
 export async function GET(
   request: NextRequest,
@@ -22,22 +58,10 @@ export async function GET(
   if (authError) return authError;
 
   const { id } = await params;
+  const page = await getPageById(id);
 
-  const { data, error } = await getSupabaseAdmin()
-    .from("pages")
-    .select("*")
-    .eq("id", id)
-    .single();
-
-  if (error?.code === "PGRST116") {
-    return Response.json({ error: "Page not found." }, { status: 404 });
-  }
-  if (error) {
-    console.error("[GET /api/admin/pages/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
-  }
-
-  return Response.json({ page: data });
+  if (!page) return Response.json({ error: "Page not found." }, { status: 404 });
+  return Response.json({ page });
 }
 
 export async function PUT(
@@ -64,24 +88,17 @@ export async function PUT(
     );
   }
 
-  const { data, error } = await getSupabaseAdmin()
-    .from("pages")
-    .update({ ...parsed.data, updated_at: new Date().toISOString() })
-    .eq("id", id)
-    .select()
-    .single();
-
-  if (error?.code === "PGRST116") {
+  const existing = await getPageById(id);
+  if (!existing) {
     return Response.json({ error: "Page not found." }, { status: 404 });
   }
-  if (error) {
-    console.error("[PUT /api/admin/pages/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+
+  try {
+    const page = await updatePage(id, mergeIntoInput(existing, parsed.data));
+    return Response.json({ page });
+  } catch (err) {
+    return errorResponse(err);
   }
-
-  await revalidateForSite(data.site_id, [`/${data.slug}`]);
-
-  return Response.json({ page: data });
 }
 
 export async function DELETE(
@@ -93,25 +110,15 @@ export async function DELETE(
 
   const { id } = await params;
 
-  const { data: existing } = await getSupabaseAdmin()
-    .from("pages")
-    .select("site_id, slug")
-    .eq("id", id)
-    .single();
-
-  const { error } = await getSupabaseAdmin()
-    .from("pages")
-    .delete()
-    .eq("id", id);
-
-  if (error) {
-    console.error("[DELETE /api/admin/pages/[id]]", error);
-    return Response.json({ error: error.message }, { status: 500 });
+  const existing = await getPageById(id);
+  if (!existing) {
+    return Response.json({ error: "Page not found." }, { status: 404 });
   }
 
-  if (existing) {
-    await revalidateForSite(existing.site_id, [`/${existing.slug}`]);
+  try {
+    await deletePage(id);
+    return Response.json({ deleted: true });
+  } catch (err) {
+    return errorResponse(err);
   }
-
-  return Response.json({ deleted: true, id });
 }

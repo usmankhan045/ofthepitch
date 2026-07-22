@@ -31,11 +31,11 @@ export const siteConfig = {
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────
-  // Printables are a personal-finance-template feature with no equivalent on a
-  // football site. Off: /free-printables 404s and its nav item, footer link,
-  // homepage CTAs and sitemap entries all disappear automatically.
+  // Printables: free checklists and planners for travelling fans, served at
+  // /printables and attachable to posts. Off: those routes 404 and the nav
+  // item and sitemap entries disappear.
   features: {
-    printables: false,
+    printables: true,
   },
 
   // ── CONTACT + LEGAL IDENTITY ─────────────────────────────────────────────
@@ -91,6 +91,8 @@ export const siteConfig = {
     { label: "Visa & Immigration", href: "/category/visa-immigration" },
     { label: "Tickets", href: "/category/tickets-and-hospitality" },
     { label: "Fan Zones", href: "/category/fan-zone-guide" },
+    // Dropped from `navLinks` when features.printables is false.
+    { label: "Printables", href: "/printables" },
     { label: "About", href: "/about" },
   ],
 
@@ -135,11 +137,11 @@ export type AudienceSegment = SiteConfig["audienceSegments"][number];
 
 /**
  * Nav links with feature-flagged items removed. When `features.printables` is
- * false, the "/free-printables" entry is dropped so the flag is the single
+ * false, the "/printables" entry is dropped so the flag is the single
  * source of truth — components should render from this, not `siteConfig.nav`.
  */
 export const navLinks: ReadonlyArray<{ label: string; href: string }> = (
   siteConfig.nav as ReadonlyArray<{ label: string; href: string }>
 ).filter(
-  (link) => siteConfig.features.printables || link.href !== "/free-printables"
+  (link) => siteConfig.features.printables || link.href !== "/printables"
 );

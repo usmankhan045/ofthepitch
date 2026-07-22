@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site.config";
-import { getPublishedPosts, getCategories } from "@/lib/queries";
+import { getPublishedPosts, getCategories, getPrintables } from "@/lib/queries";
 import { postPath } from "@/lib/utils";
 
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -19,6 +19,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE_URL, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE_URL}/blog`, changeFrequency: "daily", priority: 0.9 },
+    ...(siteConfig.features.printables
+      ? [
+          {
+            url: `${BASE_URL}/printables`,
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          },
+        ]
+      : []),
     { url: `${BASE_URL}/about`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}${siteConfig.author.url}`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${BASE_URL}/editorial-policy`, changeFrequency: "yearly", priority: 0.3 },
@@ -29,6 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dynamic: posts and categories — fall back to empty if DB not configured
   let postRoutes: MetadataRoute.Sitemap = [];
   let categoryRoutes: MetadataRoute.Sitemap = [];
+  let printableRoutes: MetadataRoute.Sitemap = [];
 
   try {
     const posts = await getPublishedPosts({ limit: 1000 });
@@ -55,5 +65,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
 
-  return [...staticRoutes, ...postRoutes, ...categoryRoutes];
+  if (siteConfig.features.printables) {
+    try {
+      const printables = await getPrintables();
+      printableRoutes = printables.map((p) => ({
+        url: `${BASE_URL}/printables/${p.slug}`,
+        lastModified: p.updated_at ?? p.created_at,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      }));
+    } catch (err) {
+      // Table may predate migration 005 — omit rather than fail the sitemap.
+      console.error("[sitemap] failed to load printables:", err);
+    }
+  }
+
+  return [
+    ...staticRoutes,
+    ...postRoutes,
+    ...categoryRoutes,
+    ...printableRoutes,
+  ];
 }

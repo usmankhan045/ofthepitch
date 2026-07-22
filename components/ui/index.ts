@@ -10,3 +10,4 @@ export { SectionDivider } from "./SectionDivider";
 
 export { Container } from "./Container";
 
+export { PrintableCallout } from "./PrintableCallout";

@@ -137,7 +137,30 @@ Flat and ink-outlined — depth comes from hard offset shadows, not gradients or
 
 ## Feature flags
 
-`siteConfig.features.printables` is **false**, and the printables routes, components, and data layer have been removed. It was a leftover from the personal-finance template this repo was forked from.
+`siteConfig.features.printables` is **true**. Printables are free downloads for
+travelling fans — visa document checklists, matchday packing lists, city planners.
+
+They were stripped during the WordPress migration as a personal-finance-template
+leftover, then deliberately re-introduced for this site. The implementation was
+recovered from the pre-squash history (`a8ec3ae`, the SpendWiseCents baseline)
+rather than rewritten, so the callout and preview match the original design.
+
+| Piece | Where |
+|---|---|
+| Public listing / detail | `/printables`, `/printables/<slug>` |
+| Admin CRUD + upload | `/admin/printables` |
+| Attach to a post | Post editor sidebar → renders callouts after the article |
+| Mention inline | `{{printable:slug}}` in the body → callout at that exact point |
+
+Two things to know before editing:
+
+1. **Shortcode order is load-bearing.** `expandShortcodes()` in
+   `components/MarkdownContent.tsx` must expand `{{printable:slug}}` *before* the
+   catch-all `{{...}}` strip. Reversing them silently deletes every mention — that
+   is exactly what happened during the migration.
+2. **Migration 005** (`supabase/migrations/005_printables.sql`) adds the
+   `post_printables` join table. Without it, attaching is unavailable but
+   everything else — listing, detail pages, inline mentions — still works.
 
 ---
 

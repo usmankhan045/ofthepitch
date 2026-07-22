@@ -1,20 +1,67 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import type { ComponentPropsWithoutRef } from "react";
+import { PrintableCallout } from "@/components/ui";
 
 /**
- * Strip `{{...}}` template placeholders before MDX sees them.
+ * Resolve `{{...}}` shortcodes before MDX sees them.
  *
- * Two reasons this is not optional:
- *  - MDX parses `{...}` as a JavaScript expression, so an unreplaced
- *    placeholder is a hard build failure, not a cosmetic glitch. The migrated
- *    WordPress content shipped `{{MID_IMAGE}}` in 15 articles and broke the
- *    production build.
- *  - Printables are disabled for this site, so a stray `{{printable:slug}}`
- *    would link to a 404.
+ * ORDER MATTERS. `{{printable:slug}}` must be expanded FIRST, because the
+ * catch-all strip below removes every remaining `{{...}}` token — that strip is
+ * why printable mentions silently vanished from migrated content.
+ *
+ * The catch-all is not optional: MDX parses `{...}` as a JavaScript expression,
+ * so an unreplaced placeholder is a hard build failure, not a cosmetic glitch.
+ * The migrated WordPress content shipped `{{MID_IMAGE}}` in 15 articles and
+ * broke the production build.
  */
 function expandShortcodes(content: string): string {
-  return content.replace(/\{\{[^}\n]*\}\}/g, "");
+  return (
+    content
+      // 1. Printable mentions → a real component. Slug is restricted to the
+      //    URL-safe charset so nothing can be injected into the JSX attribute.
+      .replace(
+        /\{\{printable:\s*([a-z0-9-]+)\s*\}\}/gi,
+        (_match, slug: string) =>
+          `\n\n<InlinePrintable slug="${slug.toLowerCase()}" />\n\n`
+      )
+      // 2. Everything else that survived → removed, so MDX can't choke on it.
+      .replace(/\{\{[^}\n]*\}\}/g, "")
+  );
+}
+
+/**
+ * Inline printable mention.
+ *
+ * Renders synchronously from the slug alone — MDX component maps can't await,
+ * and a per-mention database round trip inside the article body would be a
+ * needless N+1. The post page fetches the post's attached printables and passes
+ * them down via `printables`, so a mention whose slug is attached shows its real
+ * title and description; one that isn't still renders a working link.
+ */
+function makeInlinePrintable(printables: PrintableRef[]) {
+  return function InlinePrintable({ slug }: { slug: string }) {
+    const match = printables.find((p) => p.slug === slug);
+
+    return (
+      <div className="my-8 not-prose">
+        <PrintableCallout
+          title={match?.title ?? "Free printable"}
+          description={
+            match?.description ??
+            "Download this checklist and take it with you — no email required."
+          }
+          href={`/printables/${slug}`}
+        />
+      </div>
+    );
+  };
+}
+
+export interface PrintableRef {
+  slug: string;
+  title: string;
+  description: string | null;
 }
 
 const mdxComponents = {
@@ -156,16 +203,31 @@ const mdxComponents = {
 
 interface MarkdownContentProps {
   content: string;
+  /**
+   * Printables attached to this post. Used to give `{{printable:slug}}`
+   * mentions their real title and description; omitting it still renders a
+   * working link with generic copy.
+   */
+  printables?: PrintableRef[];
 }
 
-export async function MarkdownContent({ content }: MarkdownContentProps) {
+export async function MarkdownContent({
+  content,
+  printables = [],
+}: MarkdownContentProps) {
   const processed = expandShortcodes(content);
+
+  const components = {
+    ...mdxComponents,
+    InlinePrintable: makeInlinePrintable(printables),
+  };
+
   return (
     <MDXRemote
       source={processed}
       options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      components={mdxComponents as any}
+      components={components as any}
     />
   );
 }
