@@ -2,6 +2,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import type { ComponentPropsWithoutRef } from "react";
 import { PrintableCallout } from "@/components/ui";
+import { getPublishedSlugs } from "@/lib/queries";
 
 /**
  * Resolve `{{...}}` shortcodes before MDX sees them.
@@ -211,11 +212,35 @@ interface MarkdownContentProps {
   printables?: PrintableRef[];
 }
 
+/**
+ * Turns links to posts that are not published yet back into plain text.
+ *
+ * Articles are written in batches and cross-link each other, but they publish
+ * on a drip schedule, so an article that goes live on the 3rd can carry links
+ * to pieces that do not exist until the 19th. Shipping those as live anchors
+ * means real 404s for readers and for crawlers.
+ *
+ * Only root-relative single-segment links are considered, since that is the
+ * shape of a post URL on this site. Anything else (category archives, /blog,
+ * external links, anchors) is left alone.
+ */
+async function unlinkUnpublished(md: string): Promise<string> {
+  const targets = [...md.matchAll(/\[([^\]]+)\]\(\/([a-z0-9-]+)\)/g)];
+  if (targets.length === 0) return md;
+
+  const live = await getPublishedSlugs([...new Set(targets.map((m) => m[2]))]);
+
+  return md.replace(
+    /\[([^\]]+)\]\(\/([a-z0-9-]+)\)/g,
+    (whole, text, slug) => (live.has(slug) ? whole : text)
+  );
+}
+
 export async function MarkdownContent({
   content,
   printables = [],
 }: MarkdownContentProps) {
-  const processed = expandShortcodes(content);
+  const processed = await unlinkUnpublished(expandShortcodes(content));
 
   const components = {
     ...mdxComponents,

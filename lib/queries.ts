@@ -547,3 +547,29 @@ export async function getPrintablesMentionedIn(
 
   return (data ?? []) as Printable[];
 }
+
+/**
+ * Which of the given slugs are published on this site.
+ *
+ * Used to drop links to articles that are queued but not live yet: the
+ * content queue cross-links a whole cluster, while the drip publisher brings
+ * those articles online days apart.
+ */
+export async function getPublishedSlugs(slugs: string[]): Promise<Set<string>> {
+  if (slugs.length === 0) return new Set();
+  const siteId = await getCurrentSiteId();
+  const { data, error } = await supabaseAdmin
+    .from("posts")
+    .select("slug")
+    .eq("site_id", siteId)
+    .eq("status", "published")
+    .not("published_at", "is", null)
+    .in("slug", slugs);
+
+  if (error) {
+    // A failed lookup must not strip every link; assume they are fine.
+    console.error("[getPublishedSlugs]", error.message);
+    return new Set(slugs);
+  }
+  return new Set((data ?? []).map((r: { slug: string }) => r.slug));
+}

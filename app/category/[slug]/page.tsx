@@ -35,13 +35,23 @@ export async function generateMetadata({
   try {
     const category = await getCategoryBySlug(slug);
     if (!category) return {};
-    const title = `${category.name}: Blog`;
+
+    // An archive with nothing in it is a thin page. The relaunch created a
+    // category per sport ahead of the content, so most archives render "No
+    // posts" until their first article publishes. Those are kept crawlable
+    // (the nav links to them) but told not to index, and they drop out of the
+    // sitemap too. As soon as a post lands, the page indexes normally.
+    const posts = await getPostsByCategory(slug, 1);
+    const isEmpty = posts.length === 0;
+
+    const title = `${category.name} Guides`;
     const description =
       category.description ??
       `Browse all ${category.name} articles on ${siteConfig.name}.`;
     return {
       title,
       description,
+      ...(isEmpty && { robots: { index: false, follow: true } }),
       alternates: { canonical: `/category/${slug}` },
       openGraph: {
         title,
