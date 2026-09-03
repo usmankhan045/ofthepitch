@@ -131,6 +131,16 @@ const nextConfig: NextConfig = {
         destination: "/category/world-cup-2026",
         permanent: true,
       })),
+
+      // Two WordPress posts cover the same topic and were competing with each
+      // other for the same query. The 8.1k-character version is folded into
+      // the 10.6k one, which is the more complete page. Consolidating beats
+      // leaving both to split their own signals.
+      {
+        source: "/var-referee-controversy-world-cup-2026",
+        destination: "/world-cup-2026-referee-var-controversy",
+        permanent: true,
+      },
     ];
   },
 };
