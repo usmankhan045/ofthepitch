@@ -266,6 +266,23 @@ Two things to know before editing:
 
 ---
 
+## Pinterest
+
+`docs/PINTEREST-STRATEGY.md` carries the keyword data, the design concept and
+the platform rules. Pulled from Pinterest's own `/ideas/` pages, which publish
+search volume as "N people searched this".
+
+Three findings that contradict the obvious approach:
+
+- **Formula 1 outfit is 20k, the largest single term found**, larger than any
+  racing term. F1 moves ahead of tennis in the content order.
+- **Menswear is measured dead.** "Cheltenham races mens fashion" returns 21
+  searches against 4k for the women's equivalent. Write for women first.
+- **Light grounds win and brand palettes lose.** 87 of the top 100 viral pin
+  colours were white or near-white, and only 4% of designed viral pins used a
+  brand palette. **Pins are a separate design system from the site's dark ink
+  article cards. Never reuse the OG card design as a pin.**
+
 ## Content pipeline
 
 Articles are written in batches as files in `content-queue/`, not as rows in
