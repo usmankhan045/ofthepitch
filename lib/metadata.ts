@@ -13,13 +13,18 @@ export function ogImages(
   url: string | null | undefined = DEFAULT_OG_IMAGE,
   alt: string = `${siteConfig.name}: ${siteConfig.tagline}`
 ) {
+  const resolved = url ?? DEFAULT_OG_IMAGE;
   return [
     {
-      url: url ?? DEFAULT_OG_IMAGE,
+      url: resolved,
       width: 1200,
       height: 630,
       alt,
-      type: "image/jpeg",
+      // Generated cards come from /api/og as PNG; uploaded media is JPEG.
+      // Declaring the wrong type here misleads scrapers that trust it.
+      type: resolved.includes("/api/og") || resolved.endsWith(".png")
+        ? "image/png"
+        : "image/jpeg",
     },
   ];
 }

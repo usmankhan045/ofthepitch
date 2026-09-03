@@ -32,6 +32,9 @@ export function previewImageUrl(post: PreviewImageSource): string {
   const params = new URLSearchParams({ title: post.title });
   const label = post.categories?.name;
   if (label) params.set("label", label);
+  // The category slug lets the card pick up its sport's colour. Subcategories
+  // resolve to their parent sport inside the route.
+  if (post.categories?.slug) params.set("category", post.categories.slug);
 
   return `/api/og?${params.toString()}`;
 }
@@ -65,6 +68,8 @@ export function printableThumbnail(printable: PrintableThumbnailSource): string 
 
   const params = new URLSearchParams({ title: printable.title });
   params.set("label", printable.categories?.name ?? "Printable");
+  params.set("kicker", "Free download");
+  if (printable.categories?.slug) params.set("category", printable.categories.slug);
 
   return `/api/og?${params.toString()}`;
 }
