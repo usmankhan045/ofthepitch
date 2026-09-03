@@ -31,7 +31,10 @@ export const siteConfig = {
     name: "Of The Pitch",
     slug: "ofthepitch-editorial",
     role: "Editorial Team",
-    photo: "/images/author-ofthepitch.jpg",
+    // Points at the site mark, not a portrait: the byline is an editorial team
+    // rather than a person. The previous path had no file behind it, so the
+    // author box, homepage and author archive all rendered a broken image.
+    photo: "/logo.png",
     sameAs: [] as readonly string[],
     url: "/author/ofthepitch-editorial",
     shortBio:

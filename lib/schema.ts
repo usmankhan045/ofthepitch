@@ -1,6 +1,7 @@
 import { siteConfig } from "./site.config";
 import type { Post, FaqItem } from "./queries";
 import { postPath } from "@/lib/utils";
+import { absolutePreviewImageUrl } from "@/lib/admin/preview-image";
 
 const BASE_URL = `https://${siteConfig.domain}`;
 
@@ -9,6 +10,10 @@ const BASE_URL = `https://${siteConfig.domain}`;
 const ORG_ID = `${BASE_URL}/#organization`;
 const PERSON_ID = `${BASE_URL}/about#person`;
 const LOGO_URL = `${BASE_URL}/logo.png`;
+// /og-default.jpg is the site-level social card in public/. It was referenced
+// here long before the file existed, so every schema node that fell back to it
+// advertised a 404 as its image; the file is now real. Posts do not use this
+// fallback at all any more, they use their own generated card.
 const OG_DEFAULT = `${BASE_URL}/og-default.jpg`;
 
 export function websiteSchema() {
@@ -79,7 +84,10 @@ export function personSchema() {
     "@id": PERSON_ID,
     name: siteConfig.author.name,
     url: `${BASE_URL}${siteConfig.author.url}`,
-    image: `${BASE_URL}${siteConfig.author.photo}`,
+    // The author is the editorial team, not a photographed individual, and
+    // author.photo points at a file that has never existed. The logo is the
+    // honest image for this entity and it actually resolves.
+    image: LOGO_URL,
     jobTitle: siteConfig.author.role,
     description: siteConfig.author.shortBio,
     worksFor: { "@id": ORG_ID },
@@ -105,13 +113,19 @@ export function articleSchema(post: Post) {
     headline: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
     url,
-    // Always emit an ABSOLUTE image URL — fall back to the branded OG default
-    // when a post has no featured image (Discover/rich-result eligibility).
+    // Always emit an ABSOLUTE image URL. Posts without an uploaded image get
+    // the generated card from /api/og, the same one the OG tags use, so the
+    // schema image and the social preview never disagree.
     image: post.featured_image_url
       ? post.featured_image_url.startsWith("http")
         ? post.featured_image_url
         : `${BASE_URL}${post.featured_image_url}`
-      : OG_DEFAULT,
+      : absolutePreviewImageUrl({
+          title: post.title,
+          slug: post.slug,
+          featured_image_url: post.featured_image_url,
+          categories: post.categories,
+        }),
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
     author: { "@id": PERSON_ID },

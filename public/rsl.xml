@@ -7,15 +7,15 @@
   FIFA publication.
 -->
 <rsl xmlns="https://rslstandard.org/rsl">
-  <content url="https://ofthepitch.com/">
+  <content url="https://www.ofthepitch.com/">
     <license>
       <permits type="usage">search</permits>
       <permits type="usage">ai-summarize</permits>
       <permits type="usage">ai-input</permits>
       <permits type="usage">ai-train</permits>
       <payment type="free"/>
-      <attribution required="true">Of The Pitch — https://ofthepitch.com</attribution>
-      <legal type="terms" url="https://ofthepitch.com/terms-of-use"/>
+      <attribution required="true">Of The Pitch — https://www.ofthepitch.com</attribution>
+      <legal type="terms" url="https://www.ofthepitch.com/terms-of-use"/>
     </license>
   </content>
 </rsl>
