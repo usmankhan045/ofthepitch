@@ -132,15 +132,28 @@ const nextConfig: NextConfig = {
         permanent: true,
       })),
 
-      // Two WordPress posts cover the same topic and were competing with each
-      // other for the same query. The 8.1k-character version is folded into
-      // the 10.6k one, which is the more complete page. Consolidating beats
-      // leaving both to split their own signals.
-      {
-        source: "/var-referee-controversy-world-cup-2026",
-        destination: "/world-cup-2026-referee-var-controversy",
+      // The World Cup news archive is unpublished: 12 clicks in six months at
+      // an average position of 21, with traffic flat at zero since late June.
+      // Both VAR posts went with it, so the consolidation redirect between
+      // them would now point at a 404. These send to the football archive,
+      // which is a real page and the closest surviving topic.
+      ...[
+        "var-referee-controversy-world-cup-2026",
+        "world-cup-2026-referee-var-controversy",
+        "world-cup-2026-ticket-price-controversy",
+        "world-cup-2026-visa-entry-denial-controversy",
+        "world-cup-2026-host-country-player-controversy",
+        "world-cup-2026-most-overrated-teams",
+        "world-cup-2026-most-underrated-teams",
+        "world-cup-2026-weakest-squads-brutal-truth",
+        "nigeria-world-cup-2026-super-eagles-failed-to-qualify",
+        "watch-france-vs-norway-world-cup-2026-free",
+        "world-cup-2026-stadium-transit-chaos",
+      ].map((slug) => ({
+        source: `/${slug}`,
+        destination: "/category/football",
         permanent: true,
-      },
+      })),
     ];
   },
 };
