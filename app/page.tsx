@@ -110,8 +110,10 @@ const PLACEHOLDER_POSTS: Post[] = [
 // § Hero artifact, the sport picker.
 //
 // The one job the hero must do is tell a first-time visitor which sports this
-// site covers and how much there is to read. Counts come from the database, so
-// the panel is never stale. Each row takes its sport colour from site.config.
+// site covers. It deliberately shows no guide counts: four of the five sports
+// read zero until their first article publishes, and a column of zeroes on the
+// homepage advertises the gaps rather than the coverage. Each row takes its
+// sport colour from site.config.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const SPORT_ROWS: { slug: string; label: string; note: string }[] = [
@@ -122,12 +124,11 @@ const SPORT_ROWS: { slug: string; label: string; note: string }[] = [
   { slug: "football",     label: "Football",     note: "Matchdays and the World Cup archive" },
 ];
 
-function SportPicker({ counts }: { counts: Record<string, number> }) {
+function SportPicker() {
   return (
     <div className="w-full">
-      <div className="flex items-baseline justify-between px-1 pb-2">
+      <div className="flex items-baseline px-1 pb-2">
         <span className="stamp text-muted">Pick your sport</span>
-        <span className="stamp text-muted">Guides</span>
       </div>
 
       <div className="flex flex-col gap-2">
@@ -174,16 +175,11 @@ function SportPicker({ counts }: { counts: Record<string, number> }) {
                 <span className="block text-xs text-muted mt-0.5 truncate">{row.note}</span>
               </span>
 
-              <span className="relative grid place-items-center min-w-[1.6rem]">
-                <span className="col-start-1 row-start-1 font-mono text-xs text-muted tabular-nums transition-[opacity,transform] duration-200 group-hover/row:opacity-0 group-hover/row:translate-x-1.5">
-                  {counts[row.slug] ?? 0}
-                </span>
-                <span
-                  aria-hidden
-                  className="col-start-1 row-start-1 text-[var(--sport)] opacity-0 -translate-x-1.5 transition-[opacity,transform] duration-300 group-hover/row:opacity-100 group-hover/row:translate-x-0"
-                >
-                  &rarr;
-                </span>
+              <span
+                aria-hidden
+                className="relative grid place-items-center min-w-[1.6rem] text-muted transition-[color,transform] duration-300 group-hover/row:text-[var(--sport)] group-hover/row:translate-x-1"
+              >
+                &rarr;
               </span>
             </Link>
           );
@@ -304,11 +300,6 @@ export default async function HomePage() {
     // DB not configured; hide the sport sections.
   }
 
-  const sportCounts: Record<string, number> = Object.fromEntries(
-    categories.map((c) => [c.slug, c.postCount])
-  );
-  const totalPosts = categories.reduce((sum, c) => sum + c.postCount, 0);
-
   return (
     <main className="flex-1">
 
@@ -368,13 +359,12 @@ export default async function HomePage() {
                   />
                   Checked against venue guidance
                 </li>
-                <li className="stamp text-muted">{totalPosts} guides</li>
                 <li className="stamp text-muted">No signup</li>
               </ul>
             </div>
 
             <div className="min-w-0 w-full rise rise-3">
-              <SportPicker counts={sportCounts} />
+              <SportPicker />
             </div>
           </div>
         </Container>
