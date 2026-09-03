@@ -283,6 +283,13 @@ Three findings that contradict the obvious approach:
   brand palette. **Pins are a separate design system from the site's dark ink
   article cards. Never reuse the OG card design as a pin.**
 
+`docs/PIN-PROCESS.md` is how a batch gets made: angles, hand-written titles,
+outfit-level prompt detail, and the variation rules that stop two pins looking
+alike. `docs/PINS-BATCH-01.md` is the worked example, five pins ready to
+upload. **Check a pin's destination returns 200 before pinning it**, because
+articles publish on a drip schedule and Pinterest hides the "Visit site" button
+on a 404.
+
 ## Content pipeline
 
 Articles are written in batches as files in `content-queue/`, not as rows in
