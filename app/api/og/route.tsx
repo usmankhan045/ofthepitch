@@ -1,8 +1,12 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
 
+import sharp from "sharp";
+
 import { siteConfig } from "@/lib/site.config";
 import { sportForCategory } from "@/lib/utils";
+
+export const runtime = "nodejs";
 
 /**
  * Generated preview card, used whenever a post has no featured image.
@@ -11,20 +15,21 @@ import { sportForCategory } from "@/lib/utils";
  * no line-clamp, no CSS variables — and every element with more than one child
  * needs an explicit `display`.
  *
- * The card is paper, the same warm off-white the site itself is built on, so a
- * preview sitting in a listing reads as part of the page rather than a black
- * rectangle dropped into it. An earlier version was a dark ink panel with an
- * arc motif; it predated the palette and clashed with every surface around it.
+ * The card is the sport's own photograph under a dark scrim, with the title
+ * set large across the lower half and a coloured rule tying it to the sport.
  *
- * Structure is a wide sport-coloured band down the left edge carrying the
- * category vertically, then the title on paper, then a rule and the wordmark.
- * The band is what makes a row of these read as a set: same shape every time,
- * a different colour per sport.
+ * Two earlier versions failed for reasons worth recording. A dark ink panel
+ * with an arc motif predated the palette and clashed with every surface. A
+ * paper-ground version then matched the site too well: the card's background
+ * and the page's background were the same colour, so the card dissolved into
+ * the listing and had no edge at all. A photograph solves both, and it also
+ * fixes the real legibility problem, which is that these render at about
+ * 530px wide on a category page, not the 1200px they are drawn at.
  */
 
 const { colors, sports } = siteConfig.theme;
 
-export const contentType = "image/png";
+export const contentType = "image/jpeg";
 
 // 1200x630 is the Open Graph standard and is what social scrapers expect.
 // Post cards on the site render into a 16:10 box, though, and cropping a
@@ -39,37 +44,31 @@ const SIZES = {
 
 /** Long titles step down a size rather than overflow: Satori cannot clamp. */
 function titleSize(title: string): number {
-  if (title.length > 110) return 44;
-  if (title.length > 80) return 52;
-  if (title.length > 52) return 62;
-  if (title.length > 30) return 72;
-  return 80;
+  if (title.length > 110) return 58;
+  if (title.length > 80) return 66;
+  if (title.length > 52) return 76;
+  if (title.length > 30) return 88;
+  return 96;
 }
 
 /**
- * The sport's name set very large and very pale in the upper area. It fills
- * what was dead space, reinforces the category a second time, and unlike a
- * small graphic motif it cannot be misread as a smudge at thumbnail size.
+ * Absolute URL for the sport's card photograph. Satori cannot read from the
+ * filesystem, so the image is fetched over HTTP like any other remote asset.
+ *
+ * These are NOT the files in theme.sportImages. Those are 1880px JPEGs, 322 to
+ * 605KB each, sized for the full-bleed sport cards on the homepage. Feeding one
+ * to Satori made a single 1.8MB preview card, because the whole source was
+ * decoded and then re-encoded into the output. public/images/cards holds the
+ * same photographs pre-cropped to exactly 1200x750 at quality 68, 101 to 155KB,
+ * which is all the card can ever display and roughly a third of the bytes.
+ * They sit under a heavy scrim, so the quality drop is invisible.
+ *
+ * Not WebP: Satori decodes PNG and JPEG only, and hands back a card with no
+ * photograph at all if given anything else. It fails silently in the rendered
+ * output and only says so in the server log.
  */
-function Watermark({ text, tint }: { text: string; tint: string }) {
-  return (
-    <div
-      style={{
-        position: "absolute",
-        right: 58,
-        top: 40,
-        display: "flex",
-        fontSize: 132,
-        fontWeight: 800,
-        letterSpacing: -5,
-        color: tint,
-        opacity: 0.12,
-        textTransform: "uppercase",
-      }}
-    >
-      {text}
-    </div>
-  );
+function photoFor(sport: string | undefined, origin: string): string | null {
+  return sport ? `${origin}/images/cards/${sport}.jpg` : null;
 }
 
 export async function GET(request: NextRequest) {
@@ -87,126 +86,132 @@ export async function GET(request: NextRequest) {
   const sport = sportForCategory(sp.get("category"));
   const tint = (sport && sports[sport]) || colors.accent;
 
-  const paper = colors.background;   // #F6F3ED, the site's own ground
-  const ink = colors.text;           // #181512
-  const muted = colors.muted;        // #6E6558
-  const rule = colors.line;          // #E1DACD
+  const ink = colors.text;
+  const photo = photoFor(sport, request.nextUrl.origin);
 
-  // The band carries the category vertically. It is wide enough to be the
-  // card's defining shape rather than a stripe, which is what lets a row of
-  // these read as a set: identical geometry, one colour per sport.
-  const band = Math.round(size.height * 0.155);
-
-  return new ImageResponse(
+  const png = new ImageResponse(
     (
       <div
         style={{
           width: "100%",
           height: "100%",
           display: "flex",
-          backgroundColor: paper,
-          color: ink,
           position: "relative",
+          backgroundColor: ink,
           overflow: "hidden",
         }}
       >
-        {/* Sport band, with the category set vertically inside it. */}
+        {/* The sport's photograph fills the card. */}
+        {photo ? (
+          // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
+          <img
+            src={photo}
+            width={size.width}
+            height={size.height}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: size.width,
+              height: size.height,
+              objectFit: "cover",
+            }}
+          />
+        ) : null}
+
+        {/* Scrim: light at the top so the photograph reads, heavy at the foot
+            so the title always has contrast whatever the image behind it. */}
         <div
           style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: size.width,
+            height: size.height,
             display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: band,
+            backgroundImage: `linear-gradient(to bottom, rgba(16,14,12,0.28) 0%, rgba(16,14,12,0.52) 42%, rgba(16,14,12,0.88) 100%)`,
+          }}
+        />
+
+        {/* Sport colour along the foot, the one constant across every card. */}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            bottom: 0,
+            width: size.width,
+            height: 12,
+            display: "flex",
             backgroundColor: tint,
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              transform: "rotate(-90deg)",
-              whiteSpace: "nowrap",
-              fontSize: 25,
-              fontWeight: 700,
-              letterSpacing: 8,
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.94)",
-            }}
-          >
-            {label || siteConfig.name}
-          </div>
-        </div>
-
-        <Watermark text={sport ? sport.replace(/-/g, " ") : "sport"} tint={tint} />
+        />
 
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-end",
-            flex: 1,
-            padding: "58px 66px 52px 62px",
+            width: size.width,
+            height: size.height,
+            padding: "64px 68px 64px 68px",
           }}
         >
-          {/* A short colour rule opens the card, echoing the band. */}
-          <div style={{ display: "flex", width: 76, height: 7, backgroundColor: tint }} />
-
-          {/* Pushes the title toward the foot, leaving the watermark the
-              upper area. Not flush: the gap below the rule is deliberate. */}
-          <div style={{ display: "flex", flex: 1 }} />
-
-          <div style={{ display: "flex", flexDirection: "column", maxWidth: 790 }}>
+          {/* Category, in the sport's colour, above the title. */}
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <div style={{ display: "flex", width: 46, height: 6, backgroundColor: tint }} />
             <div
               style={{
                 display: "flex",
-                fontSize: titleSize(title),
-                fontWeight: 800,
-                lineHeight: 1.05,
-                letterSpacing: -2,
-                color: ink,
+                fontSize: 30,
+                fontWeight: 700,
+                letterSpacing: 5,
+                textTransform: "uppercase",
+                color: "#FFFFFF",
               }}
             >
-              {title}
+              {label || siteConfig.name}
             </div>
-
-            {kicker ? (
-              <div
-                style={{
-                  display: "flex",
-                  alignSelf: "flex-start",
-                  marginTop: 28,
-                  padding: "10px 20px",
-                  borderRadius: 999,
-                  backgroundColor: tint,
-                  color: "#FFFFFF",
-                  fontSize: 21,
-                  fontWeight: 700,
-                }}
-              >
-                {kicker}
-              </div>
-            ) : null}
           </div>
 
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              borderTop: `2px solid ${rule}`,
-              marginTop: 40,
-              paddingTop: 26,
+              marginTop: 22,
+              fontSize: titleSize(title),
+              fontWeight: 800,
+              lineHeight: 1.04,
+              letterSpacing: -2,
+              color: "#FFFFFF",
+              maxWidth: 1010,
             }}
           >
-            <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
-              <div style={{ display: "flex", fontSize: 27, fontWeight: 800, color: ink }}>
-                {siteConfig.name}
-              </div>
-              <div style={{ display: "flex", fontSize: 21, color: muted }}>
-                {siteConfig.domain.replace("www.", "")}
-              </div>
+            {title}
+          </div>
+
+          {kicker ? (
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "flex-start",
+                marginTop: 26,
+                padding: "12px 24px",
+                borderRadius: 999,
+                backgroundColor: tint,
+                color: "#FFFFFF",
+                fontSize: 26,
+                fontWeight: 700,
+              }}
+            >
+              {kicker}
             </div>
-            <div style={{ display: "flex", fontSize: 20, color: muted }}>
-              {siteConfig.tagline}
+          ) : null}
+
+          <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 34 }}>
+            <div style={{ display: "flex", fontSize: 30, fontWeight: 800, color: "#FFFFFF" }}>
+              {siteConfig.name}
+            </div>
+            <div style={{ display: "flex", fontSize: 26, color: "rgba(255,255,255,0.72)" }}>
+              {siteConfig.domain.replace("www.", "")}
             </div>
           </div>
         </div>
@@ -214,10 +219,25 @@ export async function GET(request: NextRequest) {
     ),
     {
       ...size,
-      headers: {
-        // Deterministic for a given query string, so it caches hard.
-        "Cache-Control": "public, max-age=31536000, immutable",
-      },
     }
   );
+
+  // ImageResponse always encodes PNG. For a photographic card that is roughly
+  // 1.8MB; the same pixels as JPEG are around 90KB. Re-encoding costs one pass
+  // at generation time and the result is cached for a year, so it happens once
+  // per card and never again.
+  const jpeg = await sharp(Buffer.from(await png.arrayBuffer()))
+    .jpeg({ quality: 82, progressive: true, mozjpeg: true })
+    .toBuffer();
+
+  return new Response(new Uint8Array(jpeg), {
+    headers: {
+      "Content-Type": "image/jpeg",
+      // Deterministic for a given query string, so it caches hard. The
+      // s-maxage line keeps it in the CDN too, so a card is rendered once
+      // ever rather than once per cold serverless instance.
+      "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable",
+      "CDN-Cache-Control": "public, max-age=31536000, immutable",
+    },
+  });
 }
