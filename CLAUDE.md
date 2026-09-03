@@ -285,10 +285,13 @@ Three findings that contradict the obvious approach:
 
 `docs/PIN-PROCESS.md` is how a batch gets made: angles, hand-written titles,
 outfit-level prompt detail, and the variation rules that stop two pins looking
-alike. `docs/PINS-BATCH-01.md` is the worked example, five pins ready to
-upload. **Check a pin's destination returns 200 before pinning it**, because
-articles publish on a drip schedule and Pinterest hides the "Visit site" button
-on a 404.
+alike. `docs/PINS-FULL-BATCH.md` is the racing cluster's 90 pins, six per
+article, three a day from 5 September to 4 October, each with a title,
+description, alt text, board and its own prompt.
+
+**No pin is scheduled before its article is live.** Pinterest hides the
+"Visit site" button when a link 404s and fixing the link later does not restore
+it, so the pin dates track `content-queue/schedule.json`.
 
 ## Content pipeline
 

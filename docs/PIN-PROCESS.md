@@ -4,7 +4,7 @@ How a batch of pins gets made. Follow this and every pin comes out different
 from the last, which is the whole point.
 
 Strategy and keyword data: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
-Worked example: [PINS-BATCH-01.md](./PINS-BATCH-01.md).
+The racing cluster's 90 pins: [PINS-FULL-BATCH.md](./PINS-FULL-BATCH.md).
 
 ---
 
