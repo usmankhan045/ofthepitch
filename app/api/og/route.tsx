@@ -67,8 +67,42 @@ function titleSize(title: string): number {
  * photograph at all if given anything else. It fails silently in the rendered
  * output and only says so in the server log.
  */
-function photoFor(sport: string | undefined, origin: string): string | null {
-  return sport ? `${origin}/images/cards/${sport}.jpg` : null;
+/**
+ * How many photographs exist per sport in public/images/cards. A sport with
+ * more than one is numbered `<sport>-1.jpg` upward; a sport with one is just
+ * `<sport>.jpg`. Fifteen racing articles sharing a single image made a listing
+ * look broken, so racing has four and the rest get more as they are sourced.
+ * Keep this in step with the directory: a count higher than the files present
+ * produces cards with no photograph.
+ */
+const PHOTO_COUNT: Record<string, number> = {
+  "horse-racing": 4,
+};
+
+function photoFor(
+  sport: string | undefined,
+  origin: string,
+  title: string
+): string | null {
+  if (!sport) return null;
+  const n = PHOTO_COUNT[sport] ?? 1;
+  if (n === 1) return `${origin}/images/cards/${sport}.jpg`;
+
+  // Derived from the title so a post always gets the same photograph, because
+  // the card is cached for a year and has to be stable rather than random.
+  //
+  // Three title-derived functions were tried and all three clustered over a
+  // set this small: a 31-multiplier hash gave one photograph to eight of
+  // fifteen posts and never picked the fourth, a character sum put nine on
+  // one image, and title length was worse again. Fifteen titles about the
+  // same subject are simply not varied enough to spread across four buckets
+  // by any property of the string.
+  //
+  // Counting distinct words instead: it correlates with nothing about the
+  // photographs, varies more than length, and is still perfectly stable for
+  // a given title.
+  const words = new Set(title.toLowerCase().match(/[a-z]+/g) ?? []).size;
+  return `${origin}/images/cards/${sport}-${(words % n) + 1}.jpg`;
 }
 
 export async function GET(request: NextRequest) {
@@ -87,7 +121,7 @@ export async function GET(request: NextRequest) {
   const tint = (sport && sports[sport]) || colors.accent;
 
   const ink = colors.text;
-  const photo = photoFor(sport, request.nextUrl.origin);
+  const photo = photoFor(sport, request.nextUrl.origin, title);
 
   const png = new ImageResponse(
     (
