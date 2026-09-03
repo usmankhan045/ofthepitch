@@ -11,10 +11,15 @@ import { sportForCategory } from "@/lib/utils";
  * no line-clamp, no CSS variables — and every element with more than one child
  * needs an explicit `display`.
  *
- * The card is a dark ink panel so it holds its own against the photographs on
- * the sport cards, with the sport's colour carried by the rail down the left
- * edge, the eyebrow dot and the arc motif. Cards for the same sport therefore
- * read as a set without any of them repeating a photograph.
+ * The card is paper, the same warm off-white the site itself is built on, so a
+ * preview sitting in a listing reads as part of the page rather than a black
+ * rectangle dropped into it. An earlier version was a dark ink panel with an
+ * arc motif; it predated the palette and clashed with every surface around it.
+ *
+ * Structure is a wide sport-coloured band down the left edge carrying the
+ * category vertically, then the title on paper, then a rule and the wordmark.
+ * The band is what makes a row of these read as a set: same shape every time,
+ * a different colour per sport.
  */
 
 const { colors, sports } = siteConfig.theme;
@@ -42,24 +47,28 @@ function titleSize(title: string): number {
 }
 
 /**
- * The arc motif, echoing the loop in the site's mark. Drawn as three nested
- * rings with a dot riding the innermost one, so it reads as motion rather than
- * decoration. Stroke-only, so it never competes with the title.
+ * The sport's name set very large and very pale in the upper area. It fills
+ * what was dead space, reinforces the category a second time, and unlike a
+ * small graphic motif it cannot be misread as a smudge at thumbnail size.
  */
-function Arcs({ tint, d, top }: { tint: string; d: number; top: number }) {
+function Watermark({ text, tint }: { text: string; tint: string }) {
   return (
-    <svg
-      width={d}
-      height={d}
-      viewBox="0 0 200 200"
-      style={{ position: "absolute", right: 64, top }}
+    <div
+      style={{
+        position: "absolute",
+        right: 58,
+        top: 40,
+        display: "flex",
+        fontSize: 132,
+        fontWeight: 800,
+        letterSpacing: -5,
+        color: tint,
+        opacity: 0.12,
+        textTransform: "uppercase",
+      }}
     >
-      <circle cx="100" cy="100" r="92" fill="none" stroke="#FFFFFF" strokeOpacity="0.10" strokeWidth="2" />
-      <path d="M100 8 A92 92 0 0 1 192 100" fill="none" stroke={tint} strokeWidth="7" strokeLinecap="round" />
-      <circle cx="100" cy="100" r="64" fill="none" stroke="#FFFFFF" strokeOpacity="0.14" strokeWidth="2" />
-      <path d="M100 36 A64 64 0 0 1 164 100" fill="none" stroke={tint} strokeOpacity="0.55" strokeWidth="6" strokeLinecap="round" />
-      <circle cx="164" cy="100" r="11" fill={tint} />
-    </svg>
+      {text}
+    </div>
   );
 }
 
@@ -78,7 +87,15 @@ export async function GET(request: NextRequest) {
   const sport = sportForCategory(sp.get("category"));
   const tint = (sport && sports[sport]) || colors.accent;
 
-  const ink = "#141210";
+  const paper = colors.background;   // #F6F3ED, the site's own ground
+  const ink = colors.text;           // #181512
+  const muted = colors.muted;        // #6E6558
+  const rule = colors.line;          // #E1DACD
+
+  // The band carries the category vertically. It is wide enough to be the
+  // card's defining shape rather than a stripe, which is what lets a row of
+  // these read as a set: identical geometry, one colour per sport.
+  const band = Math.round(size.height * 0.155);
 
   return new ImageResponse(
     (
@@ -87,55 +104,65 @@ export async function GET(request: NextRequest) {
           width: "100%",
           height: "100%",
           display: "flex",
-          backgroundColor: ink,
-          color: "#FFFFFF",
+          backgroundColor: paper,
+          color: ink,
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* The sport's colour as a rail down the leading edge. */}
-        <div style={{ display: "flex", width: 14, backgroundColor: tint }} />
+        {/* Sport band, with the category set vertically inside it. */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: band,
+            backgroundColor: tint,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              transform: "rotate(-90deg)",
+              whiteSpace: "nowrap",
+              fontSize: 25,
+              fontWeight: 700,
+              letterSpacing: 8,
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.94)",
+            }}
+          >
+            {label || siteConfig.name}
+          </div>
+        </div>
 
-        <Arcs
-          tint={tint}
-          d={size.height * 0.62}
-          top={(size.height - size.height * 0.62) / 2}
-        />
+        <Watermark text={sport ? sport.replace(/-/g, " ") : "sport"} tint={tint} />
 
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-between",
+            justifyContent: "flex-end",
             flex: 1,
-            padding: "58px 64px",
+            padding: "58px 66px 52px 62px",
           }}
         >
-          {/* Eyebrow: a dot in the sport's colour, then the category. */}
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <div style={{ display: "flex", width: 14, height: 14, borderRadius: 999, backgroundColor: tint }} />
-            <div
-              style={{
-                display: "flex",
-                fontSize: 21,
-                fontWeight: 700,
-                letterSpacing: 3,
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.62)",
-              }}
-            >
-              {label || siteConfig.name}
-            </div>
-          </div>
+          {/* A short colour rule opens the card, echoing the band. */}
+          <div style={{ display: "flex", width: 76, height: 7, backgroundColor: tint }} />
 
-          <div style={{ display: "flex", flexDirection: "column", maxWidth: 660 }}>
+          {/* Pushes the title toward the foot, leaving the watermark the
+              upper area. Not flush: the gap below the rule is deliberate. */}
+          <div style={{ display: "flex", flex: 1 }} />
+
+          <div style={{ display: "flex", flexDirection: "column", maxWidth: 790 }}>
             <div
               style={{
                 display: "flex",
                 fontSize: titleSize(title),
                 fontWeight: 800,
-                lineHeight: 1.06,
+                lineHeight: 1.05,
                 letterSpacing: -2,
+                color: ink,
               }}
             >
               {title}
@@ -146,12 +173,12 @@ export async function GET(request: NextRequest) {
                 style={{
                   display: "flex",
                   alignSelf: "flex-start",
-                  marginTop: 26,
-                  padding: "9px 18px",
+                  marginTop: 28,
+                  padding: "10px 20px",
                   borderRadius: 999,
                   backgroundColor: tint,
-                  color: ink,
-                  fontSize: 20,
+                  color: "#FFFFFF",
+                  fontSize: 21,
                   fontWeight: 700,
                 }}
               >
@@ -160,38 +187,25 @@ export async function GET(request: NextRequest) {
             ) : null}
           </div>
 
-          {/* Foot: wordmark left, positioning line right. */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              borderTop: "1px solid rgba(255,255,255,0.14)",
-              paddingTop: 24,
+              borderTop: `2px solid ${rule}`,
+              marginTop: 40,
+              paddingTop: 26,
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: 34,
-                  height: 34,
-                  borderRadius: 9,
-                  backgroundColor: tint,
-                  color: ink,
-                  fontSize: 17,
-                  fontWeight: 800,
-                }}
-              >
-                {siteConfig.brand.monogram}
-              </div>
-              <div style={{ display: "flex", fontSize: 24, fontWeight: 700 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
+              <div style={{ display: "flex", fontSize: 27, fontWeight: 800, color: ink }}>
                 {siteConfig.name}
               </div>
+              <div style={{ display: "flex", fontSize: 21, color: muted }}>
+                {siteConfig.domain.replace("www.", "")}
+              </div>
             </div>
-            <div style={{ display: "flex", fontSize: 19, color: "rgba(255,255,255,0.5)" }}>
+            <div style={{ display: "flex", fontSize: 20, color: muted }}>
               {siteConfig.tagline}
             </div>
           </div>
