@@ -1,0 +1,46 @@
+name: Publish scheduled posts
+
+# Articles are written in batches ahead of time and stored with
+# status = 'scheduled' plus a future published_at. This runs daily and flips
+# the ones whose date has arrived.
+#
+# Times are UTC. 07:00 UTC is 08:00 UK in winter, 09:00 in summer, which puts
+# a post live before the morning.
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "List what would publish without writing"
+        type: boolean
+        default: false
+
+# Two runs writing at once could double-publish. Queue them instead.
+concurrency:
+  group: publish-scheduled-posts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Publish posts that are due
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+          REVALIDATION_SECRET: ${{ secrets.REVALIDATION_SECRET }}
+        run: |
+          node scripts/publish-due-posts.mjs \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
