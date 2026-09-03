@@ -4,9 +4,26 @@
 
 ## What This Project Is
 
-Of The Pitch (ofthepitch.com) is an independent World Cup 2026 guide written for travelling fans. It covers visa and entry requirements by nationality, cross-border and inter-city travel, FIFA Fan Festival logistics per host city, ticket prices, how to watch matches by country and broadcaster, national squad reviews, and the tournament's controversies.
+Of The Pitch (www.ofthepitch.com) is an independent guide to attending sport in
+person, across **horse racing, tennis, Formula 1, skiing and football**. It
+covers what a venue actually enforces versus what people assume, which
+enclosure or grandstand a ticket really admits you to, how to get there, and
+what the day costs.
 
-It is **not** affiliated with FIFA or any national football association.
+The site relaunched in September 2026 from a World Cup 2026 fan guide. The
+tournament archive has been retired; see the History section below.
+
+**Editorial position, and the reason the site can compete:** every rule is
+checked against the venue's own published page, and where a venue publishes no
+rule, the article says so. Retailers write dress code content because they
+sell clothes, so they will never lead with "Cheltenham has no dress code" or
+"Wimbledon has none for grounds admission". That gap is the whole opening.
+
+**Revenue is outbound clicks**, mostly Pinterest into affiliate content, so
+page speed and honest pin-to-page matching are commercial concerns, not just
+technical ones.
+
+It is **not** affiliated with FIFA, any governing body, venue or race organiser.
 
 **Stack:** Next.js 16 · Tailwind CSS 4 · Supabase (PostgreSQL)
 
@@ -36,15 +53,27 @@ The site ran on WordPress (Hostinger) until July 2026. Two things about that mig
 
 Posts do **not** live under `/blog/<slug>`. Always build post links with `postPath()` from `lib/utils.ts` — never hardcode the path. Changing a slug forfeits its ranking, so treat existing slugs as immutable.
 
-**2. Most posts have no article body.** WordPress stored real prose for only 15 of 76 posts. The other 61 carried their content solely as JSON-LD, which the migration recovered:
+**2. The WordPress archive has been retired.** WordPress stored real prose for
+only 15 of 76 posts; the other 61 carried their content solely as JSON-LD.
 
-| Tier | Count | What it has |
+Search Console for the six months to September 2026 showed the whole archive
+earning 12 clicks at an average position of 21.3, flat at zero since late
+June. So it was retired rather than rewritten:
+
+| What | Count | Status |
 |---|---|---|
-| Full | 15 | 1,165–1,868 words of real prose |
-| FAQ | 37 | Q&A recovered from `FAQPage` schema into `faq_items` |
-| Data | 24 | Squad/venue tables recovered from `SportsTeam` / `Event` schema |
+| Thin posts (155 to 590 chars) | 61 | `draft`, 404 |
+| World Cup news posts | 10 | `draft`, each 301s to `/category/football` |
+| Border-crossing and travel guides | 4 | **Published**, reframed as evergreen |
 
-The 37 FAQ and 24 data posts are thin — roughly a 30–40 word intro plus their recovered block. **Fleshing these out is the highest-value content work available.** Their titles and schema state exactly what each was meant to cover.
+The four survivors were kept because border documents, rail routes and city
+transport do not expire, and they are the only pages on the site that could
+earn from the hotel and eSIM affiliates. Their titles and metadata were
+reframed around the journey rather than the fixture; **their slugs were not
+touched**, which is why they still read `world-cup-2026-...`.
+
+Retiring a post means a 301 in `next.config.ts`, never a bare 404. Google
+still has those URLs on file.
 
 ---
 
@@ -62,78 +91,151 @@ All tables have a `site_id` column. Always filter by `site_id = 'ed23c093-ff1e-4
 
 ### Categories (ofthepitch site)
 
-Only categories that actually have posts were migrated; nine empty WordPress categories were deliberately skipped. IDs are deterministic UUID5 values — see `supabase/migrations/003_ofthepitch_migration.sql` for the literals.
+Top level is the sport; subcategories sit under it via `parent_id`. A post in
+a subcategory rolls up into its parent's archive, so `/category/football`
+lists everything under `football-matchdays` too.
 
-| slug | posts |
+| sport | subcategories |
 |---|---|
-| team-reviews | 16 |
-| viewing-guides | 14 |
-| controversy-and-politics | 10 |
-| visa-immigration | 10 |
-| fan-zone-guide | 10 |
-| fan-travel-and-logistics | 6 |
-| tickets-and-hospitality | 5 |
-| fan-travel-logistics | 4 |
-| general | 1 |
+| horse-racing | racing-enclosures, racing-dress-codes, racing-racedays |
+| tennis | tennis-venues, tennis-tickets, tennis-dress-codes |
+| formula-1 | f1-circuits, f1-grandstands, f1-hospitality |
+| skiing | ski-resorts, ski-planning |
+| football | football-grounds, football-tickets, football-matchdays, world-cup-2026 |
 
-Note `fan-travel-and-logistics` and `fan-travel-logistics` are near-duplicate categories inherited from WordPress. Both are indexed, so both were kept. Merging them requires a redirect.
+**An empty archive is handled automatically.** `app/sitemap.ts` lists only
+archives that list something, and `app/category/[slug]/page.tsx` serves
+`noindex, follow` when an archive is empty. Both reverse the moment a post
+lands, so a new sport's categories can be created before its content exists.
+
+This was a real problem: 17 of 20 archives had zero posts, all returning 200
+with `index, follow`, all in the sitemap.
+
+The nine original WordPress category archives (`team-reviews`,
+`viewing-guides`, `controversy-and-politics`, `visa-immigration`,
+`fan-zone-guide`, `fan-travel-and-logistics`, `fan-travel-logistics`,
+`tickets-and-hospitality`, `general`) are indexed and 301 to
+`/category/world-cup-2026` via `next.config.ts`. **Never delete those
+redirects.**
 
 ---
 
 ## Content Rules
 
+> ⚠️ **Before writing or editing any article, read
+> `content-queue/WRITING-STANDARDS.md`.** It carries 19 rules, each one
+> traceable to a defect found in the first fifteen articles or the site audit
+> that followed: invented prices, scraper output that was really a nav shell,
+> schema images pointing at files that never existed, a cluster with zero
+> internal links, SEO titles that truncated, empty category archives in the
+> sitemap. The summary below is the short version; that file is the operative
+> one.
+>
+> Validate a batch with `node scripts/validate-queue.mjs` before committing.
+
 ### Structure
 1. **Intro:** answer the reader's actual question in the first paragraph. No throat-clearing.
 2. **H2 sections:** question-shaped headings where the topic suits it.
-3. **Self-contained answers:** each H2's body should stand alone — that is what AI Overviews and Perplexity extract and cite.
+3. **Self-contained answers:** each H2's body should stand alone. That is what AI Overviews and Perplexity extract and cite.
 4. **FAQ:** store Q&A in the `faq_items` jsonb column, not in the markdown body. The post template renders it and emits `FAQPage` schema automatically.
 5. **Internal links:** link related guides with root-relative paths (`/some-post-slug`).
 
 ### Tone
-- Practical and direct — a well-travelled friend who has actually done the border crossing.
-- Concrete beats vague: name the terminal, the line, the fee, the wait time.
-- Never present the site as official. It is an independent fan guide.
+- Practical and direct, like a well-travelled friend who has actually done the border crossing.
+- Concrete beats vague: name the enclosure, the gate, the fee, the wait time.
+- Never present the site as official. It is an independent guide, not affiliated with any governing body, venue or race organiser.
+- **No em dashes anywhere.** Full stop, comma, colon or parentheses instead. This is enforced by `scripts/validate-queue.mjs`.
 
-### Accuracy — this matters more than usual here
-Ticket prices, visa wait times, broadcast rights, and fan zone dates all change. Every factual claim needs a real source (FIFA, a host-city authority, a national broadcaster). **Do not invent statistics, prices, or dates.** If a number cannot be sourced, leave it out.
+### Accuracy, which matters more than usual here
+Ticket prices, dress codes, opening times and dates are set by venues and change between seasons. Every factual claim needs a real source: the venue's own published page, not a secondary blog. **Do not invent statistics, prices, or dates.** If a number cannot be sourced, leave it out and say plainly that the venue does not publish it.
+
+The counterpart rule matters just as much: **when a venue has no rule, say so.** Cheltenham, Aintree and Epsom publish no formal dress code, and Wimbledon has none for grounds admission. Retailers will never lead with that because they sell clothes. It is the site's whole editorial position.
 
 ---
 
 ## Brand & Design System
 
-### Theme — "Matchday"
+### Theme, "Enclosure"
+
+The pitch-green "Matchday" palette was correct for a World Cup site and wrong
+for one covering Ascot, Wimbledon, Monaco and Courchevel. Current tokens live
+in `lib/site.config.ts` under `theme.colors` and are the single source of
+truth; the values below are a reference, not a second copy to maintain.
+
 | Token | Hex | Use |
 |---|---|---|
-| primary | #0B6B3A | Pitch Green — nav, buttons, panels |
-| accent | #F5A524 | Floodlight Amber — highlights, chips |
-| background | #FBFAF7 | Chalk White |
-| text | #12211A | Boot Black |
-| muted | #5B6661 | Touchline Grey |
-| success | #1E8A6E | Goal Green |
-| primaryDark | #074A28 | pressed/hover on primary |
-| surface | #FFFFFF | cards on the chalk base |
-| line | #E6E3DB | hairline rules |
+| primary | #181512 | Ink, nav, headings, panels |
+| accent | #E8A317 | Gold, headline swipe, primary button |
+| accentInk | #8A5B06 | Gold darkened for type: eyebrows, links, labels |
+| background | #F6F3ED | Paper, warm off-white programme stock |
+| text | #181512 | Ink black, body copy |
+| muted | #6E6558 | Paddock grey, secondary copy |
+| success | #2F8F5B | Turf green |
+| surface | #FFFFFF | Cards on the paper base |
+| line | #E1DACD | Hairline rules |
 
-Fonts: Bricolage Grotesque (display) · Hanken Grotesk (body) · Geist Mono (meta labels).
+One colour per sport, in `theme.sports`, so a reader identifies a sport before
+reading the label: horse racing #CF5A2E, tennis #2F8F5B, Formula 1 #D22C1F,
+skiing #2A87B4, football #7458C9. Post cards, chips and category rules all
+take their hue from there.
 
-Flat and ink-outlined — depth comes from hard offset shadows, not gradients or blurs.
+Fonts: Bricolage Grotesque (display), Hanken Grotesk (body), Geist Mono (meta
+labels).
 
----
+Flat and ink-outlined. Depth comes from hard offset shadows, not gradients or
+blurs. Animation follows the Emil Kowalski rules in `app/globals.css`: custom
+easing, sub-300ms durations, transitions over keyframes, hover gated behind
+`@media (hover:hover)`.
+
+### Canonical host
+
+`siteConfig.domain` is **`www.ofthepitch.com`**. The apex 308-redirects to it.
+That one string builds every canonical tag, OG image URL, sitemap entry and
+schema id, so pointing it at the apex means OG images never render for
+scrapers that do not follow redirects. Verify with
+`curl -sI https://ofthepitch.com/blog` before changing it.
+
+### Generated assets
+
+Post preview cards are generated by `/api/og` from the title, category and
+sport colour. **Never set `featured_image_url` on a new post.** Meta tags use
+1200x630; on-site cards pass `ratio=card` for 1200x750, because the card slot
+is 16:10 and cropping a 1.91:1 image into it cut the first character off every
+title.
+
+`llms.txt` is generated from the live category tree at `app/llms.txt/route.ts`,
+not a static file. The previous static version survived the relaunch telling AI
+crawlers this was a World Cup site.
 
 ## Key File Paths
 
 | File | Purpose |
 |---|---|
-| lib/site.config.ts | Brand, theme, nav, author, feature flags — single source of site identity |
+| **content-queue/WRITING-STANDARDS.md** | **19 rules every article must follow. Read before writing.** |
+| content-queue/README.md | How the drip publisher works |
+| content-queue/schedule.json | slug to publish time |
+| content-queue/articles/ | One JSON payload per queued article |
+| scripts/validate-queue.mjs | Enforces the mechanical half of the standards |
+| scripts/publish-due-posts.mjs | Publishes what is due, idempotent |
+| .github/workflows/publish-scheduled-posts.yml | Runs the publisher every 30 min |
+| lib/site.config.ts | Brand, theme, nav, author, feature flags. Single source of site identity |
 | lib/queries.ts | All Supabase data access (DO NOT write queries elsewhere) |
+| lib/schema.ts | JSON-LD graph. Image URLs must resolve; three once 404'd |
+| lib/metadata.ts | OG/Twitter image helpers |
+| lib/admin/preview-image.ts | Resolves a post's card URL, `og` or `card` ratio |
 | lib/supabase.ts | Client setup + `getCurrentSiteId()` |
-| lib/utils.ts | `postPath()` — the canonical post URL shape |
+| lib/utils.ts | `postPath()`, the canonical post URL shape, and `sportForCategory()` |
+| app/api/og/route.tsx | Generates every post card |
+| app/llms.txt/route.ts | Generated llms.txt, not static |
+| app/sitemap.ts | Excludes empty archives |
 | app/[slug]/page.tsx | Post page; also resolves standalone pages |
-| app/category/[slug]/page.tsx | Category archive |
+| app/category/[slug]/page.tsx | Category archive; noindexes when empty |
 | app/blog/page.tsx | Blog listing |
-| components/MarkdownContent.tsx | Renders post markdown |
+| components/MarkdownContent.tsx | Renders markdown; unlinks unpublished targets |
+| components/PostCard.tsx | Post card; requests the 16:10 card ratio |
+| next.config.ts | Redirects for every retired post and archive |
 | public/images/ | Migrated WordPress media (yyyy/mm structure) |
-| supabase/migrations/ | 001 = schema, 003 = ofthepitch content seed |
+| supabase/migrations/ | 001 = schema, 003 = ofthepitch content seed, 005 = printables |
 
 ## Feature flags
 
@@ -164,6 +266,21 @@ Two things to know before editing:
 
 ---
 
+## Content pipeline
+
+Articles are written in batches as files in `content-queue/`, not as rows in
+the `posts` table, and a GitHub Actions cron publishes each one when its
+scheduled date arrives. See `content-queue/README.md` for how the publisher
+works and `content-queue/WRITING-STANDARDS.md` for what an article must
+contain.
+
+Two things to know before touching a published article:
+
+1. **Edit both** the queue file and the database row. The publisher will not
+   overwrite a post that already exists.
+2. **Never change a published slug.** It forfeits whatever the URL has earned.
+   Everything else about an article can be reframed; the slug cannot.
+
 ## dev Commands
 
 ```bash
@@ -171,4 +288,7 @@ npm run dev        # start dev server on localhost:3000
 npm run build      # production build
 npm run lint       # ESLint check
 npx tsc --noEmit   # typecheck
+
+node scripts/validate-queue.mjs          # check the content queue
+DRY_RUN=1 node scripts/publish-due-posts.mjs   # what would publish, writes nothing
 ```

@@ -43,6 +43,7 @@ const schedule = JSON.parse(readFileSync(join(QUEUE, "schedule.json"), "utf8"));
 const files = readdirSync(ARTICLES).filter((f) => f.endsWith(".json"));
 const slugs = new Set(files.map((f) => f.replace(/\.json$/, "")));
 const inbound = new Map();
+const headings = new Map();
 
 for (const file of files) {
   const slug = file.replace(/\.json$/, "");
@@ -79,6 +80,7 @@ for (const file of files) {
   // Rule 4: structure for extraction.
   const h2 = c.match(/^## .+$/gm) ?? [];
   if (h2.length < 5) err(slug, `only ${h2.length} H2 sections`);
+  headings.set(slug, h2.map((h) => h.replace(/^##\s*/, "").trim()));
   const questions = h2.filter((h) => h.trim().endsWith("?"));
   if (questions.length < h2.length * 0.6) {
     warn(slug, `${questions.length}/${h2.length} H2s are questions, aim for most`);
@@ -118,9 +120,45 @@ for (const file of files) {
   }
 }
 
-// Rule 5: every article needs a way in.
+// Rule 7: every article needs a way in.
 for (const slug of slugs) {
   if (!inbound.has(slug)) warn(slug, "no inbound internal links");
+}
+
+// Rule 5: two articles answering the same question compete with each other.
+// Two migrated WordPress posts did exactly this and one had to be 301'd away.
+//
+// Compared on the H2 questions rather than the title. Titles legitimately
+// share venue names across comparison pieces, which produced only false
+// positives; the set of questions a piece answers is what actually makes it
+// distinct from another.
+const askedBy = new Map();
+for (const [slug, heads] of headings) {
+  for (const h of heads) {
+    const q = h.toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+    if (!q) continue;
+    if (!askedBy.has(q)) askedBy.set(q, []);
+    askedBy.get(q).push(slug);
+  }
+}
+const overlaps = new Map();
+for (const [, owners] of askedBy) {
+  if (owners.length < 2) continue;
+  for (let i = 0; i < owners.length; i++) {
+    for (let j = i + 1; j < owners.length; j++) {
+      const key = [owners[i], owners[j]].sort().join(" | ");
+      overlaps.set(key, (overlaps.get(key) ?? 0) + 1);
+    }
+  }
+}
+for (const [pair, shared] of overlaps) {
+  const [x, y] = pair.split(" | ");
+  const smaller = Math.min(headings.get(x)?.length ?? 1, headings.get(y)?.length ?? 1);
+  // Half the smaller article's sections asking the same questions means the
+  // two are answering the same thing, whatever the titles say.
+  if (shared / smaller >= 0.5) {
+    warnings.push(`possible duplicate topic: ${x} and ${y} share ${shared} identical H2 questions`);
+  }
 }
 
 // Internal links must resolve to a queued article or an existing published one.
