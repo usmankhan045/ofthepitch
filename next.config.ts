@@ -43,6 +43,24 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Printables created remotely through HQ live in Supabase Storage rather than
+  // in this repo. A `fallback` rewrite only runs when no static file matched, so
+  // the printables committed under public/printables keep being served straight
+  // from the CDN, and only the ones that aren't there fall through to storage.
+  // Both end up at /printables/<slug>.pdf, so the split is invisible to visitors
+  // and no printable ever needs a commit or a redeploy.
+  async rewrites() {
+    return {
+      fallback: [
+        {
+          source: "/printables/:path*",
+          destination:
+            "https://ruucexzgebbehjcrinhj.supabase.co/storage/v1/object/public/printables/ofthepitch/:path*",
+        },
+      ],
+    };
+  },
+
   async headers() {
     return [
       {
@@ -90,6 +108,29 @@ const nextConfig: NextConfig = {
         destination: "/terms-of-use",
         permanent: true,
       },
+
+      // ── Football consolidation, September 2026 ────────────────────────────
+      // The nine World Cup category archives were merged into a single
+      // /category/world-cup-2026 archive. Every one of those slugs was indexed
+      // in Search Console, so they 301 into the archive rather than 404. The
+      // posts themselves never moved: post URLs sit at the site root and do
+      // not contain the category, so no article URL changed.
+      ...[
+        "team-reviews",
+        "viewing-guides",
+        "controversy-and-politics",
+        "visa-immigration",
+        "fan-zone-guide",
+        "fan-travel-and-logistics",
+        "fan-travel-logistics",
+        "tickets-and-hospitality",
+        "general",
+        "celebrity-clashes-latest-news",
+      ].map((slug) => ({
+        source: `/category/${slug}`,
+        destination: "/category/world-cup-2026",
+        permanent: true,
+      })),
     ];
   },
 };

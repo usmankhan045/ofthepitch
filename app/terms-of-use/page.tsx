@@ -96,8 +96,7 @@ export default function TermsOfUsePage() {
               and requirements often differ by nationality and personal
               circumstances. Our content is published for general information
               only. Before booking or travelling, you should confirm anything
-              that matters to your trip directly with the official source &mdash;
-              the relevant government or immigration authority, the official
+              that matters to your trip directly with the official source, the relevant government or immigration authority, the official
               ticketing channel, the venue or host city, your airline or
               accommodation provider, or your insurer. You are responsible for
               your own travel decisions.

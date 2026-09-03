@@ -9,7 +9,15 @@ import { Container } from "@/components/ui";
 
 type CategoryLink = { slug: string; name: string };
 
-// Icons as tiny SVGs — no package dependency needed for two shapes.
+/** A sport with the subcategories filed under it, used by the mega menu. */
+export type NavSport = {
+  slug: string;
+  name: string;
+  postCount: number;
+  children: Array<{ slug: string; name: string; description: string | null; postCount: number }>;
+};
+
+// Icons as tiny SVGs, no package dependency needed for two shapes.
 function MenuIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -75,28 +83,29 @@ function isInternalHref(href: string): boolean {
  */
 export function Header({
   categories = [],
+  sports = [],
   nav = navLinks,
   name = siteConfig.name,
 }: {
   categories?: CategoryLink[];
+  sports?: NavSport[];
   nav?: readonly NavItem[];
   name?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [catOpen, setCatOpen] = useState(false);          // desktop dropdown
   const [mobileCatOpen, setMobileCatOpen] = useState(false); // mobile accordion
   const pathname = usePathname();
-  const catRef = useRef<HTMLDivElement>(null);
 
-  const hasCategories = categories.length > 0;
-  const isCategoryActive = pathname.startsWith("/category");
+  // Which sport's mega menu is open. Null when none is.
+  const [openSport, setOpenSport] = useState<string | null>(null);
+  const sportBySlug = new Map(sports.map((sp) => [`/category/${sp.slug}`, sp]));
 
   const close = useCallback(() => setIsOpen(false), []);
 
   // Close everything on route change
   useEffect(() => {
     setIsOpen(false);
-    setCatOpen(false);
+    setOpenSport(null);
     setMobileCatOpen(false);
   }, [pathname]);
 
@@ -105,24 +114,12 @@ export function Header({
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         close();
-        setCatOpen(false);
+        setOpenSport(null);
       }
     };
     document.addEventListener("keydown", handleKey);
     return () => document.removeEventListener("keydown", handleKey);
   }, [close]);
-
-  // Close desktop dropdown on outside click
-  useEffect(() => {
-    if (!catOpen) return;
-    const handleClick = (e: MouseEvent) => {
-      if (catRef.current && !catRef.current.contains(e.target as Node)) {
-        setCatOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
-  }, [catOpen]);
 
   // Lock body scroll when mobile drawer open
   useEffect(() => {
@@ -131,31 +128,25 @@ export function Header({
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b-2 border-text">
+    <header className="sticky top-0 z-50 border-b border-line bg-[color-mix(in_srgb,var(--color-background)_86%,transparent)] backdrop-blur-[14px] backdrop-saturate-150">
       <Container>
-        <div className="flex items-center justify-between h-20 gap-6">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center h-20 gap-6">
 
-          {/* ── Logo ─────────────────────────────────────────────────────── */}
-          {/* The mark is a teal rounded square with a lime core — the two brand
-              colors locked together in the smallest possible object. */}
+          {/* Wordmark. The last word takes gold ink so the name carries the
+              brand colour without a separate logo object. */}
           <Link
             href="/"
-            className="group flex items-center gap-2.5 shrink-0"
+            className="group flex items-center shrink-0"
             aria-label={`${name} home`}
           >
-            <span
-              className="relative w-7 h-7 rounded-[9px] bg-primary border-2 border-text shrink-0 transition-transform duration-150 group-hover:-rotate-6"
-              aria-hidden
-            >
-              <span className="absolute inset-[5px] rounded-full bg-accent" />
-            </span>
-            <span className="font-display text-[1.35rem] font-extrabold tracking-[-0.03em] text-text">
-              {name}
+            <span className="font-display text-[1.35rem] font-extrabold tracking-[-0.045em] text-text">
+              {name.split(" ").slice(0, -1).join(" ")}{" "}
+              <span className="text-accent-ink">{name.split(" ").slice(-1)}</span>
             </span>
           </Link>
 
           {/* ── Desktop nav ──────────────────────────────────────────────── */}
-          <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center justify-center gap-1" aria-label="Main navigation">
             {nav.map((link) => {
               const internal = isInternalHref(link.href);
               const isActive =
@@ -164,10 +155,11 @@ export function Header({
                   ? pathname === "/"
                   : pathname.startsWith(link.href));
               const linkClass = cn(
-                "px-3.5 py-2 rounded-full text-[0.95rem] font-medium transition-colors duration-150",
+                "relative px-3.5 py-2 rounded-lg text-[0.95rem] font-semibold transition-colors duration-150",
+                "after:absolute after:left-3.5 after:right-3.5 after:bottom-1 after:h-[2px] after:rounded-full",
                 isActive
-                  ? "text-text bg-accent"
-                  : "text-muted hover:text-text hover:bg-text/[0.06]"
+                  ? "text-text after:bg-accent"
+                  : "text-muted hover:text-text hover:bg-text/[0.05] after:bg-transparent"
               );
               const navLink = internal ? (
                 <Link key={link.href} href={link.href} className={linkClass}>
@@ -185,68 +177,100 @@ export function Header({
                 </a>
               );
 
-              // Inject the Categories dropdown immediately after the Blog link.
-              if (link.href === "/blog" && hasCategories) {
+              // A sport in the nav opens a mega menu on hover listing the
+              // subcategories filed under it. Sports with no subcategories
+              // behave as ordinary links.
+              const sport = sportBySlug.get(link.href);
+              if (sport && sport.children.length > 0) {
+                const isMenuOpen = openSport === sport.slug;
+                const sportColour =
+                  siteConfig.theme.sports[sport.slug] ?? "var(--color-text)";
                 return (
-                  <div key="blog-and-categories" className="flex items-center gap-1">
-                    {navLink}
-                    <div
-                      ref={catRef}
-                      className="relative"
-                      onMouseEnter={() => setCatOpen(true)}
-                      onMouseLeave={() => setCatOpen(false)}
+                  <div
+                    key={link.href}
+                    className="relative"
+                    onMouseEnter={() => setOpenSport(sport.slug)}
+                    onMouseLeave={() => setOpenSport(null)}
+                  >
+                    <Link
+                      href={link.href}
+                      className={linkClass}
+                      aria-haspopup="true"
+                      aria-expanded={isMenuOpen}
                     >
-                      <button
-                        type="button"
-                        onClick={() => setCatOpen((v) => !v)}
-                        className={cn(
-                          "flex items-center gap-1 px-3.5 py-2 rounded-full text-[0.95rem] font-medium transition-colors duration-150 cursor-pointer",
-                          isCategoryActive || catOpen
-                            ? "text-text bg-accent"
-                            : "text-muted hover:text-text hover:bg-text/[0.06]"
-                        )}
-                        aria-haspopup="true"
-                        aria-expanded={catOpen}
-                      >
-                        Categories
-                        <ChevronIcon
-                          className={cn(
-                            "transition-transform duration-150",
-                            catOpen && "rotate-180"
-                          )}
-                        />
-                      </button>
+                      {link.label}
+                    </Link>
 
-                      {catOpen && (
+                    {isMenuOpen && (
+                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 z-50">
                         <div
-                          className={cn(
-                            "absolute left-0 top-full pt-2 w-60 z-50"
-                          )}
                           role="menu"
+                          className={cn(
+                            "w-[24rem] overflow-hidden rounded-2xl bg-surface",
+                            "shadow-[inset_0_0_0_1px_var(--color-line),0_24px_50px_-24px_rgb(24_21_18/0.34)]",
+                            "animate-[rise_180ms_cubic-bezier(0.23,1,0.32,1)_forwards]"
+                          )}
                         >
-                          <div className="rounded-2xl border-2 border-text bg-surface shadow-[5px_5px_0_var(--color-text)] p-1.5">
-                            {categories.map((cat) => {
-                              const active = pathname === `/category/${cat.slug}`;
-                              return (
-                                <Link
-                                  key={cat.slug}
-                                  href={`/category/${cat.slug}`}
-                                  role="menuitem"
-                                  className={cn(
-                                    "block px-3 py-2 rounded-full text-sm font-medium transition-colors",
-                                    active
-                                      ? "text-text bg-accent"
-                                      : "text-text hover:bg-text/[0.06]"
-                                  )}
-                                >
-                                  {cat.name}
-                                </Link>
-                              );
-                            })}
+                          {/* Header band carries the sport colour so the panel is
+                              identifiable before any label is read. */}
+                          <div
+                            className="flex items-baseline justify-between px-4 py-3"
+                            style={{ background: sportColour, color: "#fff" }}
+                          >
+                            <span className="font-display text-[0.98rem] font-extrabold tracking-[-0.03em]">
+                              {sport.name}
+                            </span>
+                            <span className="stamp opacity-80">
+                              {sport.postCount} {sport.postCount === 1 ? "guide" : "guides"}
+                            </span>
                           </div>
+
+                          <div className="p-1.5">
+                            {sport.children.map((child) => (
+                              <Link
+                                key={child.slug}
+                                href={`/category/${child.slug}`}
+                                role="menuitem"
+                                className="group/mi relative block rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-text/[0.04]"
+                              >
+                                {/* Colour rule appears on hover, matching the
+                                    homepage picker rows. */}
+                                <span
+                                  aria-hidden
+                                  className="absolute left-0 inset-y-1.5 w-[3px] rounded-full origin-center scale-y-0 transition-transform duration-200 group-hover/mi:scale-y-100"
+                                  style={{ background: sportColour }}
+                                />
+                                <span className="flex items-baseline justify-between gap-3">
+                                  <span className="text-[0.9rem] font-semibold text-text">
+                                    {child.name}
+                                  </span>
+                                  <span className="font-mono text-[11px] text-muted tabular-nums shrink-0">
+                                    {child.postCount}
+                                  </span>
+                                </span>
+                                {child.description && (
+                                  <span className="mt-0.5 block text-xs leading-snug text-muted line-clamp-2">
+                                    {child.description}
+                                  </span>
+                                )}
+                              </Link>
+                            ))}
+                          </div>
+
+                          <Link
+                            href={link.href}
+                            className="flex items-center justify-between gap-2 border-t border-line px-4 py-3 transition-colors duration-150 hover:bg-text/[0.03]"
+                          >
+                            <span className="stamp" style={{ color: sportColour }}>
+                              All {sport.name}
+                            </span>
+                            <span aria-hidden style={{ color: sportColour }}>
+                              &rarr;
+                            </span>
+                          </Link>
                         </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 );
               }
@@ -258,8 +282,8 @@ export function Header({
           {/* ── Hamburger ────────────────────────────────────────────────── */}
           <button
             className={cn(
-              "md:hidden p-2 rounded-full transition-colors cursor-pointer",
-              "text-text border-2 border-text bg-surface",
+              "md:hidden justify-self-end p-2 rounded-full transition-colors cursor-pointer",
+              "text-text shadow-[inset_0_0_0_1.5px_var(--color-line)] bg-surface",
               "hover:bg-accent",
               "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             )}
@@ -270,6 +294,9 @@ export function Header({
           >
             {isOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
+          {/* Balances the grid so the nav is centred on the page, not on the
+              space left over beside the wordmark. */}
+          <span className="hidden md:block" aria-hidden />
 
         </div>
       </Container>
@@ -278,7 +305,7 @@ export function Header({
       {isOpen && (
         <div
           id="mobile-nav"
-          className="md:hidden border-t-2 border-text bg-background"
+          className="md:hidden border-t border-line bg-background"
         >
           <Container>
             <nav
@@ -314,49 +341,42 @@ export function Header({
                   </a>
                 );
 
-                // Categories accordion after the Blog link.
-                if (link.href === "/blog" && hasCategories) {
+                // A sport expands to show its subcategories inline.
+                const mSport = sportBySlug.get(link.href);
+                if (mSport && mSport.children.length > 0) {
+                  const expanded = openSport === mSport.slug;
                   return (
-                    <div key="blog-and-categories-mobile" className="flex flex-col gap-0.5">
-                      {navLink}
-                      <button
-                        type="button"
-                        onClick={() => setMobileCatOpen((v) => !v)}
-                        className={cn(
-                          "flex items-center justify-between px-4 py-3 rounded-full text-base font-medium transition-colors cursor-pointer",
-                          isCategoryActive
-                            ? "text-text bg-accent"
-                            : "text-text hover:bg-text/[0.06]"
-                        )}
-                        aria-expanded={mobileCatOpen}
-                      >
-                        Categories
-                        <ChevronIcon
-                          className={cn(
-                            "transition-transform duration-150",
-                            mobileCatOpen && "rotate-180"
-                          )}
-                        />
-                      </button>
-                      {mobileCatOpen && (
-                        <div className="flex flex-col gap-0.5 pl-3 mb-1 border-l-2 border-line ml-4">
-                          {categories.map((cat) => {
-                            const active = pathname === `/category/${cat.slug}`;
-                            return (
-                              <Link
-                                key={cat.slug}
-                                href={`/category/${cat.slug}`}
-                                className={cn(
-                                  "px-4 py-2.5 rounded-full text-[15px] font-medium transition-colors",
-                                  active
-                                    ? "text-text bg-accent"
-                                    : "text-muted hover:text-text hover:bg-text/[0.06]"
-                                )}
-                              >
-                                {cat.name}
-                              </Link>
-                            );
-                          })}
+                    <div key={link.href} className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-1">
+                        <Link href={link.href} className={cn(linkClass, "flex-1")}>
+                          {link.label}
+                        </Link>
+                        <button
+                          type="button"
+                          onClick={() => setOpenSport(expanded ? null : mSport.slug)}
+                          className="p-3 rounded-lg text-muted hover:text-text hover:bg-text/[0.05] cursor-pointer"
+                          aria-expanded={expanded}
+                          aria-label={`${expanded ? "Hide" : "Show"} ${mSport.name} sections`}
+                        >
+                          <ChevronIcon
+                            className={cn("transition-transform duration-150", expanded && "rotate-180")}
+                          />
+                        </button>
+                      </div>
+                      {expanded && (
+                        <div className="flex flex-col gap-0.5 pl-3 mb-1 border-l border-line ml-4">
+                          {mSport.children.map((child) => (
+                            <Link
+                              key={child.slug}
+                              href={`/category/${child.slug}`}
+                              className="flex items-baseline justify-between gap-3 px-4 py-2.5 rounded-lg text-[15px] text-muted hover:text-text hover:bg-text/[0.05] transition-colors"
+                            >
+                              <span>{child.name}</span>
+                              <span className="font-mono text-[11px] tabular-nums shrink-0">
+                                {child.postCount}
+                              </span>
+                            </Link>
+                          ))}
                         </div>
                       )}
                     </div>

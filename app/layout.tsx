@@ -8,7 +8,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteSchema, organizationSchema, personSchema } from "@/lib/schema";
-import { getCategoriesWithPostCounts } from "@/lib/queries";
+import { getCategoriesWithPostCounts, getCategoryTree } from "@/lib/queries";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -56,11 +56,19 @@ export default async function RootLayout({
       name,
     }));
   } catch {
-    // DB not yet configured — render nav without the Categories dropdown
+    // DB not yet configured, render nav without the categories
+  }
+
+  // Drives the navigation mega menu: each sport with its subcategories.
+  let sports: Awaited<ReturnType<typeof getCategoryTree>> = [];
+  try {
+    sports = await getCategoryTree();
+  } catch {
+    // DB not yet configured, sports render as plain links
   }
 
   // Brand, nav and theme, with admin overrides applied over site.config.ts.
-  // getSiteSettings() never throws — it falls back to config on any failure,
+  // getSiteSettings() never throws, it falls back to config on any failure,
   // because an exception in the root layout would take down every page.
   const settings = await getSiteSettings();
 
@@ -79,7 +87,7 @@ export default async function RootLayout({
         <JsonLd data={[websiteSchema(), organizationSchema(), personSchema()]} />
       </head>
       <body className="flex flex-col min-h-full antialiased bg-background text-text">
-        <Header categories={categories} nav={settings.nav} name={settings.name} />
+        <Header categories={categories} sports={sports} nav={settings.nav} name={settings.name} />
         {children}
         <Footer
           name={settings.name}

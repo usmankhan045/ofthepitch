@@ -1,0 +1,349 @@
+<title>Of The Pitch Redesign</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  /* Light by default. Warm paper ground; sport colour does the lifting. */
+  --bg:#F6F3ED;
+  --bg-2:#EFEAE0;
+  --surface:#FFFFFF;
+  --surface-2:#F8F5EF;
+  --ink:#17150F;
+  --text:#181512;
+  --muted:#6E6558;
+  --line:#E1DACD;
+  --brass:#E8A317;
+  --brass-deep:#C4860A;
+  --gold-ink:#8A5B06;
+
+  --tennis:#2F8F5B;
+  --racing:#CF5A2E;
+  --f1:#D22C1F;
+  --ski:#2A87B4;
+  --football:#7458C9;
+
+  --display:"Bricolage Grotesque",Impact,sans-serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --mono:"Geist Mono",ui-monospace,Menlo,monospace;
+
+  /* Emil: the built-in easings are too weak. */
+  --out:cubic-bezier(0.23,1,0.32,1);
+  --inout:cubic-bezier(0.77,0,0.175,1);
+}
+/* Light-only by design. The dark variant is deliberately not wired to the OS
+   setting — this site commits to paper. */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.0;letter-spacing:-.035em;margin:0}
+.stamp{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase}
+.note{max-width:1200px;margin:0 auto;padding:18px 28px 4px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);opacity:.62}
+
+/* page-load stagger — 40ms apart, decorative only, never blocks */
+@keyframes rise{to{opacity:1;transform:none}}
+.rise{opacity:0;transform:translateY(10px);animation:rise .5s var(--out) forwards}
+.d1{animation-delay:.02s}.d2{animation-delay:.07s}.d3{animation-delay:.12s}.d4{animation-delay:.17s}.d5{animation-delay:.22s}
+
+/* ── HEADER ── */
+header.site{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.4rem;letter-spacing:-.05em;white-space:nowrap}
+.brand b{color:var(--gold-ink)}
+nav.main{display:flex;gap:1px}
+nav.main a{position:relative;font-size:14px;font-weight:600;padding:8px 13px;color:var(--muted);border-radius:6px;transition:color 140ms var(--out),background 140ms var(--out)}
+@media (hover:hover) and (pointer:fine){nav.main a:hover{color:var(--text);background:var(--surface)}}
+nav.main a[aria-current]{color:var(--text)}
+nav.main a[aria-current]::after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;background:var(--brass);border-radius:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--body);font-weight:650;cursor:pointer;border:none;border-radius:8px;padding:11px 20px;font-size:.94rem;transition:transform 160ms var(--out),filter 160ms var(--out),box-shadow 160ms var(--out)}
+.btn:active{transform:scale(0.97)}
+.btn-brass{background:var(--brass);color:#241B06;box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 8px 20px -10px rgba(232,163,23,.55)}
+@media (hover:hover){.btn-brass:hover{filter:brightness(1.07)}}
+.btn-line{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1.5px var(--line)}
+@media (hover:hover){.btn-line:hover{box-shadow:inset 0 0 0 1.5px var(--brass)}}
+
+/* ── HERO ── */
+.hero{padding:70px 0 66px;position:relative;overflow:hidden}
+/* two soft washes, offset — warmth without a "gradient hero" */
+.hero::before{content:"";position:absolute;top:-32%;right:-10%;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,color-mix(in srgb,var(--brass) 13%,transparent),transparent 66%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-46%;left:-14%;width:560px;height:560px;border-radius:50%;
+  background:radial-gradient(circle,color-mix(in srgb,var(--tennis) 9%,transparent),transparent 66%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:56px;align-items:center;position:relative}
+
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--gold-ink);margin:0 0 20px}
+.kicker::before{content:"";width:22px;height:1.5px;background:var(--gold-ink);display:block}
+
+h1{font-size:clamp(2.75rem,5.7vw,4.25rem);margin:0 0 22px;text-wrap:balance;letter-spacing:-.04em}
+/* the swipe draws itself once, left to right — one moment, not a loop */
+h1 .hl{position:relative;display:inline-block;white-space:nowrap;z-index:0}
+h1 .hl::after{
+  content:"";position:absolute;left:-.06em;right:-.06em;bottom:.13em;height:.30em;
+  background:var(--brass);opacity:.9;z-index:-1;border-radius:2px;transform:rotate(-1.1deg);
+  transform-origin:left center;
+  animation:swipe .62s cubic-bezier(0.23,1,0.32,1) .42s both;
+}
+@keyframes swipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
+.lede{font-size:1.1rem;color:var(--muted);margin:0 0 30px;max-width:50ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* trust line under the buttons — real detail, not filler */
+.trust{display:flex;align-items:center;gap:16px;margin-top:26px;flex-wrap:wrap}
+.trust .t{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.trust .dot{width:5px;height:5px;border-radius:50%;background:var(--tennis);box-shadow:0 0 0 3px color-mix(in srgb,var(--tennis) 18%,transparent)}
+
+/* ── SPORT PICKER ── */
+.picker{display:flex;flex-direction:column;gap:8px;position:relative}
+.picker-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;padding:0 3px}
+.picker-head .ph{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.prow{
+  --c:var(--brass);
+  position:relative;display:grid;grid-template-columns:46px 1fr auto;gap:15px;align-items:center;
+  background:var(--surface);border-radius:13px;padding:15px 17px;overflow:hidden;
+  box-shadow:inset 0 0 0 1px var(--line);
+  transition:transform 300ms var(--out),box-shadow 300ms var(--out),background 300ms var(--out);
+}
+/* colour wash sweeps in from the left on hover */
+.prow::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--c) 11%,transparent),transparent 58%);
+  opacity:0;transition:opacity 320ms var(--out);
+}
+.prow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c);
+  transform:scaleY(.3);transform-origin:center;transition:transform 340ms var(--out)}
+@media (hover:hover) and (pointer:fine){
+  .prow:hover{transform:translateX(7px);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 40%,var(--line)),0 12px 26px -14px color-mix(in srgb,var(--c) 55%,transparent)}
+  .prow:hover::before{transform:scaleY(1)}
+  .prow:hover::after{opacity:1}
+  .prow:hover .pno{background:var(--c);color:#fff;transform:rotate(-5deg) scale(1.06);box-shadow:none}
+  .prow:hover .pgo{opacity:1;transform:translateX(0)}
+  .prow:hover .pcount{opacity:0;transform:translateX(6px)}
+}
+.prow:active{transform:translateX(7px) scale(.994)}
+.pno{position:relative;z-index:1;font-family:var(--mono);font-size:12px;font-weight:600;text-align:center;padding:7px 0;border-radius:8px;
+  background:var(--surface-2);color:var(--c);box-shadow:inset 0 0 0 1px var(--line);
+  transition:background 300ms var(--out),color 300ms var(--out),transform 300ms var(--out),box-shadow 300ms var(--out)}
+.pname{position:relative;z-index:1;font-weight:700;font-size:15.5px;letter-spacing:-.02em}
+.pname span{display:block;font-weight:400;font-size:12.5px;color:var(--muted);letter-spacing:0;margin-top:2px}
+.pright{position:relative;z-index:1;display:grid;place-items:center;min-width:26px}
+.pcount{grid-area:1/1;font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;transition:opacity 240ms var(--out),transform 240ms var(--out)}
+.pgo{grid-area:1/1;color:var(--c);font-size:16px;opacity:0;transform:translateX(-7px);transition:opacity 260ms var(--out),transform 260ms var(--out)}
+
+/* ── BANDS ── */
+section.band{padding:62px 0;border-top:1px solid var(--line)}
+.band-head{display:flex;justify-content:space-between;align-items:flex-end;gap:22px;margin-bottom:30px;flex-wrap:wrap}
+h2{font-size:2.2rem}
+.sub{color:var(--muted);font-size:.95rem;margin:9px 0 0;max-width:54ch}
+.seeall{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:600;color:var(--gold-ink);display:inline-flex;align-items:center;gap:6px;transition:gap 200ms var(--out)}
+@media (hover:hover){.seeall:hover{gap:11px}}
+
+/* ── CARDS — the part that was boring ── */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{
+  --c:var(--brass);
+  position:relative;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;
+  background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);
+  transition:transform 300ms var(--out),box-shadow 300ms var(--out);
+}
+@media (hover:hover) and (pointer:fine){
+  .card:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--c) 55%,var(--line)),0 20px 42px -20px color-mix(in srgb,var(--c) 42%,transparent),0 8px 18px -12px rgba(23,21,15,.22)}
+  .card:hover .cover::after{opacity:.42}
+  .card:hover .cover .word{transform:scale(1.05) translateY(-2px)}
+  .card:hover .go{gap:11px;color:var(--c)}
+}
+.card:active{transform:translateY(-6px) scale(.994)}
+.cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--c);display:grid;place-items:center}
+/* diagonal ruled texture — printed, not photographic */
+.cover::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(58deg,rgba(0,0,0,.10) 0 2px,transparent 2px 13px);
+}
+.cover::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 100% at 20% 0%,rgba(255,255,255,.30),transparent 62%);
+  opacity:.22;transition:opacity 320ms var(--out);
+}
+.cover .word{position:relative;font-family:var(--display);font-weight:800;font-size:2.5rem;letter-spacing:-.05em;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.22);transition:transform 380ms var(--out)}
+.chip{
+  position:absolute;top:13px;left:13px;z-index:2;
+  font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  background:rgba(10,9,8,.55);backdrop-filter:blur(6px);color:#fff;padding:5px 10px;border-radius:999px;
+}
+.pinflag{
+  position:absolute;top:13px;right:13px;z-index:2;display:inline-flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--brass);color:#241B06;padding:5px 10px;border-radius:999px;
+}
+.card-body{padding:19px 21px 21px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.28rem;letter-spacing:-.03em;text-wrap:balance;line-height:1.1}
+.card p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.55}
+.card-foot{margin-top:auto;padding-top:13px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.card-foot .m{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.go{display:inline-flex;align-items:center;gap:6px;font-weight:650;font-size:13.5px;transition:gap 240ms var(--out),color 240ms var(--out)}
+
+/* ── RULE TABLE ── */
+.feature{display:grid;grid-template-columns:.92fr 1.08fr;gap:46px;align-items:center}
+.rt{border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line),0 22px 46px -26px rgba(23,21,15,.30)}
+.rt-head{background:var(--surface-2);padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;border-bottom:1px solid var(--line)}
+.rt-head .q{font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:-.03em}
+.rt-head .s{font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--gold-ink)}
+.rr{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);transition:background 180ms var(--out)}
+.rr:last-of-type{border-bottom:none}
+@media (hover:hover){.rr:hover{background:var(--surface-2)}}
+.rr .n{font-weight:650;font-size:14.5px}
+.rr .n small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:1px}
+.v{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:5px 12px;white-space:nowrap}
+.v-yes{background:var(--brass);color:#241B06}
+.v-soft{background:var(--surface-2);color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+.rt-foot{background:var(--bg-2);padding:12px 20px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line)}
+
+/* ── PRINTABLES ── */
+.prints{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px}
+.pc{position:relative;background:var(--surface);border-radius:14px;padding:17px;display:flex;flex-direction:column;gap:13px;box-shadow:inset 0 0 0 1px var(--line);transition:transform 300ms var(--out),box-shadow 300ms var(--out)}
+@media (hover:hover) and (pointer:fine){
+  .pc:hover{transform:translateY(-5px);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--brass) 50%,var(--line)),0 16px 32px -16px rgba(23,21,15,.26)}
+  .pc:hover .sheet{transform:rotate(-1.4deg) translateY(-2px)}
+}
+.pc:active{transform:translateY(-5px) scale(.994)}
+.sheet{aspect-ratio:1/1.28;border-radius:7px;background:var(--bg-2);padding:15px;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px var(--line);transition:transform 340ms var(--out)}
+.sheet i{display:block;height:5px;border-radius:2px;background:var(--line);font-style:normal}
+.sheet i.h{background:var(--text);height:7px;width:56%;opacity:.85}
+.sheet i.a{background:var(--brass);width:42%}
+.sheet .fade{position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(to bottom,transparent,var(--surface))}
+.pc h4{font-size:1.02rem;letter-spacing:-.03em}
+.pc .pm{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ── FOOTER ── */
+footer.site{padding:56px 0 36px;border-top:1px solid var(--line);background:var(--bg-2)}
+.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:34px}
+footer h5{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 14px;font-weight:600}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+footer li a{font-size:13.5px;color:var(--muted);transition:color 150ms var(--out)}
+@media (hover:hover){footer li a:hover{color:var(--text)}}
+.fbrand{font-family:var(--display);font-weight:800;font-size:1.45rem;margin:0 0 10px;letter-spacing:-.05em}
+.fbrand b{color:var(--gold-ink)}
+.fnote{font-size:13px;color:var(--muted);margin:0;max-width:36ch;line-height:1.6}
+.f-legal{margin-top:34px;padding-top:19px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.05em;opacity:.8}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .rise{opacity:1;transform:none}
+}
+@media (max-width:940px){.hero-grid,.feature,.f-grid{grid-template-columns:1fr;gap:34px}nav.main{display:none}.f-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.wrap{padding:0 18px}.f-grid{grid-template-columns:1fr}}
+</style>
+
+<p class="note">Header · blurred sticky, brass underline marks current</p>
+<header class="site"><div class="wrap hdr">
+  <a class="brand" href="#">Of The <b>Pitch</b></a>
+  <nav class="main">
+    <a href="#" aria-current="page">Tennis</a><a href="#">Racing</a><a href="#">Formula 1</a>
+    <a href="#">Skiing</a><a href="#">Football</a><a href="#">Printables</a>
+  </nav>
+  <a class="btn btn-brass" href="#">Free checklists</a>
+</div></header>
+
+<p class="note">Hero · swipe draws itself once, rows sweep colour on hover</p>
+<div class="wrap hero"><div class="hero-grid">
+  <div>
+    <p class="kicker stamp rise d1">Independent · not affiliated with any venue</p>
+    <h1 class="rise d2">The rules nobody tells you until <span class="hl">you're at the gate</span>.</h1>
+    <p class="lede rise d3">Wimbledon has no dress code for grounds admission. Royal Ascot has four, and they differ by enclosure. We publish what venues actually enforce — plus what the ticket includes, how to get there, and what the day really costs.</p>
+    <div class="hero-actions rise d4">
+      <a class="btn btn-brass" href="#">Start with Royal Ascot</a>
+      <a class="btn btn-line" href="#">Browse all guides</a>
+    </div>
+    <div class="trust rise d5">
+      <span class="t"><span class="dot"></span>Rules checked Sep 2026</span>
+      <span class="t">119 guides</span>
+      <span class="t">No email required</span>
+    </div>
+  </div>
+  <div class="picker rise d3">
+    <div class="picker-head"><span class="ph">Pick your sport</span><span class="ph">Guides</span></div>
+    <a class="prow" href="#" style="--c:var(--racing)"><span class="pno">01</span><span class="pname">Horse Racing<span>Ascot · Cheltenham · the Derby</span></span><span class="pright"><span class="pcount">12</span><span class="pgo">→</span></span></a>
+    <a class="prow" href="#" style="--c:var(--tennis)"><span class="pno">02</span><span class="pname">Tennis<span>All four slams</span></span><span class="pright"><span class="pcount">9</span><span class="pgo">→</span></span></a>
+    <a class="prow" href="#" style="--c:var(--f1)"><span class="pno">03</span><span class="pname">Formula 1<span>24 circuits, grandstand by grandstand</span></span><span class="pright"><span class="pcount">15</span><span class="pgo">→</span></span></a>
+    <a class="prow" href="#" style="--c:var(--ski)"><span class="pno">04</span><span class="pname">Skiing<span>Both hemispheres</span></span><span class="pright"><span class="pcount">7</span><span class="pgo">→</span></span></a>
+    <a class="prow" href="#" style="--c:var(--football)"><span class="pno">05</span><span class="pname">Football<span>Matchdays + World Cup 2026 archive</span></span><span class="pright"><span class="pcount">76</span><span class="pgo">→</span></span></a>
+  </div>
+</div></div>
+
+<p class="note">Cards · lift 6px, cover brightens, wordmark scales — all on one curve</p>
+<section class="band"><div class="wrap">
+  <div class="band-head">
+    <div><h2>Latest guides</h2><p class="sub">Written against what venues publish, not what people assume.</p></div>
+    <a class="seeall" href="#">All guides <span>→</span></a>
+  </div>
+  <div class="cards">
+    <article class="card rise d1" style="--c:var(--racing)">
+      <div class="cover"><span class="word">ASCOT</span><span class="chip">Horse Racing</span><span class="pinflag">Printable</span></div>
+      <div class="card-body">
+        <h3>Royal Ascot enclosures: which ticket gets you where</h3>
+        <p>Four enclosures, four dress codes, and the strap rule that turns people away at the gate.</p>
+        <div class="card-foot"><span class="m">3 Sep · 9 min</span><span class="go">Read <span>→</span></span></div>
+      </div>
+    </article>
+    <article class="card rise d2" style="--c:var(--tennis)">
+      <div class="cover"><span class="word">SW19</span><span class="chip">Tennis</span><span class="pinflag">Printable</span></div>
+      <div class="card-body">
+        <h3>Wimbledon has no dress code. Here's what it does have.</h3>
+        <p>The all-white rule is for players. Grounds admission gets a bag limit instead — 40×30×30cm.</p>
+        <div class="card-foot"><span class="m">1 Sep · 7 min</span><span class="go">Read <span>→</span></span></div>
+      </div>
+    </article>
+    <article class="card rise d3" style="--c:var(--f1)">
+      <div class="cover"><span class="word">MONACO</span><span class="chip">Formula 1</span></div>
+      <div class="card-body">
+        <h3>Monaco grandstands, ranked by what you actually see</h3>
+        <p>Which sections catch overtaking, which catch the harbour, and which catch neither.</p>
+        <div class="card-foot"><span class="m">28 Aug · 6 min</span><span class="go">Read <span>→</span></span></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<p class="note">Rule table · what retailers never publish, with a check date</p>
+<section class="band"><div class="wrap"><div class="feature">
+  <div>
+    <h2>What a venue <span class="hl">actually</span> enforces</h2>
+    <p class="sub" style="margin-bottom:24px">Retailers write outfit guides to sell clothes, so they rarely mention when a rule doesn't exist. We check the venue's own published guidance and say so plainly — including when the answer is "there isn't one."</p>
+    <a class="btn btn-line" href="#">How we check rules</a>
+  </div>
+  <div class="rt">
+    <div class="rt-head"><span class="q">Do I have to wear a hat?</span><span class="s">Royal Ascot</span></div>
+    <div class="rr"><span class="n">Royal Enclosure<small>Ladies</small></span><span class="v v-yes">Required</span></div>
+    <div class="rr"><span class="n">Queen Anne<small>Ladies</small></span><span class="v v-yes">Required</span></div>
+    <div class="rr"><span class="n">Village<small>Ladies</small></span><span class="v v-yes">Required</span></div>
+    <div class="rr"><span class="n">Windsor<small>Ladies</small></span><span class="v v-soft">Optional</span></div>
+    <div class="rt-foot"><span>Source · ascot.com</span><span>Checked Sep 2026</span></div>
+  </div>
+</div></div></section>
+
+<p class="note">Printables · sheet tilts on hover, fades out — full version behind the click</p>
+<section class="band"><div class="wrap">
+  <div class="band-head">
+    <div><h2>Free printables</h2><p class="sub">One-page checklists to take with you. No email required.</p></div>
+    <a class="seeall" href="#">All printables <span>→</span></a>
+  </div>
+  <div class="prints">
+    <a class="pc" href="#"><div class="sheet"><i class="h"></i><i></i><i class="a"></i><i></i><i></i><i class="a"></i><i></i><i></i><span class="fade"></span></div><h4>Ascot enclosure cheat sheet</h4><span class="pm">PDF · 1 page</span></a>
+    <a class="pc" href="#"><div class="sheet"><i class="h"></i><i></i><i></i><i class="a"></i><i></i><i></i><i class="a"></i><i></i><span class="fade"></span></div><h4>Wimbledon queue day kit</h4><span class="pm">PDF · 1 page</span></a>
+    <a class="pc" href="#"><div class="sheet"><i class="h"></i><i class="a"></i><i></i><i></i><i></i><i class="a"></i><i></i><i></i><span class="fade"></span></div><h4>Race weekend packing list</h4><span class="pm">PDF · 2 pages</span></a>
+    <a class="pc" href="#"><div class="sheet"><i class="h"></i><i></i><i></i><i class="a"></i><i></i><i></i><i></i><i class="a"></i><span class="fade"></span></div><h4>Ski week planner</h4><span class="pm">PDF · 2 pages</span></a>
+  </div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="f-grid">
+    <div>
+      <p class="fbrand">Of The <b>Pitch</b></p>
+      <p class="fnote">An independent guide to attending the world's best sport. Not affiliated with any governing body, venue or organiser.</p>
+    </div>
+    <div><h5>Sports</h5><ul><li><a href="#">Tennis</a></li><li><a href="#">Horse Racing</a></li><li><a href="#">Formula 1</a></li><li><a href="#">Skiing</a></li><li><a href="#">Football</a></li></ul></div>
+    <div><h5>Guides</h5><ul><li><a href="#">Dress codes</a></li><li><a href="#">Tickets</a></li><li><a href="#">Where to stay</a></li><li><a href="#">Trip costs</a></li></ul></div>
+    <div><h5>About</h5><ul><li><a href="#">Editorial policy</a></li><li><a href="#">How we check rules</a></li><li><a href="#">Affiliate disclosure</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="f-legal">© 2026 Of The Pitch · Dress codes and ticket terms are set by venues and change — always check the venue's own guidance before you travel.</div>
+</div></footer>

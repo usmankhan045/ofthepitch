@@ -35,8 +35,8 @@ export const revalidate = 3600;
 
 /**
  * Does the body mention this printable inline? Must match the SAME pattern
- * `expandShortcodes()` and `getPrintablesMentionedIn()` use — whitespace-tolerant
- * and case-insensitive — or an attached printable also mentioned as
+ * `expandShortcodes()` and `getPrintablesMentionedIn()` use, whitespace-tolerant
+ * and case-insensitive, or an attached printable also mentioned as
  * `{{printable: slug }}` would render both inline and again at the foot.
  */
 function mentionsPrintable(content: string | null | undefined, slug: string): boolean {
@@ -101,7 +101,7 @@ export async function generateMetadata({
         publishedTime: post.published_at ?? undefined,
         modifiedTime: post.updated_at,
         authors: [siteConfig.author.name],
-        // Absolute URL, and the generated card when no image was chosen — so a
+        // Absolute URL, and the generated card when no image was chosen, so a
         // shared link always previews with artwork rather than the site default.
         images: ogImages(absolutePreviewImageUrl(post), title),
       },
@@ -130,7 +130,7 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  // Not a post — try a standalone page before 404ing.
+  // Not a post, try a standalone page before 404ing.
   if (!post) {
     let page: Awaited<ReturnType<typeof getPageBySlug>> = null;
     try {
@@ -204,7 +204,7 @@ export default async function BlogPostPage({
         aria-labelledby="post-title"
       >
         <Container width="narrow">
-          {/* Visible breadcrumb trail — matches the BreadcrumbList schema */}
+          {/* Visible breadcrumb trail, matches the BreadcrumbList schema */}
           <nav aria-label="Breadcrumb" className="mb-5">
             <ol className="flex items-center gap-2 text-xs font-mono text-muted/60 uppercase tracking-wide flex-wrap">
               <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
@@ -249,7 +249,7 @@ export default async function BlogPostPage({
             </p>
           )}
 
-          {/* Byline + date — named authorship for E-E-A-T / YMYL trust */}
+          {/* Byline + date, named authorship for E-E-A-T / YMYL trust */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-mono text-muted/60 uppercase tracking-wide">
             <span>
               By{" "}
@@ -304,9 +304,9 @@ export default async function BlogPostPage({
       {/* ── Article body ───────────────────────────────────────────────────── */}
       <article className="py-12 sm:py-16">
         <Container width="narrow">
-          {/* Affiliate disclosure — FTC-conspicuous, above the content */}
+          {/* Affiliate disclosure, FTC-conspicuous, above the content */}
           <p className="text-xs text-muted/70 mb-8 leading-relaxed">
-            Some links in this guide are affiliate links &mdash; if you buy through
+            Some links in this guide are affiliate links, if you buy through
             them we may earn a small commission at no extra cost to you.{" "}
             <Link
               href="/affiliate-disclosure"
@@ -316,7 +316,7 @@ export default async function BlogPostPage({
             </Link>
           </p>
 
-          {/* Quick Answer box — AEO answer-first pattern */}
+          {/* Quick Answer box, AEO answer-first pattern */}
           {post.quick_answer && (
             <div
               className="swc-quick-answer mb-10 border-l-4 border-success rounded-r-xl bg-success/[0.06] p-5 sm:p-6"
@@ -358,7 +358,7 @@ export default async function BlogPostPage({
                       title={p.title}
                       description={
                         p.description ??
-                        "Download it free — no email required."
+                        "Download it free. No email required."
                       }
                       href={`/printables/${p.slug}`}
                     />
@@ -397,7 +397,7 @@ export default async function BlogPostPage({
         </Container>
       </article>
 
-      {/* ── Author box — per-article E-E-A-T trust signal ──────────────────── */}
+      {/* ── Author box, per-article E-E-A-T trust signal ──────────────────── */}
       <Container width="narrow">
         <AuthorBox />
       </Container>
@@ -420,7 +420,7 @@ export default async function BlogPostPage({
               {relatedPosts.map((related) => (
                 <Link
                   key={related.id}
-                  // Posts live at the site root, not under /blog — a hardcoded
+                  // Posts live at the site root, not under /blog, a hardcoded
                   // /blog/<slug> here 404'd every related link. Use postPath().
                   href={postPath(related.slug)}
                   className="group block h-full focus-visible:outline-none"

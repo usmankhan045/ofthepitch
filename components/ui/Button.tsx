@@ -11,42 +11,37 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
 }
 
-// Every variant is a pill with a 2px ink outline. Depth comes from the hard
-// (un-blurred) offset shadow, which the button presses into on hover via the
-// `hard-press` utility — see globals.css. `--shadow-color` tells that utility
-// which color to keep while the offset shrinks.
+// Buttons are solid shapes with no outline. Gold is a light surface so it
+// always carries ink, never white. The press feedback comes from `press` in
+// globals.css: a slight shrink that confirms the interface heard the tap.
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-primary text-white border-2 border-text " +
-    "shadow-[4px_4px_0_var(--color-text)] hard-press " +
+    "bg-text text-background press " +
     "hover:bg-primary-dark " +
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-ink",
 
   outline:
-    "bg-surface text-text border-2 border-text " +
-    "shadow-[4px_4px_0_var(--color-text)] hard-press " +
-    "hover:bg-accent " +
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+    "bg-transparent text-text shadow-[inset_0_0_0_1.5px_var(--color-line)] press " +
+    "hover:shadow-[inset_0_0_0_1.5px_var(--color-accent)] " +
+    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-ink",
 
   ghost:
-    "bg-transparent text-text border-2 border-transparent " +
-    "hover:bg-text/[0.06] " +
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+    "bg-transparent text-text press " +
+    "hover:bg-text/[0.05] " +
+    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-ink",
 
-  // Lime is a light surface — it always carries ink text, never white.
+  // Gold carries ink text at every size. White on gold fails contrast.
   accent:
-    "bg-accent text-text border-2 border-text " +
-    "shadow-[4px_4px_0_var(--color-text)] hard-press " +
-    "hover:brightness-105 " +
+    "bg-accent text-text press " +
+    "shadow-[0_1px_0_rgba(255,255,255,0.45)_inset,0_8px_20px_-10px_color-mix(in_srgb,var(--color-accent)_55%,transparent)] " +
+    "hover:brightness-[1.04] " +
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text",
 };
 
-// Pills at every size — the radius is intentionally maxed out rather than
-// scaled, so a small and a large button read as the same component.
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: "px-4 py-1.5 text-sm rounded-full",
-  md: "px-6 py-2.5 text-[0.95rem] rounded-full",
-  lg: "px-8 py-3.5 text-base rounded-full",
+  sm: "px-4 py-1.5 text-sm rounded-lg",
+  md: "px-5 py-2.5 text-[0.94rem] rounded-lg",
+  lg: "px-7 py-3.5 text-base rounded-xl",
 };
 
 export function Button({
@@ -62,7 +57,7 @@ export function Button({
       className={cn(
         "inline-flex items-center justify-center gap-2",
         "font-body font-semibold",
-        "transition duration-150 cursor-pointer",
+        "cursor-pointer",
         "disabled:opacity-50 disabled:pointer-events-none",
         variantClasses[variant],
         sizeClasses[size],

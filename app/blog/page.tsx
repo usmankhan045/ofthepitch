@@ -8,14 +8,14 @@ import { blogSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "All guides",
   description:
-    "World Cup 2026 guides for travelling fans: visas and entry rules, host city travel, fan zones, ticket prices, squads and where to watch.",
+    "Every guide on Of The Pitch, newest first. Dress codes, tickets, venues and trip costs across tennis, horse racing, Formula 1, skiing and football.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog",
+    title: "All guides",
     description:
-      "World Cup 2026 guides for travelling fans: visas and entry rules, host city travel, fan zones, ticket prices, squads and where to watch.",
+      "Every guide on Of The Pitch, newest first. Dress codes, tickets, venues and trip costs across tennis, horse racing, Formula 1, skiing and football.",
     url: "/blog",
     type: "website",
     images: ogImages(),
@@ -54,7 +54,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
       ]);
     }
   } catch {
-    // DB not yet configured — show empty state
+    // DB not yet configured, show empty state
   }
 
   const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
@@ -76,24 +76,17 @@ export default async function BlogIndexPage({ searchParams }: Props) {
         aria-labelledby="blog-heading"
       >
         <Container>
-          <Tag variant="primary" className="mb-5">
-            Blog
-          </Tag>
           <h1
             id="blog-heading"
-            className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-text tracking-[-0.04em] leading-[1.02] mb-4"
           >
-            Every guide.
-            <br className="hidden sm:block" />
-            One place.
+            All guides
           </h1>
-          <p className="text-lg text-muted leading-relaxed max-w-xl mb-6">
-            Visas and border crossings, host city travel, fan zones, ticket prices,
-            squad reviews and where to watch &mdash; every World Cup 2026 guide we
-            publish, newest first.
+          <p className="text-lg text-muted leading-relaxed max-w-[52ch] mb-6">
+            Everything we publish, newest first.
           </p>
 
-          {/* Search — makes the WebSite SearchAction schema functional */}
+          {/* Search, makes the WebSite SearchAction schema functional */}
           <form action="/blog" method="get" role="search" className="flex gap-2 max-w-md">
             <label htmlFor="blog-search" className="sr-only">Search guides</label>
             <input

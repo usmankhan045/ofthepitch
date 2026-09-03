@@ -26,7 +26,7 @@ export default function AffiliateDisclosurePage() {
             id="affiliate-heading"
             className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
           >
-            How we make money &mdash; and how we don&rsquo;t.
+            How we make money, and how we don&rsquo;t.
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             {siteConfig.name} is free to read, and we keep it that way partly
@@ -46,12 +46,12 @@ export default function AffiliateDisclosurePage() {
             <p>
               Some of our guides contain <span className="font-medium text-text">affiliate links</span>.
               If you click one and sign up for or buy a product, we may earn a small
-              commission &mdash; <span className="font-medium text-text">at no extra cost to you</span>.
+              commission, <span className="font-medium text-text">at no extra cost to you</span>.
               You never pay more for using our link.
             </p>
             <p>
               Where they exist, these links sit alongside the kinds of things a
-              travelling fan actually books &mdash; flights, accommodation and
+              travelling fan actually books, flights, accommodation and
               transport; tours and matchday experiences; ticket and hospitality
               resellers; streaming or broadcast subscriptions for watching
               matches; travel insurance and eSIMs; and kit and merchandise. We
@@ -71,7 +71,7 @@ export default function AffiliateDisclosurePage() {
               One thing worth stating clearly: for match tickets, the official
               sale channel is the one we point you to first. Where we mention a
               resale or hospitality marketplace, treat it as an option to
-              research, not an endorsement &mdash; prices, legitimacy and
+              research, not an endorsement, prices, legitimacy and
               transfer rules vary, and only the official channel is guaranteed.
             </p>
             <p>

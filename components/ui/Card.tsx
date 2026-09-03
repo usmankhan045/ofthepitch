@@ -1,22 +1,22 @@
 import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
-// A card in this system is a sheet of paper lifted off the page: a white
-// surface, a 2px ink outline, and a solid un-blurred offset shadow beneath it.
-// The "ledger" variant casts its shadow in primary, "plain" in ink — the two
-// read as the same object at different emphasis.
+// A card is a white sheet on the paper ground, held by a hairline rule rather
+// than a heavy outline. Depth arrives only on hover, via the `lift` utility in
+// globals.css, and the shadow it casts is tinted with the card's own sport
+// colour. Set `--sport` on the element to colour it; without it the shadow
+// falls back to ink.
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
-  /** "ledger" (default) casts a teal offset shadow — the emphasized sheet.
-   *  "plain" casts a plain ink shadow for dense or secondary contexts. */
-  variant?: "ledger" | "plain";
-  /** Reduces padding for dense list contexts */
+  /** Reduces padding for dense list contexts. */
   compact?: boolean;
+  /** Adds the hover lift. Leave off for static panels. */
+  interactive?: boolean;
 }
 
 export function Card({
-  variant = "ledger",
   compact = false,
+  interactive = false,
   className,
   children,
   ...props
@@ -24,13 +24,9 @@ export function Card({
   return (
     <div
       className={cn(
-        // text-left keeps card interiors left-aligned even under the mobile
-        // text-centering rule in globals.css (cards read cleaner left-aligned).
         "bg-surface rounded-2xl text-left",
-        "border-2 border-text",
-        variant === "ledger"
-          ? "shadow-[5px_5px_0_var(--color-primary)] [--shadow-color:var(--color-primary)]"
-          : "shadow-[5px_5px_0_var(--color-text)]",
+        "shadow-[inset_0_0_0_1px_var(--color-line)]",
+        interactive && "lift",
         compact ? "p-4" : "p-6",
         className
       )}
@@ -41,11 +37,7 @@ export function Card({
   );
 }
 
-// ── Compound sub-components ───────────────────────────────────────────────────
-
-interface CardHeaderProps extends HTMLAttributes<HTMLDivElement> {}
-
-export function CardHeader({ className, children, ...props }: CardHeaderProps) {
+export function CardHeader({ className, children, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div className={cn("mb-3", className)} {...props}>
       {children}
@@ -61,7 +53,7 @@ export function CardTitle({ as: Tag = "h3", className, children, ...props }: Car
   return (
     <Tag
       className={cn(
-        "font-display text-xl font-extrabold text-text leading-[1.1] tracking-[-0.02em]",
+        "font-display text-xl font-extrabold text-text leading-[1.1] tracking-[-0.03em]",
         className
       )}
       {...props}
@@ -71,9 +63,7 @@ export function CardTitle({ as: Tag = "h3", className, children, ...props }: Car
   );
 }
 
-interface CardBodyProps extends HTMLAttributes<HTMLDivElement> {}
-
-export function CardBody({ className, children, ...props }: CardBodyProps) {
+export function CardBody({ className, children, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div className={cn("text-muted text-sm leading-relaxed", className)} {...props}>
       {children}
@@ -81,11 +71,9 @@ export function CardBody({ className, children, ...props }: CardBodyProps) {
   );
 }
 
-interface CardFooterProps extends HTMLAttributes<HTMLDivElement> {}
-
-export function CardFooter({ className, children, ...props }: CardFooterProps) {
+export function CardFooter({ className, children, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={cn("mt-4 pt-4 border-t-2 border-line", className)} {...props}>
+    <div className={cn("mt-4 pt-4 border-t border-line", className)} {...props}>
       {children}
     </div>
   );

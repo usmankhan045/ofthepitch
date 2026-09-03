@@ -1,9 +1,24 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Of The Pitch">
-  <rect width="512" height="512" rx="112" fill="#0B6B3A"/>
-  <!-- The pitch reduced to its two marks: halfway line and centre circle -->
-  <g stroke-linecap="round" fill="none">
-    <line x1="256" y1="86" x2="256" y2="426" stroke="#FBFAF7" stroke-width="34"/>
-    <circle cx="256" cy="256" r="104" stroke="#FBFAF7" stroke-width="34"/>
+  <!-- A ticket stub. The old mark was a football pitch in pitch green, which
+       named one sport and used a palette the site no longer has. A ticket is
+       the object every reader holds whatever they are going to see, and it
+       survives the crop to 16px because the notched silhouette carries it. -->
+  <rect width="512" height="512" rx="116" fill="#181512"/>
+
+  <!-- Tilted so it reads as a held object rather than a centred glyph. Gold is
+       the site accent; on ink it needs no outline. -->
+  <g transform="rotate(-8 256 256)">
+    <!-- Body with a semicircular notch bitten out of each end. -->
+    <path
+      d="M116 176h280a24 24 0 0 1 24 24v18a38 38 0 0 0 0 76v18a24 24 0 0 1-24 24H116a24 24 0 0 1-24-24v-18a38 38 0 0 0 0-76v-18a24 24 0 0 1 24-24z"
+      fill="#E8A317"
+    />
+    <!-- Perforation. Round caps and a wide gap so the dots stay distinct at
+         64px and blur into a single seam at 16px rather than vanishing. -->
+    <line
+      x1="256" y1="196" x2="256" y2="316"
+      stroke="#181512" stroke-width="16" stroke-linecap="round"
+      stroke-dasharray="0 34"
+    />
   </g>
-  <circle cx="256" cy="256" r="26" fill="#F5A524"/>
 </svg>

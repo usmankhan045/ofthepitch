@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <p className="text-sm">
                     {siteConfig.legal.disclaimer} We can&rsquo;t sell, transfer or
                     troubleshoot match tickets, and we can&rsquo;t advise on your
-                    individual visa or immigration case &mdash; check with FIFA or the
+                    individual visa or immigration case, check with FIFA or the
                     relevant government authority directly.
                   </p>
                 </div>

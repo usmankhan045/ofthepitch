@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
  * dashed "cut here" rule on the paper glyph.
  *
  * Recovered from the pre-migration template and repointed at /printables.
- * Unlike the original — which hardcoded "Free Printable Worksheet" for every
- * callout — this takes the printable's real title and description, so an inline
+ * Unlike the original, which hardcoded "Free Printable Worksheet" for every
+ * callout, this takes the printable's real title and description, so an inline
  * mention tells the reader what they're actually downloading.
  */
 
@@ -37,14 +37,14 @@ export function PrintableCallout({
       className={cn(
         "relative overflow-hidden",
         "bg-primary text-white",
-        "border-2 border-text rounded-3xl p-7 sm:p-8",
-        "shadow-[6px_6px_0_var(--color-text)]",
+        "shadow-[inset_0_0_0_1px_var(--color-line)] rounded-3xl p-7 sm:p-8",
+        "",
         "flex flex-col sm:flex-row items-start sm:items-center gap-6",
         className
       )}
       {...props}
     >
-      {/* Amber blob bleeding out of the top-right — the panel motif. Low
+      {/* Amber blob bleeding out of the top-right, the panel motif. Low
           opacity and tucked outside the padding box so it never competes with
           the amber CTA sitting in the same corner. */}
       <div
@@ -54,7 +54,7 @@ export function PrintableCallout({
 
       {/* Ruled-paper glyph with a dashed cut line. */}
       <div
-        className="relative flex h-16 w-14 shrink-0 flex-col items-center justify-center gap-1.5 rounded-lg border-2 border-text bg-surface px-2"
+        className="relative flex h-16 w-14 shrink-0 flex-col items-center justify-center gap-1.5 rounded-lg shadow-[inset_0_0_0_1px_var(--color-line)] bg-surface px-2"
         aria-hidden
       >
         {[0, 1, 2].map((i) => (
@@ -77,14 +77,14 @@ export function PrintableCallout({
         <p className="text-sm leading-relaxed text-white/75">{description}</p>
       </div>
 
-      {/* Plain anchor with button styling — no client JS needed. */}
+      {/* Plain anchor with button styling, no client JS needed. */}
       <a
         href={href}
         className={cn(
           "relative inline-flex shrink-0 items-center justify-center gap-2",
-          "border-2 border-text bg-accent text-text",
+          "shadow-[inset_0_0_0_1px_var(--color-line)] bg-accent text-text",
           "rounded-full px-6 py-2.5 text-[0.95rem]",
-          "font-semibold shadow-[4px_4px_0_var(--color-text)] hard-press",
+          "font-semibold  lift",
           "hover:brightness-105",
           "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         )}

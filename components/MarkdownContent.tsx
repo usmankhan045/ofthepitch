@@ -7,7 +7,7 @@ import { PrintableCallout } from "@/components/ui";
  * Resolve `{{...}}` shortcodes before MDX sees them.
  *
  * ORDER MATTERS. `{{printable:slug}}` must be expanded FIRST, because the
- * catch-all strip below removes every remaining `{{...}}` token — that strip is
+ * catch-all strip below removes every remaining `{{...}}` token, that strip is
  * why printable mentions silently vanished from migrated content.
  *
  * The catch-all is not optional: MDX parses `{...}` as a JavaScript expression,
@@ -33,7 +33,7 @@ function expandShortcodes(content: string): string {
 /**
  * Inline printable mention.
  *
- * Renders synchronously from the slug alone — MDX component maps can't await,
+ * Renders synchronously from the slug alone, MDX component maps can't await,
  * and a per-mention database round trip inside the article body would be a
  * needless N+1. The post page fetches the post's attached printables and passes
  * them down via `printables`, so a mention whose slug is attached shows its real
@@ -49,7 +49,7 @@ function makeInlinePrintable(printables: PrintableRef[]) {
           title={match?.title ?? "Free printable"}
           description={
             match?.description ??
-            "Download this checklist and take it with you — no email required."
+            "Download this checklist and take it with you. No email required."
           }
           href={`/printables/${slug}`}
         />

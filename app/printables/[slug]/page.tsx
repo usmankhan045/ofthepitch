@@ -72,7 +72,7 @@ export default async function PrintableDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Feature-flagged surface — off means these detail pages don't exist either.
+  // Feature-flagged surface, off means these detail pages don't exist either.
   if (!siteConfig.features.printables) notFound();
 
   const { slug } = await params;
@@ -85,7 +85,7 @@ export default async function PrintableDetailPage({
   }
   if (!printable) notFound();
 
-  // Non-critical extras — a failure here must not 500 the download page.
+  // Non-critical extras, a failure here must not 500 the download page.
   const [relatedPosts, siblings] = await Promise.all([
     getPostsForPrintable(printable.id).catch(() => []),
     getPrintables(printable.category_id ?? undefined).catch(() => []),
@@ -151,7 +151,7 @@ export default async function PrintableDetailPage({
               <a
                 href={printable.file_url}
                 download
-                className="inline-flex items-center justify-center rounded-full border-2 border-text bg-accent px-6 py-3 font-semibold text-text shadow-[4px_4px_0_var(--color-text)] hard-press hover:brightness-105"
+                className="inline-flex items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--color-line)] bg-accent px-6 py-3 font-semibold text-text  lift hover:brightness-105"
               >
                 Download PDF
               </a>
@@ -167,8 +167,8 @@ export default async function PrintableDetailPage({
           ) : (
             // A row can exist before its file is uploaded; say so plainly
             // rather than rendering a dead button.
-            <p className="rounded-lg border-2 border-text bg-accent/25 px-4 py-3 text-sm font-medium">
-              This printable is being prepared — the file isn&apos;t available to
+            <p className="rounded-lg shadow-[inset_0_0_0_1px_var(--color-line)] bg-accent/25 px-4 py-3 text-sm font-medium">
+              This printable is being prepared. The file isn&apos;t available to
               download yet.
             </p>
           )}

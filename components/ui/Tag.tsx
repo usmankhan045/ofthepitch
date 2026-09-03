@@ -1,9 +1,9 @@
-// ── Tag — the chip ────────────────────────────────────────────────────────────
+// ── Tag, the chip ────────────────────────────────────────────────────────────
 //
 // Geist Mono · uppercase · 0.1em letter-spacing · filled · fully rounded.
 // In the Bold Daylight system a tag is a solid chip rather than an outline, so
 // it holds its own next to the heavy display type instead of disappearing.
-// Every variant is a filled surface with ink or white text — never a light
+// Every variant is a filled surface with ink or white text, never a light
 // fill with white text, which is why `accent` (lime) carries ink.
 
 import { HTMLAttributes } from "react";

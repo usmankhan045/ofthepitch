@@ -20,6 +20,10 @@ export function generateThemeCSS(colors: ThemeColors = siteConfig.theme.colors):
     --color-primary-dark: ${colors.primaryDark};
     --color-surface: ${colors.surface};
     --color-line: ${colors.line};
+    --color-accent-ink: ${colors.accentInk};
+${Object.entries(siteConfig.theme.sports)
+      .map(([slug, hex]) => `    --sport-${slug}: ${hex};`)
+      .join("\n")}
     --radius: ${siteConfig.theme.radius};
   `.trim();
 }

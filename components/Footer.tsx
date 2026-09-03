@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site.config";
 import { Container } from "@/components/ui";
 import type { NavItem } from "@/lib/settings";
 
-// Social SVGs — inlined to avoid a package dependency.
+// Social SVGs, inlined to avoid a package dependency.
 function PinterestIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -57,8 +57,16 @@ export interface FooterProps {
 }
 
 // Brand, tagline, footer links and social handles default to site.config.ts but
-// are overridden by the admin Settings screen — the root layout passes the
+// are overridden by the admin Settings screen, the root layout passes the
 // resolved settings in. Without this the Settings screen was a silent no-op.
+const SPORT_LINKS = [
+  { slug: "tennis", label: "Tennis" },
+  { slug: "horse-racing", label: "Horse Racing" },
+  { slug: "formula-1", label: "Formula 1" },
+  { slug: "skiing", label: "Skiing" },
+  { slug: "football", label: "Football" },
+];
+
 export function Footer({
   name = siteConfig.name,
   tagline = siteConfig.tagline,
@@ -68,14 +76,9 @@ export function Footer({
   const year = new Date().getFullYear();
 
   return (
-    // The footer is the one full-bleed ink surface on the site — it closes the
-    // page the way the 2px outlines close every card.
-    <footer className="relative overflow-hidden bg-text text-white border-t-2 border-text">
-      {/* Lime blob bleeding in from the right, echoing the hero panel. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 -right-20 w-64 h-64 rounded-full bg-accent/10"
-      />
+    // The footer is the one inverted surface on the site. It closes the page
+    // the way the hairline rules close every section, with no decoration.
+    <footer className="relative bg-text text-white/90">
       <Container className="relative">
 
         {/* ── Main grid ──────────────────────────────────────────────────── */}
@@ -83,25 +86,17 @@ export function Footer({
 
           {/* Column 1: Brand */}
           <div className="col-span-2 lg:col-span-1">
-            <Link
-              href="/"
-              className="group flex items-center gap-2 mb-2"
-            >
-              <span
-                className="relative w-6 h-6 rounded-[7px] bg-primary border-2 border-white/25 shrink-0 transition-transform duration-150 group-hover:-rotate-6"
-                aria-hidden
-              >
-                <span className="absolute inset-[4px] rounded-full bg-accent" />
-              </span>
-              <span className="font-display text-lg font-extrabold tracking-[-0.03em] text-white">
-                {name}
+            <Link href="/" className="group inline-flex items-center mb-2">
+              <span className="font-display text-lg font-extrabold tracking-[-0.045em] text-white">
+                {name.split(" ").slice(0, -1).join(" ")}{" "}
+                <span className="text-accent">{name.split(" ").slice(-1)}</span>
               </span>
             </Link>
             <p className="text-white/65 text-[0.8rem] leading-snug mb-2">
               {tagline}
             </p>
 
-            {/* Authorship credit — E-E-A-T + links the author archive */}
+            {/* Authorship credit, E-E-A-T + links the author archive */}
             <p className="text-white/50 text-[0.7rem] mb-3">
               Written &amp; edited by{" "}
               <Link
@@ -112,7 +107,7 @@ export function Footer({
               </Link>
             </p>
 
-            {/* Social links — only those set in Settings render */}
+            {/* Social links, only those set in Settings render */}
             <div className="flex items-center gap-3">
               {social.pinterest && (
                 <a
@@ -120,7 +115,7 @@ export function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${name} on Pinterest`}
-                  className="p-2 rounded-full bg-white/10 text-white/70 hover:bg-accent hover:text-text transition-colors"
+                  className="p-2 rounded-lg bg-white/[0.07] text-white/70 hover:bg-accent hover:text-text transition-colors"
                 >
                   <PinterestIcon />
                 </a>
@@ -131,7 +126,7 @@ export function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${name} on X`}
-                  className="p-2 rounded-full bg-white/10 text-white/70 hover:bg-accent hover:text-text transition-colors"
+                  className="p-2 rounded-lg bg-white/[0.07] text-white/70 hover:bg-accent hover:text-text transition-colors"
                 >
                   <XIcon />
                 </a>
@@ -142,7 +137,7 @@ export function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${name} on Instagram`}
-                  className="p-2 rounded-full bg-white/10 text-white/70 hover:bg-accent hover:text-text transition-colors"
+                  className="p-2 rounded-lg bg-white/[0.07] text-white/70 hover:bg-accent hover:text-text transition-colors"
                 >
                   <InstagramIcon />
                 </a>
@@ -169,27 +164,33 @@ export function Footer({
             </ul>
           </div>
 
-          {/* Column 3: Explore — situation hubs for quick navigation */}
+          {/* Column 3: the sports, so every top-level section is reachable
+              from the bottom of any page. */}
           <div>
             <p className="stamp text-accent mb-2.5">
-              Explore
+              Sports
             </p>
             <ul className="space-y-1.5">
-              <li>
-                <Link href="/blog" className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              {siteConfig.audienceSegments.map((seg) => (
-                <li key={seg.slug}>
+              {SPORT_LINKS.map((sport) => (
+                <li key={sport.slug}>
                   <Link
-                    href={`/${seg.slug}`}
-                    className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors"
+                    href={`/category/${sport.slug}`}
+                    className="group/f flex items-center gap-2 leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors"
                   >
-                    {seg.label}
+                    <span
+                      aria-hidden
+                      className="h-1.5 w-1.5 rounded-full shrink-0 opacity-70 transition-opacity group-hover/f:opacity-100"
+                      style={{ background: siteConfig.theme.sports[sport.slug] }}
+                    />
+                    {sport.label}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/blog" className="block leading-tight text-[0.8rem] text-white/65 hover:text-white transition-colors">
+                  All guides
+                </Link>
+              </li>
             </ul>
           </div>
 

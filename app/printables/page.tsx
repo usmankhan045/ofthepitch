@@ -13,7 +13,7 @@ export const revalidate = 3600;
 
 const TITLE = "Free World Cup 2026 Printables";
 const DESCRIPTION =
-  "Checklists, planners and trackers for travelling fans — visa document lists, matchday packing checklists and city planners. Free to download, no email required.";
+  "Checklists and planners for people going to the sport. Dress code cheat sheets, packing lists and trip planners. Free to download, no email required.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -47,7 +47,7 @@ export default async function PrintablesPage({
       getCategories(),
     ]);
   } catch (err) {
-    // Missing table or unconfigured DB — render the empty state rather than 500.
+    // Missing table or unconfigured DB, render the empty state rather than 500.
     console.error("[/printables]", err);
   }
 
@@ -88,7 +88,7 @@ export default async function PrintablesPage({
           <p className="text-lg leading-relaxed text-muted">{DESCRIPTION}</p>
           <p className="mt-4 text-sm text-muted">
             Print at A4 or US Letter. {siteConfig.name} is an independent fan
-            guide — these are not official FIFA documents.
+            guide. These are not official documents.
           </p>
         </Container>
       </section>
@@ -140,13 +140,13 @@ export default async function PrintablesPage({
             </p>
             <p className="mx-auto mt-2 max-w-md text-sm text-muted">
               {printables.length === 0
-                ? "Checklists and planners are on the way — check back before the tournament."
+                ? "Checklists and planners are on the way."
                 : "Try another category, or browse them all."}
             </p>
             {printables.length > 0 && (
               <Link
                 href="/printables"
-                className="stamp mt-5 inline-block rounded-lg border-2 border-text bg-surface px-4 py-2 transition-colors hover:bg-primary hover:text-white"
+                className="stamp mt-5 inline-block rounded-lg shadow-[inset_0_0_0_1px_var(--color-line)] bg-surface px-4 py-2 transition-colors hover:bg-primary hover:text-white"
               >
                 Show all
               </Link>
@@ -168,7 +168,7 @@ export default async function PrintablesPage({
       <Container width="narrow" className="py-10">
         <p className="text-sm text-muted">
           Spotted something out of date? Ticket prices, visa rules and fan zone
-          details change often —{" "}
+          details change often.{" "}
           <Link href="/contact" className="text-primary underline">
             tell us
           </Link>{" "}

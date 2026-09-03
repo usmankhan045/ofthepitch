@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { previewImageUrl } from "@/lib/admin/preview-image";
-import { Card, CardTitle, CardBody, Tag } from "@/components/ui";
+import { CardTitle } from "@/components/ui";
 import type { Post } from "@/lib/queries";
 import { cn, postPath } from "@/lib/utils";
+import { siteConfig } from "@/lib/site.config";
 
 /**
- * The single post card used by every listing surface — homepage, blog index,
+ * The single post card used by every listing surface, homepage, blog index,
  * category archives, audience hubs, and the author archive.
  *
  * This exists because the card was previously copy-pasted five times and had
@@ -19,14 +20,14 @@ type Meta = "read" | "date" | "date-tags";
 
 interface PostCardProps {
   post: Post;
-  /** Heading element for the title — pick the one that fits the page outline. */
+  /** Heading element for the title, pick the one that fits the page outline. */
   as?: "h2" | "h3" | "p";
   /** What renders under the excerpt. */
   meta?: Meta;
   /** `sizes` for the cover image; set it to match the grid's column count. */
   sizes?: string;
   /**
-   * Mark the cover as the LCP image — set it on the first card of an
+   * Mark the cover as the LCP image, set it on the first card of an
    * above-the-fold grid so Next preloads it instead of lazy-loading. Without
    * this the first generated card is the largest paint yet loads late.
    */
@@ -60,7 +61,7 @@ export function PostCard({
 
   // Posts saved without a featured image fall back to a generated card built
   // from the title and category, so every listing has artwork. Placeholder
-  // posts are excluded — they have no real title to render into a card.
+  // posts are excluded, they have no real title to render into a card.
   const coverUrl = isPlaceholder
     ? post.featured_image_url
     : previewImageUrl({
@@ -70,79 +71,96 @@ export function PostCard({
         categories: post.categories,
       });
 
-  const hasCover = Boolean(coverUrl);
+  // Each sport has a colour. The card's hover shadow and its chip take that
+  // hue, so a reader can tell tennis from Formula 1 before reading the label.
+  const sport = post.categories?.slug
+    ? siteConfig.theme.sports[post.categories.slug]
+    : undefined;
 
   return (
-    <Link href={href} className="group block h-full focus-visible:outline-none">
-      <Card
+    <Link
+      href={href}
+      className="group block h-full focus-visible:outline-none"
+      style={{ "--sport": sport ?? "var(--color-text)" } as React.CSSProperties}
+    >
+      <article
         className={cn(
-          "h-full flex flex-col overflow-hidden",
-          // Presses into its own hard shadow on hover — see globals.css.
-          "hard-press",
-          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary",
+          "relative flex h-full flex-col overflow-hidden rounded-xl bg-surface",
+          "shadow-[inset_0_0_0_1px_var(--color-line)]",
+          "transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.23,1,0.32,1)]",
+          "group-hover:-translate-y-1",
+          "group-hover:shadow-[inset_0_0_0_1px_color-mix(in_srgb,var(--sport)_40%,var(--color-line)),0_18px_36px_-20px_color-mix(in_srgb,var(--sport)_45%,transparent),0_6px_14px_-10px_rgb(24_21_18/0.18)]",
+          "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-accent-ink",
           className
         )}
       >
-        {/* Cover — bleeds to the card's inner edge, under the 2px outline. */}
         {coverUrl && (
-          <div className="relative -mt-6 -mx-6 mb-4 aspect-[1200/630] overflow-hidden border-b-2 border-text bg-primary/[0.05]">
+          <div className="relative aspect-[16/10] overflow-hidden bg-text/[0.04]">
             <Image
               src={coverUrl}
               alt=""
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.04]"
               sizes={sizes}
               priority={priority}
               // The generated card is produced on demand by /api/og; there is
               // nothing for the image optimiser to improve on.
               unoptimized={!post.featured_image_url}
             />
+            {/* A hairline of sport colour along the foot of the image ties the
+                photograph to the category without covering it. */}
+            <span
+              aria-hidden
+              className="absolute inset-x-0 bottom-0 h-[3px]"
+              style={{ background: sport ?? "var(--color-text)" }}
+            />
           </div>
         )}
 
-        {post.categories && (
-          <Tag variant="default" className="mb-3 self-start">
-            {post.categories.name}
-          </Tag>
-        )}
-
-        {/* The cover already sets the title in type, so the text title is
-            visually redundant there — it stays in the DOM (sr-only) for screen
-            readers and crawlers. */}
-        <CardTitle
-          as={as}
-          className={cn(hasCover ? "sr-only" : "text-base leading-snug mb-2 line-clamp-3")}
-        >
-          {post.title}
-        </CardTitle>
-
-        {post.excerpt && (
-          <CardBody className="flex-1 line-clamp-3 text-sm">{post.excerpt}</CardBody>
-        )}
-
-        {meta === "read" && <p className="mt-4 stamp text-primary">Read →</p>}
-
-        {meta === "date" && post.published_at && (
-          <p className="mt-4 stamp text-muted/70">{formatDate(post.published_at)}</p>
-        )}
-
-        {meta === "date-tags" && (
-          <>
-            {post.audience_tags.length > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-4">
-                {post.audience_tags.map((tag) => (
-                  <Tag key={tag} variant="default" className="text-[10px]">
-                    {tag.replace(/-/g, " ")}
-                  </Tag>
-                ))}
-              </div>
+        <div className="flex flex-1 flex-col gap-2 p-4">
+          <div className="flex items-center gap-2">
+            <span
+              aria-hidden
+              className="h-1.5 w-1.5 shrink-0 rounded-full"
+              style={{ background: sport ?? "var(--color-text)" }}
+            />
+            {post.categories && (
+              <span className="stamp text-muted">{post.categories.name}</span>
             )}
-            {post.published_at && (
-              <p className="mt-3 stamp text-muted/70">{formatDate(post.published_at)}</p>
+            {meta !== "read" && post.published_at && (
+              <span className="stamp ml-auto text-muted/60">
+                {formatDate(post.published_at)}
+              </span>
             )}
-          </>
-        )}
-      </Card>
+          </div>
+
+          {/* The title always renders. A real featured image carries no text,
+              so hiding it left cards with a photo and an excerpt but no
+              headline. */}
+          <CardTitle
+            as={as}
+            className="text-[1.05rem] leading-[1.2] tracking-[-0.025em] line-clamp-2"
+          >
+            {post.title}
+          </CardTitle>
+
+          {post.excerpt && (
+            <p className="text-[0.85rem] leading-snug text-muted line-clamp-2">
+              {post.excerpt}
+            </p>
+          )}
+
+          <span className="mt-auto flex items-center gap-1.5 pt-2.5 stamp text-accent-ink">
+            Read
+            <span
+              aria-hidden
+              className="transition-transform duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-x-1"
+            >
+              &rarr;
+            </span>
+          </span>
+        </div>
+      </article>
     </Link>
   );
 }

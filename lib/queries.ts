@@ -32,6 +32,14 @@ export interface Category {
   slug: string;
   name: string;
   description: string | null;
+  /** Null for a top-level sport; set for a subcategory beneath one. */
+  parent_id: string | null;
+}
+
+/** A top-level sport with the subcategories filed under it. */
+export interface CategoryTree extends Category {
+  postCount: number;
+  children: Array<Category & { postCount: number }>;
 }
 
 export interface Page {
@@ -55,6 +63,8 @@ export async function getPublishedPosts(options?: {
   limit?: number;
   offset?: number;
   categoryId?: string;
+  /** Several categories at once, used by a parent archive to include its children. */
+  categoryIds?: string[];
   audienceTag?: string;
   search?: string;
 }): Promise<Post[]> {
@@ -68,7 +78,9 @@ export async function getPublishedPosts(options?: {
     .not("published_at", "is", null)
     .order("published_at", { ascending: false });
 
-  if (options?.categoryId) {
+  if (options?.categoryIds?.length) {
+    query = query.in("category_id", options.categoryIds);
+  } else if (options?.categoryId) {
     query = query.eq("category_id", options.categoryId);
   }
 
@@ -155,9 +167,62 @@ export async function getCategoriesWithPostCounts(): Promise<
     if (id) counts.set(id, (counts.get(id) ?? 0) + 1);
   }
 
-  return categories
-    .map((c) => ({ ...c, postCount: counts.get(c.id) ?? 0 }))
+  // A parent's count rolls up its children, so Football reports every post
+  // filed under its subcategories rather than the zero posts filed directly.
+  const withOwn = categories.map((c) => ({ ...c, postCount: counts.get(c.id) ?? 0 }));
+
+  return withOwn
+    .map((c) => {
+      if (c.parent_id) return c;
+      const rolled = withOwn
+        .filter((child) => child.parent_id === c.id)
+        .reduce((sum, child) => sum + child.postCount, c.postCount);
+      return { ...c, postCount: rolled };
+    })
     .filter((c) => c.postCount > 0);
+}
+
+/**
+ * The full category tree: top-level sports, each with its subcategories.
+ * Drives the navigation mega menu and the homepage sport picker. Sports with
+ * no posts anywhere beneath them are kept, so a new sport still appears in the
+ * navigation before its first guide is published.
+ */
+export async function getCategoryTree(): Promise<CategoryTree[]> {
+  const siteId = await getCurrentSiteId();
+
+  const [categories, postsRes] = await Promise.all([
+    getCategories(),
+    supabaseAdmin
+      .from("posts")
+      .select("category_id")
+      .eq("site_id", siteId)
+      .eq("status", "published")
+      .not("published_at", "is", null),
+  ]);
+
+  if (postsRes.error) throw postsRes.error;
+
+  const counts = new Map<string, number>();
+  for (const row of postsRes.data ?? []) {
+    const id = (row as { category_id: string | null }).category_id;
+    if (id) counts.set(id, (counts.get(id) ?? 0) + 1);
+  }
+
+  const withOwn = categories.map((c) => ({ ...c, postCount: counts.get(c.id) ?? 0 }));
+
+  return withOwn
+    .filter((c) => !c.parent_id)
+    .map((parent) => {
+      const children = withOwn
+        .filter((c) => c.parent_id === parent.id)
+        .sort((a, b) => b.postCount - a.postCount || a.name.localeCompare(b.name));
+      return {
+        ...parent,
+        postCount: children.reduce((sum, c) => sum + c.postCount, parent.postCount),
+        children,
+      };
+    });
 }
 
 export async function getCategoryBySlug(slug: string): Promise<Category | null> {
@@ -178,6 +243,16 @@ export async function getCategoryBySlug(slug: string): Promise<Category | null> 
 export async function getPostsByCategory(categorySlug: string, limit = 20): Promise<Post[]> {
   const category = await getCategoryBySlug(categorySlug);
   if (!category) return [];
+
+  // A sport archive lists everything filed under its subcategories as well as
+  // anything filed directly against it. Without this, /category/football is
+  // empty because every post sits in one of its children.
+  const all = await getCategories();
+  const childIds = all.filter((c) => c.parent_id === category.id).map((c) => c.id);
+
+  if (childIds.length > 0) {
+    return getPublishedPosts({ categoryIds: [category.id, ...childIds], limit });
+  }
   return getPublishedPosts({ categoryId: category.id, limit });
 }
 
@@ -232,6 +307,7 @@ export async function saveContactMessage(params: {
 
 export async function getPublishedPostCount(options?: {
   categoryId?: string;
+  categoryIds?: string[];
   audienceTag?: string;
 }): Promise<number> {
   const siteId = await getCurrentSiteId();
@@ -243,7 +319,9 @@ export async function getPublishedPostCount(options?: {
     .eq("status", "published")
     .not("published_at", "is", null);
 
-  if (options?.categoryId) {
+  if (options?.categoryIds?.length) {
+    query = query.in("category_id", options.categoryIds);
+  } else if (options?.categoryId) {
     query = query.eq("category_id", options.categoryId);
   }
 

@@ -12,7 +12,7 @@ import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const revalidate = 3600;
 
-// Single-author site — only the configured author slug is valid.
+// Single-author site, only the configured author slug is valid.
 export const dynamicParams = false;
 
 export function generateStaticParams() {

@@ -32,12 +32,12 @@ export function PrintableCard({
       <Card
         className={cn(
           "flex h-full flex-col overflow-hidden",
-          "hard-press",
+          "lift",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary",
           className
         )}
       >
-        <div className="relative -mx-6 -mt-6 mb-4 aspect-[1200/630] overflow-hidden border-b-2 border-text bg-primary/[0.05]">
+        <div className="relative -mx-6 -mt-6 mb-4 aspect-[1200/630] overflow-hidden border-b border-line bg-primary/[0.05]">
           <Image
             src={thumb}
             alt=""
