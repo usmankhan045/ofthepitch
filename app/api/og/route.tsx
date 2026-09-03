@@ -21,7 +21,16 @@ const { colors, sports } = siteConfig.theme;
 
 export const contentType = "image/png";
 
-const SIZE = { width: 1200, height: 630 };
+// 1200x630 is the Open Graph standard and is what social scrapers expect.
+// Post cards on the site render into a 16:10 box, though, and cropping a
+// 1.91:1 image to 1.6:1 with object-cover shaves ~16% off each side, which
+// took the first character of every title and clipped the footer rule. The
+// `ratio` parameter lets the card be drawn at the shape it will be displayed
+// in instead of being cropped into it.
+const SIZES = {
+  og: { width: 1200, height: 630 },   // social / meta tags
+  card: { width: 1200, height: 750 }, // 16:10, the on-site post card
+} as const;
 
 /** Long titles step down a size rather than overflow: Satori cannot clamp. */
 function titleSize(title: string): number {
@@ -37,13 +46,13 @@ function titleSize(title: string): number {
  * rings with a dot riding the innermost one, so it reads as motion rather than
  * decoration. Stroke-only, so it never competes with the title.
  */
-function Arcs({ tint }: { tint: string }) {
+function Arcs({ tint, d, top }: { tint: string; d: number; top: number }) {
   return (
     <svg
-      width="430"
-      height="430"
+      width={d}
+      height={d}
       viewBox="0 0 200 200"
-      style={{ position: "absolute", right: 46, top: 100 }}
+      style={{ position: "absolute", right: 64, top }}
     >
       <circle cx="100" cy="100" r="92" fill="none" stroke="#FFFFFF" strokeOpacity="0.10" strokeWidth="2" />
       <path d="M100 8 A92 92 0 0 1 192 100" fill="none" stroke={tint} strokeWidth="7" strokeLinecap="round" />
@@ -62,6 +71,7 @@ export async function GET(request: NextRequest) {
   const title = rawTitle.slice(0, 160);
   const label = sp.get("label")?.trim().slice(0, 40);
   const kicker = sp.get("kicker")?.trim().slice(0, 28);
+  const size = sp.get("ratio") === "card" ? SIZES.card : SIZES.og;
 
   // The sport's colour, resolved from the category slug so subcategories
   // inherit their parent's hue. Amber is the fallback for anything unmapped.
@@ -86,7 +96,11 @@ export async function GET(request: NextRequest) {
         {/* The sport's colour as a rail down the leading edge. */}
         <div style={{ display: "flex", width: 14, backgroundColor: tint }} />
 
-        <Arcs tint={tint} />
+        <Arcs
+          tint={tint}
+          d={size.height * 0.62}
+          top={(size.height - size.height * 0.62) / 2}
+        />
 
         <div
           style={{
@@ -185,7 +199,7 @@ export async function GET(request: NextRequest) {
       </div>
     ),
     {
-      ...SIZE,
+      ...size,
       headers: {
         // Deterministic for a given query string, so it caches hard.
         "Cache-Control": "public, max-age=31536000, immutable",

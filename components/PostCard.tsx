@@ -64,12 +64,17 @@ export function PostCard({
   // posts are excluded, they have no real title to render into a card.
   const coverUrl = isPlaceholder
     ? post.featured_image_url
-    : previewImageUrl({
-        title: post.title,
-        slug: post.slug,
-        featured_image_url: post.featured_image_url,
-        categories: post.categories,
-      });
+    : previewImageUrl(
+        {
+          title: post.title,
+          slug: post.slug,
+          featured_image_url: post.featured_image_url,
+          categories: post.categories,
+        },
+        // The card slot is 16:10. Ask for that shape rather than letting
+        // object-cover crop a 1.91:1 image into it.
+        "card"
+      );
 
   // Each sport has a colour. The card's hover shadow and its chip take that
   // hue, so a reader can tell tennis from Formula 1 before reading the label.

@@ -26,7 +26,15 @@ export interface PreviewImageSource {
  * The URL to use for a post's preview/social image — the admin's uploaded image
  * if there is one, otherwise an on-brand generated card.
  */
-export function previewImageUrl(post: PreviewImageSource): string {
+export function previewImageUrl(
+  post: PreviewImageSource,
+  /**
+   * "card" draws the image at 16:10, the shape the on-site post card renders
+   * it in. The default 1200x630 is for meta tags, where scrapers expect it;
+   * letting the card crop that ratio cut the first character off every title.
+   */
+  ratio: "og" | "card" = "og"
+): string {
   if (post.featured_image_url) return post.featured_image_url;
 
   const params = new URLSearchParams({ title: post.title });
@@ -35,6 +43,7 @@ export function previewImageUrl(post: PreviewImageSource): string {
   // The category slug lets the card pick up its sport's colour. Subcategories
   // resolve to their parent sport inside the route.
   if (post.categories?.slug) params.set("category", post.categories.slug);
+  if (ratio === "card") params.set("ratio", "card");
 
   return `/api/og?${params.toString()}`;
 }
