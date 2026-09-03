@@ -1,9 +1,19 @@
 export const siteConfig = {
   slug: "ofthepitch",
   // Canonical host. MUST match the host the deployment actually serves with a
-  // 200. WordPress served the apex directly (www 301s → apex), and every
-  // migrated canonical tag points at the apex, so keep it apex-only.
-  domain: "ofthepitch.com",
+  // 200, because this string builds every canonical tag, OG image URL, sitemap
+  // entry and schema id.
+  //
+  // Under WordPress the apex served directly and www redirected to it. The
+  // current hosting does the opposite: https://ofthepitch.com/... returns a
+  // 308 to https://www.ofthepitch.com/..., which is the only host answering
+  // 200. Pointing canonicals and OG images at a redirecting host is a real
+  // cost (Pinterest hides the "Visit site" button on links that do not resolve
+  // cleanly, and some scrapers do not follow redirects on images), so this
+  // tracks the host that actually serves. Verify with
+  //   curl -sI https://ofthepitch.com/blog
+  // before changing it back.
+  domain: "www.ofthepitch.com",
   // Known site_id for this tenant. Used as a resilient fallback if the runtime
   // `sites` table lookup is unavailable (e.g. build-time prerender). See
   // getCurrentSiteId() in lib/supabase.ts.
