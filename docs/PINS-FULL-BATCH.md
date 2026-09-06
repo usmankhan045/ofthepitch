@@ -6195,7 +6195,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-03 · Can you wear wellies to the races? It depends where
+## 2026-10-03 · Wellies are fine at three racecourses, banned at one
 
 **Board:** Race Day Style
 
@@ -6206,7 +6206,7 @@ https://www.ofthepitch.com/racing-in-the-rain
 
 **Title**
 ```
-Can you wear wellies to the races? It depends where
+Wellies are fine at three racecourses, banned at one
 ```
 
 **Description**
@@ -6239,7 +6239,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Can you wear wellies to the races? It depends where"
+   "Wellies are fine at three racecourses, banned at one"
 
 3. Beneath it, these lines in smaller grey serif:
    "At Cheltenham, Aintree and Epsom yes, and they are common at winter jump meetings."

@@ -6,6 +6,18 @@ one hand, made by a person who cares, rather than a template run ninety times.
 Numbers here are verified: Pinterest's own published specs, or the Tailwind
 2025 study of 1.2M pins across 17k accounts. Where nobody knows, it says so.
 
+**These are enforced.** Run this before committing any pin, and it must pass:
+
+```bash
+node scripts/validate-pins.mjs           # rules
+node scripts/validate-pins.mjs --links   # rules + every destination returns 200
+```
+
+It fails on a missing quoted headline, a title outside the range, a banned
+phrase, a duplicate or templated title, a missing palette, a vague outfit, a
+badge in the prompt, a ground that is not #FAF7F1, or more than six pins on one
+article. What it cannot judge, the checklist at the foot covers.
+
 Keyword data: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
 How a batch gets built: [PIN-PROCESS.md](./PIN-PROCESS.md).
 

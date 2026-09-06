@@ -283,10 +283,21 @@ Three findings that contradict the obvious approach:
   brand palette. **Pins are a separate design system from the site's dark ink
   article cards. Never reuse the OG card design as a pin.**
 
-**`docs/PIN-RULES.md` is binding on every pin.** No formulaic titles, six
-genuinely distinct angles per article, every on-image word quoted in the
-prompt, outfits specified to fabric and cut, #FAF7F1 ground on all of them,
-and the url as the only branding. Read it before writing a single pin.
+**`docs/PIN-RULES.md` is binding on every pin, and enforced by a script.**
+No formulaic titles, four to six genuinely distinct angles per article, titles
+of 40 to 60 characters, every on-image word quoted verbatim in the prompt,
+outfits specified to fabric and cut, #FAF7F1 ground on all of them, and the url
+as the only branding.
+
+```bash
+node scripts/validate-pins.mjs   # must pass before any pin is committed
+```
+
+Read the rules before writing a pin, and run the validator after. It exists
+because the first ninety prompts said "a headline drawn from the pin title"
+instead of quoting the words, so the image model wrote its own copy and
+produced pins headlined "Good Style Lasts Longer" and one about a summer
+wedding, on an account about racecourse dress codes.
 
 `docs/PIN-PROCESS.md` is how a batch gets made: angles, hand-written titles,
 outfit-level prompt detail, and the variation rules that stop two pins looking
