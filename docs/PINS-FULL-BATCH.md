@@ -14,9 +14,9 @@ field sits in its own block so VS Code gives it a copy button.
 
 Binding standard for every pin: [PIN-RULES.md](./PIN-RULES.md).
 
-> **Pins 1 to 12 (5 to 8 September) are already made and scheduled.** They
-> predate the rules and are left as they are. Everything from 9 September on
-> follows PIN-RULES.md.
+> **Pins 1 to 12 (5 to 8 September) were generated before the rules existed
+> and their images do not match these prompts.** The prompts here have been
+> corrected, so regenerate those twelve images before their scheduled dates.
 Process and design rules: [PIN-PROCESS.md](./PIN-PROCESS.md).
 Keyword data behind the angles: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
 
@@ -124,12 +124,26 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Which Royal Ascot enclosure is worth the money"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Windsor is £25 and has no dress code. Queen Anne is £80 and needs a suit and necktie."
+   "The Royal Enclosure cannot be bought at all."
+   "Only two of the four reach the Parade Ring, and only one lets you bring a picnic."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   Royal Ascot racegoers, one woman in three-quarter profile in the
@@ -143,11 +157,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-05 · You can bring your own champagne to Royal Ascot
@@ -185,12 +198,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You can bring your own champagne to Royal Ascot"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Only into the Windsor Enclosure, and only one bottle per person over 18."
+   "It has to arrive in a hamper at first entry, and anyone carrying more drink than food has to dispose of the excess at the gate."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   An open wicker picnic hamper on a tartan wool blanket laid on cut
@@ -202,14 +228,13 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
-## 2026-09-05 · What time Royal Ascot actually starts
+## 2026-09-05 · What time Royal Ascot actually starts, and ends
 
 **Board:** Race Day Planning
 
@@ -220,7 +245,7 @@ https://www.ofthepitch.com/royal-ascot-enclosures-guide
 
 **Title**
 ```
-What time Royal Ascot actually starts
+What time Royal Ascot actually starts, and ends
 ```
 
 **Description**
@@ -244,12 +269,25 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What time Royal Ascot actually starts, and ends"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Gates open at 10.30am, the first race is at 2.30pm and the last starts at 6.10pm."
+   "That is four hours between arriving and any racing, which is why the picnic rule matters more than most people expect."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A close crop of an ornate racecourse clock face in white and black
@@ -260,11 +298,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-06 · Children go free at Royal Ascot, up to four per adult
@@ -302,12 +339,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Children go free at Royal Ascot, up to four per adult"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Under 18s enter the Queen Anne, Village and Windsor Enclosures free without a pre-purchased ticket."
+   "The Royal Enclosure is different: 10 to 17s must buy admission and under 10s are not permitted at all."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A family walking together on grass at Royal Ascot seen from behind
@@ -320,11 +370,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-06 · The Royal Enclosure cannot be bought at any price
@@ -362,12 +411,26 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Royal Enclosure cannot be bought at any price"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It is open only to members and their guests."
+   "Becoming a member needs sponsorship by two existing members plus approval by His Majesty's Representative."
+   "The Queen Anne Enclosure is the closest thing you can actually buy."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A man in a charcoal morning suit with tails and a black silk top
@@ -379,11 +442,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-06 · Getting to Ascot: your Oyster card will not work
@@ -421,12 +483,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Getting to Ascot: your Oyster card will not work"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Trains from London Waterloo take about 52 minutes and the station is a seven minute walk from the course."
+   "Oyster and contactless are not valid on that line, so buy a paper ticket before you travel."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   Racegoers walking away from a small English railway station on a
@@ -439,11 +514,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # What Gets You Turned Away at the Races (and What Does Not)
@@ -452,7 +526,7 @@ edge. Nothing overlaps the footer.
 **Live from:** 2026-09-05
 
 
-## 2026-09-07 · Four things banned at Royal Ascot that people still turn up in
+## 2026-09-07 · Four things banned at Royal Ascot that people wear
 
 **Board:** Race Day Style
 
@@ -463,7 +537,7 @@ https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
 
 **Title**
 ```
-Four things banned at Royal Ascot that people still turn up in
+Four things banned at Royal Ascot that people wear
 ```
 
 **Description**
@@ -487,12 +561,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Four things banned at Royal Ascot that people wear"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Trainers, denim, leggings and shorts are refused across the whole site, whichever enclosure you hold."
+   "Three more rules catch people out, including one that applies only in the Royal Enclosure."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   The entrance gate at Royal Ascot with racegoers arriving. In the
@@ -508,11 +595,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-07 · Your fascinator will get you stopped in one enclosure
@@ -550,12 +636,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Your fascinator will get you stopped in one enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Fascinators are fine in the Queen Anne, Village and Windsor Enclosures."
+   "In the Royal Enclosure they are refused unless you are under 17, because a headpiece there needs a solid base of at least four inches."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A close crop of a woman's head and shoulders from behind and to one
@@ -568,11 +667,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-07 · Sashes and tiaras count as fancy dress at Ascot
@@ -610,12 +708,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Sashes and tiaras count as fancy dress at Ascot"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot treats stag and hen party items as novelty clothing and does not allow them anywhere on site."
+   "Cheltenham handles it differently, permitting fancy dress everywhere except the Club Enclosure and hospitality."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A group of four women standing together at a racecourse, seen in
@@ -628,11 +739,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-08 · Bow ties are refused in the Queen Anne Enclosure
@@ -670,12 +780,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Bow ties are refused in the Queen Anne Enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "A standard necktie is required there, while the Village Enclosure allows a necktie, bow tie or cravat."
+   "The trap is buying a bow tie for Queen Anne because it feels like the more formal choice."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A tight detail crop of a man's chest and shoulders in a dove-grey
@@ -688,11 +811,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-08 · Buying from a resale site can get you refused at the gate
@@ -730,12 +852,25 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Buying from a resale site can get you refused at the gate"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot enforces the right to turn away anyone who bought from a tout, a ticket exchange such as ViaGogo, or an auction site."
+   "There is no refund, because the ticket was never valid in the first place."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A short queue of racegoers at a racecourse turnstile seen from
@@ -747,11 +882,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-08 · Things people think are banned at Ascot but are not
@@ -789,12 +923,26 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Things people think are banned at Ascot but are not"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Open-backed dresses are fine as long as they are not strapless or off the shoulder."
+   "Culottes count as a dress."
+   "Lace, tulle, voile and organza are all permitted, and the sheer ban applies only to see-through fabric."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
   A woman photographed from behind in a cream open-backed midi dress
@@ -806,11 +954,10 @@ Photograph:
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Cheltenham Festival: Enclosures, Dress Code and What to Expect

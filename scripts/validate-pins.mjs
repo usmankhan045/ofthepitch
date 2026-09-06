@@ -23,9 +23,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const FILE = join(ROOT, "docs/PINS-FULL-BATCH.md");
 const CHECK_LINKS = process.argv.includes("--links");
 
-// Pins 1 to 12 were made and scheduled before the rules existed. They are
-// deliberately exempt; see the note at the top of the batch file.
-const EXEMPT = 12;
+// No exemptions. Pins 1 to 12 were made before the rules existed and have
+// since been brought up to them, so the whole file is held to one standard.
+const EXEMPT = 0;
 
 const TITLE_MIN = 40;
 const TITLE_MAX = 60;
