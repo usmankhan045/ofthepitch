@@ -32,36 +32,48 @@ A hand-written line sounds like something you would say out loud to a friend
 who asked. "Cheltenham has no dress code" is a sentence. "5 Cheltenham Dress
 Code Facts" is a slot with words in it.
 
-## 2. Six angles per article, each genuinely different
+## 2. Four to six angles per article, never forced
 
 An angle is a question the article answers that a person would actually type
-into Pinterest. Six per article, drawn from six different sections.
+into Pinterest. Take **four to six** per article, from different sections.
 
 Two angles are the same angle if the same sentence answers both. "Which
 enclosure should I pick" and "which enclosure is cheapest" are one angle.
 "Which enclosure" and "what parking costs" are two.
 
-If an article yields fewer than six genuinely distinct angles, it gets fewer
-pins. Padding to reach a number produces the near-duplicates this whole
-document exists to prevent.
+**Never invent an angle to reach a number.** Four strong pins beat six where
+two are stretched, and a stretched angle produces exactly the near-duplicate
+this document exists to prevent. A thirteen-section article may carry six
+comfortably; a seven-section one often will not.
 
-## 3. Title: hook inside 40 characters
+## 3. Title: 40 to 60 characters
 
-Pinterest allows 100 characters and shows roughly **the first 40** in feed.
-Everything past that is for relevance, not for the reader.
+Two measured facts set this range.
 
-- The pain point, the surprise or the question lands inside 40 characters
-- Hard stop at 100
-- Include the term someone would search, in the words they would use
+Pinterest shows roughly **the first 40 characters** in feed; anything past that
+is for relevance rather than for the reader. And **about 60% of viral pins had
+titles of 25 or more characters**, so very short titles underperform.
+
+- **Write 40 to 60 characters.** Long enough to carry a real sentence, short
+  enough that the whole thing survives the feed truncation
+- Hard stop at 100, which is Pinterest's limit
+- The pain point, surprise or question lands inside the first 40
+- **About 80% of viral pins carried the target keyword in the title.** Include
+  the term someone would search, in the words they would use
 - Sentence case. Not Title Case, not ALL CAPS
+
+To be clear about what is known: 25 characters is a measured floor and 40 is a
+display limit. Nobody has published an optimum. The 40 to 60 range is where
+those two facts leave you, not a figure from a study.
 
 Broad beats specific: "ascot outfits" is 13k searches, "ascot royal enclosure
 dresses" is 170. Pin on the broad term; the page delivers the precise answer.
 
 ## 4. Description: 220 to 232 characters
 
-The measured optimum. Longer correlates with worse performance, and the
-description never displays in the feed anyway; it exists for relevance.
+This one **is** a measured optimum: viral pins averaged 220 to 232 characters,
+and longer descriptions correlated with worse performance. The description
+never displays in the feed anyway; it exists for relevance.
 
 It must say something the title did not. Never restate the headline.
 
@@ -264,8 +276,9 @@ real data on the question that will exist.
 
 ## Checklist, per pin
 
-- [ ] Angle is genuinely distinct from the other five for this article
-- [ ] Title hooks inside 40 characters, stops before 100, sentence case
+- [ ] Angle is genuinely distinct from the others for this article
+- [ ] Title 40 to 60 characters, hook inside the first 40, sentence case
+- [ ] Target keyword present in the title
 - [ ] Title shares no skeleton with any other title in the account
 - [ ] Description 220 to 232 characters, says something the title did not
 - [ ] On-image text: attention, real answer, soft close written for this pin

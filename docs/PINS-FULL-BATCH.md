@@ -13,6 +13,10 @@ field sits in its own block so VS Code gives it a copy button.
 > the publishing schedule in `content-queue/schedule.json`.
 
 Binding standard for every pin: [PIN-RULES.md](./PIN-RULES.md).
+
+> **Pins 1 to 12 (5 to 8 September) are already made and scheduled.** They
+> predate the rules and are left as they are. Everything from 9 September on
+> follows PIN-RULES.md.
 Process and design rules: [PIN-PROCESS.md](./PIN-PROCESS.md).
 Keyword data behind the angles: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
 
@@ -815,7 +819,7 @@ edge. Nothing overlaps the footer.
 **Live from:** 2026-09-07
 
 
-## 2026-09-09 · Cheltenham has no dress code. Here's what people actually wear
+## 2026-09-09 · Cheltenham has no dress code, so what do people wear?
 
 **Board:** Cheltenham & Jump Racing
 
@@ -826,7 +830,7 @@ https://www.ofthepitch.com/cheltenham-festival-guide
 
 **Title**
 ```
-Cheltenham has no dress code. Here's what people actually wear
+Cheltenham has no dress code, so what do people wear?
 ```
 
 **Description**
@@ -859,7 +863,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Cheltenham has no dress code. Here's what people actually wear"
+   "Cheltenham has no dress code, so what do people wear?"
 
 3. Beneath it, these lines in smaller grey serif:
    "The Jockey Club publishes no formal dress code for the Festival, which surprises most first-timers."
@@ -1329,7 +1333,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-11 · A Royal Ascot ticket starts at £25
+## 2026-09-11 · A Royal Ascot ticket starts at £25, if you pick right
 
 **Board:** Race Day Planning
 
@@ -1340,7 +1344,7 @@ https://www.ofthepitch.com/royal-ascot-cost-guide
 
 **Title**
 ```
-A Royal Ascot ticket starts at £25
+A Royal Ascot ticket starts at £25, if you pick right
 ```
 
 **Description**
@@ -1373,7 +1377,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "A Royal Ascot ticket starts at £25"
+   "A Royal Ascot ticket starts at £25, if you pick right"
 
 3. Beneath it, these lines in smaller grey serif:
    "That is the Windsor Enclosure, which has no formal dress code and lets you bring a picnic."
@@ -1546,7 +1550,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-12 · Children get into Royal Ascot free
+## 2026-09-12 · Children get into Royal Ascot free, four per adult
 
 **Board:** Race Day Planning
 
@@ -1557,7 +1561,7 @@ https://www.ofthepitch.com/royal-ascot-cost-guide
 
 **Title**
 ```
-Children get into Royal Ascot free
+Children get into Royal Ascot free, four per adult
 ```
 
 **Description**
@@ -1590,7 +1594,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Children get into Royal Ascot free"
+   "Children get into Royal Ascot free, four per adult"
 
 3. Beneath it, these lines in smaller grey serif:
    "Under 18s enter the Queen Anne, Village and Windsor Enclosures without a ticket, up to four per adult."
@@ -1694,7 +1698,7 @@ edge.
 **Live from:** 2026-09-11
 
 
-## 2026-09-13 · A raceday is seven hours long and about twenty minutes of it is racing
+## 2026-09-13 · A raceday is seven hours, and twenty minutes of racing
 
 **Board:** Race Day Planning
 
@@ -1705,7 +1709,7 @@ https://www.ofthepitch.com/first-time-at-the-races
 
 **Title**
 ```
-A raceday is seven hours long and about twenty minutes of it is racing
+A raceday is seven hours, and twenty minutes of racing
 ```
 
 **Description**
@@ -1738,7 +1742,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "A raceday is seven hours long and about twenty minutes of it is racing"
+   "A raceday is seven hours, and twenty minutes of racing"
 
 3. Beneath it, these lines in smaller grey serif:
    "Gates open at 10.30am, the first race is at 2.30pm, the last at 6.10pm."
@@ -2202,7 +2206,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-15 · Parking is free at the Grand National
+## 2026-09-15 · Parking is free at the Grand National, unlike Ascot
 
 **Board:** Race Day Planning
 
@@ -2213,7 +2217,7 @@ https://www.ofthepitch.com/grand-national-aintree-guide
 
 **Title**
 ```
-Parking is free at the Grand National
+Parking is free at the Grand National, unlike Ascot
 ```
 
 **Description**
@@ -2246,7 +2250,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Parking is free at the Grand National"
+   "Parking is free at the Grand National, unlike Ascot"
 
 3. Beneath it, these lines in smaller grey serif:
    "A free on-site car park runs for general admission at the Festival, and children go free too."
@@ -2344,7 +2348,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-16 · The Grand National is four and a quarter miles and thirty fences
+## 2026-09-16 · The Grand National: four miles and thirty fences
 
 **Board:** Cheltenham & Jump Racing
 
@@ -2355,7 +2359,7 @@ https://www.ofthepitch.com/grand-national-aintree-guide
 
 **Title**
 ```
-The Grand National is four and a quarter miles and thirty fences
+The Grand National: four miles and thirty fences
 ```
 
 **Description**
@@ -2388,7 +2392,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "The Grand National is four and a quarter miles and thirty fences"
+   "The Grand National: four miles and thirty fences"
 
 3. Beneath it, these lines in smaller grey serif:
    "It is a handicap, which is why a horse at long odds can win it."
@@ -2487,7 +2491,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-16 · Do not wear a football shirt to Aintree
+## 2026-09-16 · Do not wear a football shirt to Aintree, or anywhere
 
 **Board:** Race Day Style
 
@@ -2498,7 +2502,7 @@ https://www.ofthepitch.com/grand-national-aintree-guide
 
 **Title**
 ```
-Do not wear a football shirt to Aintree
+Do not wear a football shirt to Aintree, or anywhere
 ```
 
 **Description**
@@ -2531,7 +2535,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Do not wear a football shirt to Aintree"
+   "Do not wear a football shirt to Aintree, or anywhere"
 
 3. Beneath it, these lines in smaller grey serif:
    "The racecourse asks people to leave team kits at home, on the grounds that showing club allegiance can look antagonistic."
@@ -2708,7 +2712,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-17 · What is actually banned at Epsom
+## 2026-09-17 · What is actually banned at the Epsom Derby
 
 **Board:** Race Day Style
 
@@ -2719,7 +2723,7 @@ https://www.ofthepitch.com/epsom-derby-guide
 
 **Title**
 ```
-What is actually banned at Epsom
+What is actually banned at the Epsom Derby
 ```
 
 **Description**
@@ -2752,7 +2756,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "What is actually banned at Epsom"
+   "What is actually banned at the Epsom Derby"
 
 3. Beneath it, these lines in smaller grey serif:
    "Offensive or derogatory fancy dress may be refused, and the racecourse asks people to avoid football shirts."
@@ -2922,7 +2926,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-18 · One Epsom stand does have a dress code
+## 2026-09-18 · One Epsom stand does have a dress code on Derby Day
 
 **Board:** Race Day Style
 
@@ -2933,7 +2937,7 @@ https://www.ofthepitch.com/epsom-derby-guide
 
 **Title**
 ```
-One Epsom stand does have a dress code
+One Epsom stand does have a dress code on Derby Day
 ```
 
 **Description**
@@ -2966,7 +2970,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "One Epsom stand does have a dress code"
+   "One Epsom stand does have a dress code on Derby Day"
 
 3. Beneath it, these lines in smaller grey serif:
    "The Queen Elizabeth II Stand on Derby Day runs a smart code while the rest of the course follows the relaxed guidance."
@@ -3873,7 +3877,7 @@ edge.
 **Live from:** 2026-09-21
 
 
-## 2026-09-23 · What the going actually means
+## 2026-09-23 · What the going means, and why everyone talks about it
 
 **Board:** Race Day Planning
 
@@ -3884,7 +3888,7 @@ https://www.ofthepitch.com/racing-terms-explained
 
 **Title**
 ```
-What the going actually means
+What the going means, and why everyone talks about it
 ```
 
 **Description**
@@ -3917,7 +3921,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "What the going actually means"
+   "What the going means, and why everyone talks about it"
 
 3. Beneath it, these lines in smaller grey serif:
    "It is the state of the ground, and rain moves it from firm toward heavy."
@@ -3945,7 +3949,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-23 · A furlong is an eighth of a mile
+## 2026-09-23 · A furlong is an eighth of a mile, and other race terms
 
 **Board:** Race Day Planning
 
@@ -3956,7 +3960,7 @@ https://www.ofthepitch.com/racing-terms-explained
 
 **Title**
 ```
-A furlong is an eighth of a mile
+A furlong is an eighth of a mile, and other race terms
 ```
 
 **Description**
@@ -3989,7 +3993,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "A furlong is an eighth of a mile"
+   "A furlong is an eighth of a mile, and other race terms"
 
 3. Beneath it, these lines in smaller grey serif:
    "Two hundred and twenty yards."
@@ -4159,7 +4163,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-24 · Follow the colours, not the horse
+## 2026-09-24 · Follow the colours, not the horse, and racing makes sense
 
 **Board:** Race Day Planning
 
@@ -4170,7 +4174,7 @@ https://www.ofthepitch.com/racing-terms-explained
 
 **Title**
 ```
-Follow the colours, not the horse
+Follow the colours, not the horse, and racing makes sense
 ```
 
 **Description**
@@ -4203,7 +4207,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Follow the colours, not the horse"
+   "Follow the colours, not the horse, and racing makes sense"
 
 3. Beneath it, these lines in smaller grey serif:
    "The silks a jockey wears identify the owner, and they are the only reliable way to pick one horse out at distance."
@@ -4230,7 +4234,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-24 · Each way, explained in one line
+## 2026-09-24 · Each way betting, explained in a single line
 
 **Board:** Race Day Planning
 
@@ -4241,7 +4245,7 @@ https://www.ofthepitch.com/racing-terms-explained
 
 **Title**
 ```
-Each way, explained in one line
+Each way betting, explained in a single line
 ```
 
 **Description**
@@ -4274,7 +4278,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Each way, explained in one line"
+   "Each way betting, explained in a single line"
 
 3. Beneath it, these lines in smaller grey serif:
    "Half your stake on the horse to win, half on it to place in the top few."
@@ -4666,7 +4670,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-26 · Your ticket might need a badge as well
+## 2026-09-26 · Your racecourse ticket might need a badge as well
 
 **Board:** Race Day Planning
 
@@ -4677,7 +4681,7 @@ https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
 
 **Title**
 ```
-Your ticket might need a badge as well
+Your racecourse ticket might need a badge as well
 ```
 
 **Description**
@@ -4710,7 +4714,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Your ticket might need a badge as well"
+   "Your racecourse ticket might need a badge as well"
 
 3. Beneath it, these lines in smaller grey serif:
    "King Edward VII ticket holders, Fine Dining guests, box guests and members all need one alongside the ticket."
@@ -5757,7 +5761,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-01 · Is it awkward going to the races alone?
+## 2026-10-01 · Is it awkward going to the races on your own?
 
 **Board:** Going To The Sport
 
@@ -5768,7 +5772,7 @@ https://www.ofthepitch.com/races-without-knowing-anything
 
 **Title**
 ```
-Is it awkward going to the races alone?
+Is it awkward going to the races on your own?
 ```
 
 **Description**
@@ -5801,7 +5805,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Is it awkward going to the races alone?"
+   "Is it awkward going to the races on your own?"
 
 3. Beneath it, these lines in smaller grey serif:
    "Less than most sporting events, because seating is unreserved and the day is spent moving around rather than sitting in an assigned seat."
@@ -6048,7 +6052,7 @@ edge.
 **Live from:** 2026-10-01
 
 
-## 2026-10-03 · Rain almost never stops British racing
+## 2026-10-03 · Rain almost never stops a British race meeting
 
 **Board:** Race Day Planning
 
@@ -6059,7 +6063,7 @@ https://www.ofthepitch.com/racing-in-the-rain
 
 **Title**
 ```
-Rain almost never stops British racing
+Rain almost never stops a British race meeting
 ```
 
 **Description**
@@ -6092,7 +6096,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Rain almost never stops British racing"
+   "Rain almost never stops a British race meeting"
 
 3. Beneath it, these lines in smaller grey serif:
    "Meetings are abandoned for waterlogging or frost, not for rain."
@@ -6119,7 +6123,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-03 · What to wear to the races when it rains
+## 2026-10-03 · What to wear to the races when it is raining
 
 **Board:** Race Day Style
 
@@ -6130,7 +6134,7 @@ https://www.ofthepitch.com/racing-in-the-rain
 
 **Title**
 ```
-What to wear to the races when it rains
+What to wear to the races when it is raining
 ```
 
 **Description**
@@ -6163,7 +6167,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "What to wear to the races when it rains"
+   "What to wear to the races when it is raining"
 
 3. Beneath it, these lines in smaller grey serif:
    "Layers and boots you can walk in."
@@ -6191,7 +6195,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-03 · Can you wear wellies to the races?
+## 2026-10-03 · Can you wear wellies to the races? It depends where
 
 **Board:** Race Day Style
 
@@ -6202,7 +6206,7 @@ https://www.ofthepitch.com/racing-in-the-rain
 
 **Title**
 ```
-Can you wear wellies to the races?
+Can you wear wellies to the races? It depends where
 ```
 
 **Description**
@@ -6235,7 +6239,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Can you wear wellies to the races?"
+   "Can you wear wellies to the races? It depends where"
 
 3. Beneath it, these lines in smaller grey serif:
    "At Cheltenham, Aintree and Epsom yes, and they are common at winter jump meetings."
@@ -6334,7 +6338,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-04 · Soft ground changes which horse wins
+## 2026-10-04 · Soft ground changes which horse actually wins
 
 **Board:** Race Day Planning
 
@@ -6345,7 +6349,7 @@ https://www.ofthepitch.com/racing-in-the-rain
 
 **Title**
 ```
-Soft ground changes which horse wins
+Soft ground changes which horse actually wins
 ```
 
 **Description**
@@ -6378,7 +6382,7 @@ shorten it, or add any headline, tagline or caption of your own.
 
 2. The headline, set large in serif, near-black, over two or three
    lines, breaking where it reads naturally:
-   "Soft ground changes which horse wins"
+   "Soft ground changes which horse actually wins"
 
 3. Beneath it, these lines in smaller grey serif:
    "Firm ground is fast and suits quick horses. Heavy is demanding and suits stamina."
