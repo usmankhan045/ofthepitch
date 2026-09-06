@@ -47,38 +47,38 @@ board with a gap is a second placement, not duplicate creative.
 
 ## Schedule at a glance
 
-| Date | Pins |
-|---|---|
-| 2026-09-05 | Which Royal Ascot enclosure is worth the mon · You can bring your own champagne to Royal As · What time Royal Ascot actually starts |
-| 2026-09-06 | Children go free at Royal Ascot, up to four  · The Royal Enclosure cannot be bought at any  · Getting to Ascot: your Oyster card will not  |
-| 2026-09-07 | Four things banned at Royal Ascot that peopl · Your fascinator will get you stopped in one  · Sashes and tiaras count as fancy dress at As |
-| 2026-09-08 | Bow ties are refused in the Queen Anne Enclo · Buying from a resale site can get you refuse · Things people think are banned at Ascot but  |
-| 2026-09-09 | Cheltenham has no dress code. Here's what pe · What to actually wear to Cheltenham in March · The three Cheltenham enclosures, and what ea |
-| 2026-09-10 | Four days at Cheltenham, and what happens on · Cheltenham or Royal Ascot: they are not the  · What the Cheltenham roar actually sounds lik |
-| 2026-09-11 | Royal Ascot parking is £45. Every other race · A Royal Ascot ticket starts at £25 · The cheapest way to do Royal Ascot properly |
-| 2026-09-12 | What the clothes actually cost at Royal Asco · Children get into Royal Ascot free · Train or drive to Ascot: which actually cost |
-| 2026-09-13 | A raceday is seven hours long and about twen · You do not have to bet to enjoy a day at the · Find your horse by the colours, not the name |
-| 2026-09-14 | What to actually bring to your first raceday · Arrive two hours before the first race, not  · The mistake almost every first-timer makes |
-| 2026-09-15 | Aintree tells you to wear whatever you like · Parking is free at the Grand National · Two Aintree enclosures are over 21s only |
-| 2026-09-16 | The Grand National is four and a quarter mil · Aintree or Cheltenham: which jump meeting to · Do not wear a football shirt to Aintree |
-| 2026-09-17 | Epsom says jeans and clean trainers are fine · The Derby course climbs, falls and bends lef · What is actually banned at Epsom |
-| 2026-09-18 | Epsom is the easiest first race meeting to a · Epsom and Royal Ascot are opposite ends of t · One Epsom stand does have a dress code |
-| 2026-09-19 | Only one British racecourse actually enforce · Can you wear jeans to the races? It depends  · Trainers: fine at three racecourses, banned  |
-| 2026-09-20 | You only have to wear a hat at one meeting · Where you can and cannot wear fancy dress · The two things banned at nearly every raceco |
-| 2026-09-21 | The Royal Enclosure measures your shoulder s · Why fascinators are refused in the Royal Enc · Men need morning dress and a top hat in the  |
-| 2026-09-22 | You can hire morning dress rather than buy i · Children under 10 are not allowed in the Roy · You cannot buy your way into the Royal Enclo |
-| 2026-09-23 | What the going actually means · A furlong is an eighth of a mile · The Parade Ring is where racing stops being  |
-| 2026-09-24 | Why the Grand National is so hard to predict · Follow the colours, not the horse · Each way, explained in one line |
-| 2026-09-25 | Ascot runs 26 racedays a year and only five  · The Queen Anne Enclosure changes rank depend · Parking is free at Ascot on every day except |
-| 2026-09-26 | Gate times at Ascot change with the season · You can upgrade your racecourse ticket on th · Your ticket might need a badge as well |
-| 2026-09-27 | A racecourse ticket buys an area, not a seat · Enclosure names do not mean the same thing e · Children often do not need a racecourse tick |
-| 2026-09-28 | Buy on the day and you will usually get in · A ticket in someone else's name is fine at A · Never buy racecourse tickets from a resale s |
-| 2026-09-29 | Four British race meetings, four completely  · Which race meeting to pick for your first ti · The cheapest of the big four race meetings |
-| 2026-09-30 | Which race meeting works best with children · If dress codes put you off, three of the fou · Cheltenham or Ascot, if you can only do one |
-| 2026-10-01 | Nobody can tell it is your first time at the · Twenty minutes of racing in a seven hour day · Is it awkward going to the races alone? |
-| 2026-10-02 | Three racing terms worth knowing before you  · The Parade Ring is where it stops feeling ab · Will you be bored at the races? Depends what |
-| 2026-10-03 | Rain almost never stops British racing · What to wear to the races when it rains · Can you wear wellies to the races? |
-| 2026-10-04 | Where you can actually shelter at a racecour · Soft ground changes which horse wins · Should you still go if the forecast is bad? |
+| Day | Date | Pins |
+|---|---|---|
+| 01 | 2026-09-05 | Which Royal Ascot enclosure is worth the money · You can bring your own champagne to Royal Ascot · What time Royal Ascot actually starts, and ends |
+| 02 | 2026-09-06 | Children go free at Royal Ascot, up to four per adult · The Royal Enclosure cannot be bought at any price · Getting to Ascot: your Oyster card will not work |
+| 03 | 2026-09-07 | Four things banned at Royal Ascot that people wear · Your fascinator will get you stopped in one enclosure · Sashes and tiaras count as fancy dress at Ascot |
+| 04 | 2026-09-08 | Bow ties are refused in the Queen Anne Enclosure · Buying from a resale site can get you refused at the gate · Things people think are banned at Ascot but are not |
+| 05 | 2026-09-09 | Cheltenham has no dress code, so what do people wear? · What to actually wear to Cheltenham in March · The three Cheltenham enclosures, and what each one gets you |
+| 06 | 2026-09-10 | Four days at Cheltenham, and what happens on each · Cheltenham or Royal Ascot: they are not the same day out · What the Cheltenham roar actually sounds like |
+| 07 | 2026-09-11 | Royal Ascot parking is £45. Every other raceday it's free · A Royal Ascot ticket starts at £25, if you pick right · The cheapest way to do Royal Ascot properly |
+| 08 | 2026-09-12 | What the clothes actually cost at Royal Ascot · Children get into Royal Ascot free, four per adult · Train or drive to Ascot: which actually costs less |
+| 09 | 2026-09-13 | A raceday is seven hours, and twenty minutes of racing · You do not have to bet to enjoy a day at the races · Find your horse by the colours, not the name |
+| 10 | 2026-09-14 | What to actually bring to your first raceday · Arrive two hours before the first race, not at the gates · The mistake almost every first-timer makes |
+| 11 | 2026-09-15 | Aintree tells you to wear whatever you like · Parking is free at the Grand National, unlike Ascot · Two Aintree enclosures are over 21s only |
+| 12 | 2026-09-16 | The Grand National: four miles and thirty fences · Aintree or Cheltenham: which jump meeting to pick · Do not wear a football shirt to Aintree, or anywhere |
+| 13 | 2026-09-17 | Epsom says jeans and clean trainers are fine · The Derby course climbs, falls and bends left · What is actually banned at the Epsom Derby |
+| 14 | 2026-09-18 | Epsom is the easiest first race meeting to attend · Epsom and Royal Ascot are opposite ends of the same sport · One Epsom stand does have a dress code on Derby Day |
+| 15 | 2026-09-19 | Only one British racecourse actually enforces a dress code · Can you wear jeans to the races? It depends where · Trainers: fine at three racecourses, banned at one |
+| 16 | 2026-09-20 | You only have to wear a hat at one meeting · Where you can and cannot wear fancy dress · The two things banned at nearly every racecourse |
+| 17 | 2026-09-21 | The Royal Enclosure measures your shoulder straps · Why fascinators are refused in the Royal Enclosure · Men need morning dress and a top hat in the Royal Enclosure |
+| 18 | 2026-09-22 | You can hire morning dress rather than buy it · Children under 10 are not allowed in the Royal Enclosure · You cannot buy your way into the Royal Enclosure |
+| 19 | 2026-09-23 | What the going means, and why everyone talks about it · A furlong is an eighth of a mile, and other race terms · The Parade Ring is where racing stops being abstract |
+| 20 | 2026-09-24 | Why the Grand National is so hard to predict · Follow the colours, not the horse, and racing makes sense · Each way betting, explained in a single line |
+| 21 | 2026-09-25 | Ascot runs 26 racedays a year and only five are Royal Ascot · The Queen Anne Enclosure changes rank depending on the day · Parking is free at Ascot on every day except five |
+| 22 | 2026-09-26 | Gate times at Ascot change with the season · You can upgrade your racecourse ticket on the day · Your racecourse ticket might need a badge as well |
+| 23 | 2026-09-27 | A racecourse ticket buys an area, not a seat · Enclosure names do not mean the same thing everywhere · Children often do not need a racecourse ticket at all |
+| 24 | 2026-09-28 | Buy on the day and you will usually get in · A ticket in someone else's name is fine at Ascot · Never buy racecourse tickets from a resale site |
+| 25 | 2026-09-29 | Four British race meetings, four completely different days · Which race meeting to pick for your first time · The cheapest of the big four race meetings |
+| 26 | 2026-09-30 | Which race meeting works best with children · If dress codes put you off, three of the four are fine · Cheltenham or Ascot, if you can only do one |
+| 27 | 2026-10-01 | Nobody can tell it is your first time at the races · Twenty minutes of racing in a seven hour day · Is it awkward going to the races on your own? |
+| 28 | 2026-10-02 | Three racing terms worth knowing before you go · The Parade Ring is where it stops feeling abstract · Will you be bored at the races? Depends what you expect |
+| 29 | 2026-10-03 | Rain almost never stops a British race meeting · What to wear to the races when it is raining · Wellies are fine at three racecourses, banned at one |
+| 30 | 2026-10-04 | Where you can actually shelter at a racecourse · Soft ground changes which horse actually wins · Should you still go if the forecast is bad? |
 
 ---
 
@@ -89,7 +89,7 @@ board with a gap is a second placement, not duplicate creative.
 **Live from:** 2026-09-03
 
 
-## 2026-09-05 · Which Royal Ascot enclosure is worth the money
+## Day 01 · Pin 1 · 2026-09-05 · Which Royal Ascot enclosure is worth the money
 
 **Board:** Royal Ascot
 
@@ -163,7 +163,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-05 · You can bring your own champagne to Royal Ascot
+## Day 01 · Pin 2 · 2026-09-05 · You can bring your own champagne to Royal Ascot
 
 **Board:** Race Day Planning
 
@@ -234,7 +234,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-05 · What time Royal Ascot actually starts, and ends
+## Day 01 · Pin 3 · 2026-09-05 · What time Royal Ascot actually starts, and ends
 
 **Board:** Race Day Planning
 
@@ -304,7 +304,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-06 · Children go free at Royal Ascot, up to four per adult
+## Day 02 · Pin 1 · 2026-09-06 · Children go free at Royal Ascot, up to four per adult
 
 **Board:** Race Day Planning
 
@@ -376,7 +376,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-06 · The Royal Enclosure cannot be bought at any price
+## Day 02 · Pin 2 · 2026-09-06 · The Royal Enclosure cannot be bought at any price
 
 **Board:** Royal Ascot
 
@@ -448,7 +448,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-06 · Getting to Ascot: your Oyster card will not work
+## Day 02 · Pin 3 · 2026-09-06 · Getting to Ascot: your Oyster card will not work
 
 **Board:** Race Day Planning
 
@@ -526,7 +526,7 @@ edge.
 **Live from:** 2026-09-05
 
 
-## 2026-09-07 · Four things banned at Royal Ascot that people wear
+## Day 03 · Pin 1 · 2026-09-07 · Four things banned at Royal Ascot that people wear
 
 **Board:** Race Day Style
 
@@ -601,7 +601,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-07 · Your fascinator will get you stopped in one enclosure
+## Day 03 · Pin 2 · 2026-09-07 · Your fascinator will get you stopped in one enclosure
 
 **Board:** Race Day Style
 
@@ -673,7 +673,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-07 · Sashes and tiaras count as fancy dress at Ascot
+## Day 03 · Pin 3 · 2026-09-07 · Sashes and tiaras count as fancy dress at Ascot
 
 **Board:** Race Day Style
 
@@ -745,7 +745,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-08 · Bow ties are refused in the Queen Anne Enclosure
+## Day 04 · Pin 1 · 2026-09-08 · Bow ties are refused in the Queen Anne Enclosure
 
 **Board:** Race Day Style
 
@@ -817,7 +817,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-08 · Buying from a resale site can get you refused at the gate
+## Day 04 · Pin 2 · 2026-09-08 · Buying from a resale site can get you refused at the gate
 
 **Board:** Race Day Planning
 
@@ -888,7 +888,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-08 · Things people think are banned at Ascot but are not
+## Day 04 · Pin 3 · 2026-09-08 · Things people think are banned at Ascot but are not
 
 **Board:** Race Day Style
 
@@ -966,7 +966,7 @@ edge.
 **Live from:** 2026-09-07
 
 
-## 2026-09-09 · Cheltenham has no dress code, so what do people wear?
+## Day 05 · Pin 1 · 2026-09-09 · Cheltenham has no dress code, so what do people wear?
 
 **Board:** Cheltenham & Jump Racing
 
@@ -1041,7 +1041,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-09 · What to actually wear to Cheltenham in March
+## Day 05 · Pin 2 · 2026-09-09 · What to actually wear to Cheltenham in March
 
 **Board:** Race Day Style
 
@@ -1114,7 +1114,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-09 · The three Cheltenham enclosures, and what each one gets you
+## Day 05 · Pin 3 · 2026-09-09 · The three Cheltenham enclosures, and what each one gets you
 
 **Board:** Cheltenham & Jump Racing
 
@@ -1185,7 +1185,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-10 · Four days at Cheltenham, and what happens on each
+## Day 06 · Pin 1 · 2026-09-10 · Four days at Cheltenham, and what happens on each
 
 **Board:** Cheltenham & Jump Racing
 
@@ -1256,7 +1256,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-10 · Cheltenham or Royal Ascot: they are not the same day out
+## Day 06 · Pin 2 · 2026-09-10 · Cheltenham or Royal Ascot: they are not the same day out
 
 **Board:** Cheltenham & Jump Racing
 
@@ -1329,7 +1329,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-10 · What the Cheltenham roar actually sounds like
+## Day 06 · Pin 3 · 2026-09-10 · What the Cheltenham roar actually sounds like
 
 **Board:** Cheltenham & Jump Racing
 
@@ -1406,7 +1406,7 @@ edge.
 **Live from:** 2026-09-09
 
 
-## 2026-09-11 · Royal Ascot parking is £45. Every other raceday it's free
+## Day 07 · Pin 1 · 2026-09-11 · Royal Ascot parking is £45. Every other raceday it's free
 
 **Board:** Race Day Planning
 
@@ -1480,7 +1480,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-11 · A Royal Ascot ticket starts at £25, if you pick right
+## Day 07 · Pin 2 · 2026-09-11 · A Royal Ascot ticket starts at £25, if you pick right
 
 **Board:** Race Day Planning
 
@@ -1552,7 +1552,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-11 · The cheapest way to do Royal Ascot properly
+## Day 07 · Pin 3 · 2026-09-11 · The cheapest way to do Royal Ascot properly
 
 **Board:** Race Day Planning
 
@@ -1625,7 +1625,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-12 · What the clothes actually cost at Royal Ascot
+## Day 08 · Pin 1 · 2026-09-12 · What the clothes actually cost at Royal Ascot
 
 **Board:** Race Day Style
 
@@ -1697,7 +1697,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-12 · Children get into Royal Ascot free, four per adult
+## Day 08 · Pin 2 · 2026-09-12 · Children get into Royal Ascot free, four per adult
 
 **Board:** Race Day Planning
 
@@ -1768,7 +1768,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-12 · Train or drive to Ascot: which actually costs less
+## Day 08 · Pin 3 · 2026-09-12 · Train or drive to Ascot: which actually costs less
 
 **Board:** Race Day Planning
 
@@ -1845,7 +1845,7 @@ edge.
 **Live from:** 2026-09-11
 
 
-## 2026-09-13 · A raceday is seven hours, and twenty minutes of racing
+## Day 09 · Pin 1 · 2026-09-13 · A raceday is seven hours, and twenty minutes of racing
 
 **Board:** Race Day Planning
 
@@ -1917,7 +1917,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-13 · You do not have to bet to enjoy a day at the races
+## Day 09 · Pin 2 · 2026-09-13 · You do not have to bet to enjoy a day at the races
 
 **Board:** Race Day Planning
 
@@ -1989,7 +1989,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-13 · Find your horse by the colours, not the name
+## Day 09 · Pin 3 · 2026-09-13 · Find your horse by the colours, not the name
 
 **Board:** Race Day Planning
 
@@ -2061,7 +2061,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-14 · What to actually bring to your first raceday
+## Day 10 · Pin 1 · 2026-09-14 · What to actually bring to your first raceday
 
 **Board:** Race Day Planning
 
@@ -2132,7 +2132,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-14 · Arrive two hours before the first race, not at the gates
+## Day 10 · Pin 2 · 2026-09-14 · Arrive two hours before the first race, not at the gates
 
 **Board:** Race Day Planning
 
@@ -2204,7 +2204,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-14 · The mistake almost every first-timer makes
+## Day 10 · Pin 3 · 2026-09-14 · The mistake almost every first-timer makes
 
 **Board:** Race Day Planning
 
@@ -2281,7 +2281,7 @@ edge.
 **Live from:** 2026-09-13
 
 
-## 2026-09-15 · Aintree tells you to wear whatever you like
+## Day 11 · Pin 1 · 2026-09-15 · Aintree tells you to wear whatever you like
 
 **Board:** Cheltenham & Jump Racing
 
@@ -2353,7 +2353,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-15 · Parking is free at the Grand National, unlike Ascot
+## Day 11 · Pin 2 · 2026-09-15 · Parking is free at the Grand National, unlike Ascot
 
 **Board:** Race Day Planning
 
@@ -2424,7 +2424,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-15 · Two Aintree enclosures are over 21s only
+## Day 11 · Pin 3 · 2026-09-15 · Two Aintree enclosures are over 21s only
 
 **Board:** Cheltenham & Jump Racing
 
@@ -2495,7 +2495,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-16 · The Grand National: four miles and thirty fences
+## Day 12 · Pin 1 · 2026-09-16 · The Grand National: four miles and thirty fences
 
 **Board:** Cheltenham & Jump Racing
 
@@ -2566,7 +2566,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-16 · Aintree or Cheltenham: which jump meeting to pick
+## Day 12 · Pin 2 · 2026-09-16 · Aintree or Cheltenham: which jump meeting to pick
 
 **Board:** Cheltenham & Jump Racing
 
@@ -2638,7 +2638,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-16 · Do not wear a football shirt to Aintree, or anywhere
+## Day 12 · Pin 3 · 2026-09-16 · Do not wear a football shirt to Aintree, or anywhere
 
 **Board:** Race Day Style
 
@@ -2716,7 +2716,7 @@ edge.
 **Live from:** 2026-09-15
 
 
-## 2026-09-17 · Epsom says jeans and clean trainers are fine
+## Day 13 · Pin 1 · 2026-09-17 · Epsom says jeans and clean trainers are fine
 
 **Board:** Race Day Style
 
@@ -2788,7 +2788,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-17 · The Derby course climbs, falls and bends left
+## Day 13 · Pin 2 · 2026-09-17 · The Derby course climbs, falls and bends left
 
 **Board:** Race Day Planning
 
@@ -2859,7 +2859,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-17 · What is actually banned at the Epsom Derby
+## Day 13 · Pin 3 · 2026-09-17 · What is actually banned at the Epsom Derby
 
 **Board:** Race Day Style
 
@@ -2930,7 +2930,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-18 · Epsom is the easiest first race meeting to attend
+## Day 14 · Pin 1 · 2026-09-18 · Epsom is the easiest first race meeting to attend
 
 **Board:** Race Day Planning
 
@@ -3001,7 +3001,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-18 · Epsom and Royal Ascot are opposite ends of the same sport
+## Day 14 · Pin 2 · 2026-09-18 · Epsom and Royal Ascot are opposite ends of the same sport
 
 **Board:** Race Day Style
 
@@ -3073,7 +3073,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-18 · One Epsom stand does have a dress code on Derby Day
+## Day 14 · Pin 3 · 2026-09-18 · One Epsom stand does have a dress code on Derby Day
 
 **Board:** Race Day Style
 
@@ -3152,7 +3152,7 @@ edge.
 **Live from:** 2026-09-17
 
 
-## 2026-09-19 · Only one British racecourse actually enforces a dress code
+## Day 15 · Pin 1 · 2026-09-19 · Only one British racecourse actually enforces a dress code
 
 **Board:** Race Day Style
 
@@ -3225,7 +3225,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-19 · Can you wear jeans to the races? It depends where
+## Day 15 · Pin 2 · 2026-09-19 · Can you wear jeans to the races? It depends where
 
 **Board:** Race Day Style
 
@@ -3296,7 +3296,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-19 · Trainers: fine at three racecourses, banned at one
+## Day 15 · Pin 3 · 2026-09-19 · Trainers: fine at three racecourses, banned at one
 
 **Board:** Race Day Style
 
@@ -3367,7 +3367,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-20 · You only have to wear a hat at one meeting
+## Day 16 · Pin 1 · 2026-09-20 · You only have to wear a hat at one meeting
 
 **Board:** Race Day Style
 
@@ -3439,7 +3439,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-20 · Where you can and cannot wear fancy dress
+## Day 16 · Pin 2 · 2026-09-20 · Where you can and cannot wear fancy dress
 
 **Board:** Race Day Style
 
@@ -3511,7 +3511,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-20 · The two things banned at nearly every racecourse
+## Day 16 · Pin 3 · 2026-09-20 · The two things banned at nearly every racecourse
 
 **Board:** Race Day Style
 
@@ -3589,7 +3589,7 @@ edge.
 **Live from:** 2026-09-19
 
 
-## 2026-09-21 · The Royal Enclosure measures your shoulder straps
+## Day 17 · Pin 1 · 2026-09-21 · The Royal Enclosure measures your shoulder straps
 
 **Board:** Royal Ascot
 
@@ -3661,7 +3661,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-21 · Why fascinators are refused in the Royal Enclosure
+## Day 17 · Pin 2 · 2026-09-21 · Why fascinators are refused in the Royal Enclosure
 
 **Board:** Race Day Style
 
@@ -3734,7 +3734,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-21 · Men need morning dress and a top hat in the Royal Enclosure
+## Day 17 · Pin 3 · 2026-09-21 · Men need morning dress and a top hat in the Royal Enclosure
 
 **Board:** Royal Ascot
 
@@ -3805,7 +3805,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-22 · You can hire morning dress rather than buy it
+## Day 18 · Pin 1 · 2026-09-22 · You can hire morning dress rather than buy it
 
 **Board:** Race Day Style
 
@@ -3876,7 +3876,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-22 · Children under 10 are not allowed in the Royal Enclosure
+## Day 18 · Pin 2 · 2026-09-22 · Children under 10 are not allowed in the Royal Enclosure
 
 **Board:** Royal Ascot
 
@@ -3947,7 +3947,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-22 · You cannot buy your way into the Royal Enclosure
+## Day 18 · Pin 3 · 2026-09-22 · You cannot buy your way into the Royal Enclosure
 
 **Board:** Royal Ascot
 
@@ -4024,7 +4024,7 @@ edge.
 **Live from:** 2026-09-21
 
 
-## 2026-09-23 · What the going means, and why everyone talks about it
+## Day 19 · Pin 1 · 2026-09-23 · What the going means, and why everyone talks about it
 
 **Board:** Race Day Planning
 
@@ -4096,7 +4096,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-23 · A furlong is an eighth of a mile, and other race terms
+## Day 19 · Pin 2 · 2026-09-23 · A furlong is an eighth of a mile, and other race terms
 
 **Board:** Race Day Planning
 
@@ -4168,7 +4168,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-23 · The Parade Ring is where racing stops being abstract
+## Day 19 · Pin 3 · 2026-09-23 · The Parade Ring is where racing stops being abstract
 
 **Board:** Race Day Planning
 
@@ -4239,7 +4239,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-24 · Why the Grand National is so hard to predict
+## Day 20 · Pin 1 · 2026-09-24 · Why the Grand National is so hard to predict
 
 **Board:** Race Day Planning
 
@@ -4310,7 +4310,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-24 · Follow the colours, not the horse, and racing makes sense
+## Day 20 · Pin 2 · 2026-09-24 · Follow the colours, not the horse, and racing makes sense
 
 **Board:** Race Day Planning
 
@@ -4381,7 +4381,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-24 · Each way betting, explained in a single line
+## Day 20 · Pin 3 · 2026-09-24 · Each way betting, explained in a single line
 
 **Board:** Race Day Planning
 
@@ -4458,7 +4458,7 @@ edge.
 **Live from:** 2026-09-23
 
 
-## 2026-09-25 · Ascot runs 26 racedays a year and only five are Royal Ascot
+## Day 21 · Pin 1 · 2026-09-25 · Ascot runs 26 racedays a year and only five are Royal Ascot
 
 **Board:** Race Day Planning
 
@@ -4529,7 +4529,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-25 · The Queen Anne Enclosure changes rank depending on the day
+## Day 21 · Pin 2 · 2026-09-25 · The Queen Anne Enclosure changes rank depending on the day
 
 **Board:** Race Day Planning
 
@@ -4602,7 +4602,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-25 · Parking is free at Ascot on every day except five
+## Day 21 · Pin 3 · 2026-09-25 · Parking is free at Ascot on every day except five
 
 **Board:** Race Day Planning
 
@@ -4674,7 +4674,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-26 · Gate times at Ascot change with the season
+## Day 22 · Pin 1 · 2026-09-26 · Gate times at Ascot change with the season
 
 **Board:** Race Day Planning
 
@@ -4745,7 +4745,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-26 · You can upgrade your racecourse ticket on the day
+## Day 22 · Pin 2 · 2026-09-26 · You can upgrade your racecourse ticket on the day
 
 **Board:** Race Day Planning
 
@@ -4817,7 +4817,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-26 · Your racecourse ticket might need a badge as well
+## Day 22 · Pin 3 · 2026-09-26 · Your racecourse ticket might need a badge as well
 
 **Board:** Race Day Planning
 
@@ -4894,7 +4894,7 @@ edge.
 **Live from:** 2026-09-25
 
 
-## 2026-09-27 · A racecourse ticket buys an area, not a seat
+## Day 23 · Pin 1 · 2026-09-27 · A racecourse ticket buys an area, not a seat
 
 **Board:** Race Day Planning
 
@@ -4965,7 +4965,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-27 · Enclosure names do not mean the same thing everywhere
+## Day 23 · Pin 2 · 2026-09-27 · Enclosure names do not mean the same thing everywhere
 
 **Board:** Race Day Planning
 
@@ -5037,7 +5037,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-27 · Children often do not need a racecourse ticket at all
+## Day 23 · Pin 3 · 2026-09-27 · Children often do not need a racecourse ticket at all
 
 **Board:** Race Day Planning
 
@@ -5109,7 +5109,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-28 · Buy on the day and you will usually get in
+## Day 24 · Pin 1 · 2026-09-28 · Buy on the day and you will usually get in
 
 **Board:** Race Day Planning
 
@@ -5181,7 +5181,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-28 · A ticket in someone else's name is fine at Ascot
+## Day 24 · Pin 2 · 2026-09-28 · A ticket in someone else's name is fine at Ascot
 
 **Board:** Race Day Planning
 
@@ -5252,7 +5252,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-28 · Never buy racecourse tickets from a resale site
+## Day 24 · Pin 3 · 2026-09-28 · Never buy racecourse tickets from a resale site
 
 **Board:** Race Day Planning
 
@@ -5329,7 +5329,7 @@ edge.
 **Live from:** 2026-09-27
 
 
-## 2026-09-29 · Four British race meetings, four completely different days
+## Day 25 · Pin 1 · 2026-09-29 · Four British race meetings, four completely different days
 
 **Board:** Going To The Sport
 
@@ -5402,7 +5402,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-29 · Which race meeting to pick for your first time
+## Day 25 · Pin 2 · 2026-09-29 · Which race meeting to pick for your first time
 
 **Board:** Going To The Sport
 
@@ -5473,7 +5473,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-29 · The cheapest of the big four race meetings
+## Day 25 · Pin 3 · 2026-09-29 · The cheapest of the big four race meetings
 
 **Board:** Race Day Planning
 
@@ -5544,7 +5544,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-30 · Which race meeting works best with children
+## Day 26 · Pin 1 · 2026-09-30 · Which race meeting works best with children
 
 **Board:** Race Day Planning
 
@@ -5616,7 +5616,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-30 · If dress codes put you off, three of the four are fine
+## Day 26 · Pin 2 · 2026-09-30 · If dress codes put you off, three of the four are fine
 
 **Board:** Race Day Style
 
@@ -5687,7 +5687,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-09-30 · Cheltenham or Ascot, if you can only do one
+## Day 26 · Pin 3 · 2026-09-30 · Cheltenham or Ascot, if you can only do one
 
 **Board:** Going To The Sport
 
@@ -5766,7 +5766,7 @@ edge.
 **Live from:** 2026-09-29
 
 
-## 2026-10-01 · Nobody can tell it is your first time at the races
+## Day 27 · Pin 1 · 2026-10-01 · Nobody can tell it is your first time at the races
 
 **Board:** Going To The Sport
 
@@ -5837,7 +5837,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-01 · Twenty minutes of racing in a seven hour day
+## Day 27 · Pin 2 · 2026-10-01 · Twenty minutes of racing in a seven hour day
 
 **Board:** Going To The Sport
 
@@ -5908,7 +5908,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-01 · Is it awkward going to the races on your own?
+## Day 27 · Pin 3 · 2026-10-01 · Is it awkward going to the races on your own?
 
 **Board:** Going To The Sport
 
@@ -5979,7 +5979,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-02 · Three racing terms worth knowing before you go
+## Day 28 · Pin 1 · 2026-10-02 · Three racing terms worth knowing before you go
 
 **Board:** Race Day Planning
 
@@ -6050,7 +6050,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-02 · The Parade Ring is where it stops feeling abstract
+## Day 28 · Pin 2 · 2026-10-02 · The Parade Ring is where it stops feeling abstract
 
 **Board:** Race Day Planning
 
@@ -6122,7 +6122,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-02 · Will you be bored at the races? Depends what you expect
+## Day 28 · Pin 3 · 2026-10-02 · Will you be bored at the races? Depends what you expect
 
 **Board:** Going To The Sport
 
@@ -6199,7 +6199,7 @@ edge.
 **Live from:** 2026-10-01
 
 
-## 2026-10-03 · Rain almost never stops a British race meeting
+## Day 29 · Pin 1 · 2026-10-03 · Rain almost never stops a British race meeting
 
 **Board:** Race Day Planning
 
@@ -6270,7 +6270,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-03 · What to wear to the races when it is raining
+## Day 29 · Pin 2 · 2026-10-03 · What to wear to the races when it is raining
 
 **Board:** Race Day Style
 
@@ -6342,7 +6342,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-03 · Wellies are fine at three racecourses, banned at one
+## Day 29 · Pin 3 · 2026-10-03 · Wellies are fine at three racecourses, banned at one
 
 **Board:** Race Day Style
 
@@ -6413,7 +6413,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-04 · Where you can actually shelter at a racecourse
+## Day 30 · Pin 1 · 2026-10-04 · Where you can actually shelter at a racecourse
 
 **Board:** Race Day Planning
 
@@ -6485,7 +6485,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-04 · Soft ground changes which horse actually wins
+## Day 30 · Pin 2 · 2026-10-04 · Soft ground changes which horse actually wins
 
 **Board:** Race Day Planning
 
@@ -6556,7 +6556,7 @@ be blurred or out of focus, never legible. No text within 60px of the
 edge.
 ```
 
-## 2026-10-04 · Should you still go if the forecast is bad?
+## Day 30 · Pin 3 · 2026-10-04 · Should you still go if the forecast is bad?
 
 **Board:** Race Day Style
 

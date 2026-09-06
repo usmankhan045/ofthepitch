@@ -58,9 +58,10 @@ const err = (n, m) => errors.push(`pin ${n}: ${m}`);
 const warn = (n, m) => warnings.push(`pin ${n}: ${m}`);
 
 const text = readFileSync(FILE, "utf8");
+// Headings are "## Day NN · Pin N · YYYY-MM-DD · Title".
 const blocks = text
-  .split(/\n(?=## \d{4}-\d{2}-\d{2} · )/)
-  .filter((b) => b.startsWith("## 20"));
+  .split(/\n(?=## Day \d+ · Pin \d · )/)
+  .filter((b) => b.startsWith("## Day "));
 
 if (blocks.length === 0) {
   console.error("No pins found. Has the batch file moved?");
