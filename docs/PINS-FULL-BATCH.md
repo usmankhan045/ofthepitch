@@ -325,7 +325,7 @@ Under 18s enter the Queen Anne, Village and Windsor Enclosures free without a pr
 
 **Alt text**
 ```
-Family walking together at Royal Ascot, mother in a pale blue dress and hat, two children smartly dressed, grandstand behind.
+Four printed admission tickets fanned out on a picnic blanket beside a wicker hamper and a straw sun hat on grass at a summer racecourse.
 ```
 
 **Prompt**
@@ -360,11 +360,11 @@ shorten it, or add any headline, tagline or caption of your own.
 No other words anywhere on the image.
 
 Photograph:
-  A family walking together on grass at Royal Ascot seen from behind
-  and slightly to the side. Mother in a powder-blue midi dress with a
-  match ing wide-brimmed hat, a girl of about ten in a simple cream
-  dress, a b oy in grey shorts, a navy blazer and a tie. Grandstand
-  soft in the bac kground, bright June light.
+  Four printed admission tickets fanned out on a picnic blanket beside
+  a wicker hamper and a straw sun hat, on cut grass at a summer
+  racecourse. All printing on the tickets blurred and unreadable. Warm
+  afternoon light, shallow depth of field, blurred pastel crowd well
+  beyond.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
@@ -1718,7 +1718,7 @@ Under 18s enter the Queen Anne, Village and Windsor Enclosures without a ticket,
 
 **Alt text**
 ```
-Girl in a simple cream dress and a boy in a navy blazer walking with adults at a summer race meeting.
+Picnic laid on a tartan blanket at a racecourse: open wicker hamper, stacked plates, linen napkin and a wide-brimmed straw hat.
 ```
 
 **Prompt**
@@ -1753,10 +1753,11 @@ shorten it, or add any headline, tagline or caption of your own.
 No other words anywhere on the image.
 
 Photograph:
-  A girl of about eight in a simple cream cotton dress and a boy of
-  about ten in a navy blazer and grey shorts walking alongside two
-  adults at a summer racecourse, all seen from behind. Grandstand and
-  pale marque es soft in the background, bright June light.
+  A picnic laid on a tartan wool blanket on cut grass: an open wicker
+  hamper, a stack of small plates, a folded linen napkin and a wide-
+  brimmed straw hat set to one side, with space cleared as if for a
+  group. Bright June daylight, racecourse rail and pale marquees soft
+  in the distance.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
@@ -3897,7 +3898,7 @@ Those aged 10 to 17 have to buy admission there, unlike the other enclosures whe
 
 **Alt text**
 ```
-Teenage boy in a dark lounge suit and tie beside a girl in a simple dress and headpiece at a summer race meeting.
+Navy lounge suit on a wooden hanger beside a pale sinamay headpiece and a folded silk necktie on a linen-covered table.
 ```
 
 **Prompt**
@@ -3932,10 +3933,10 @@ shorten it, or add any headline, tagline or caption of your own.
 No other words anywhere on the image.
 
 Photograph:
-  A teenage boy in a dark navy lounge suit with a collared shirt and
-  necktie standing beside a teenage girl in a simple pale dress with a
-  small headpiece, both at a summer racecourse, seen in three- quarter
-  view. Grandstand soft behind. Bright June light.
+  A dark navy lounge suit on a wooden hanger beside a pale sinamay
+  headpiece resting on a linen-covered table, a folded silk necktie
+  between them. Warm indoor daylight from a window to one side, no
+  people in frame, editorial menswear still life.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
@@ -5058,7 +5059,7 @@ Ascot admits under 18s free with an adult, up to four per adult at the Royal mee
 
 **Alt text**
 ```
-Child in a smart coat holding an adult's hand at a racecourse entrance.
+Ornate black ironwork racecourse turnstile standing open in early morning light, flowers in planters either side.
 ```
 
 **Prompt**
@@ -5094,10 +5095,10 @@ shorten it, or add any headline, tagline or caption of your own.
 No other words anywhere on the image.
 
 Photograph:
-  A child of about seven in a smart navy coat holding an adult's hand
-  at a racecourse entrance, both seen from behind, walking toward the
-  turn stiles. Other racegoers soft in the background. Bright spring
-  daylight , warm and unposed.
+  An ornate black ironwork racecourse turnstile photographed from the
+  side in early morning light, gate standing open, flowers in planters
+  either side and a steward's gloved hand resting on the rail. No
+  faces in frame. Soft long shadows across the path.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
@@ -5565,7 +5566,7 @@ The Grand National and ordinary racedays, where entry and parking are both free.
 
 **Alt text**
 ```
-Family group in spring coats walking together at a racecourse, children between the adults.
+Tartan blankets and folding chairs spread across a racecourse lawn on a bright spring day, grandstand and white marquees behind.
 ```
 
 **Prompt**
@@ -5601,10 +5602,11 @@ shorten it, or add any headline, tagline or caption of your own.
 No other words anywhere on the image.
 
 Photograph:
-  A family group walking together at a racecourse, two adults in
-  spring coats and two children of about eight and eleven in smart
-  casual cloth es, all seen from behind. Grandstand and green course
-  ahead of them. B right breezy April light.
+  A wide view across a racecourse lawn on a bright spring day, tartan
+  blankets and folding chairs spread out on the grass with hampers
+  beside them, the grandstand and white marquees behind. Figures small
+  and out of focus in the far distance. Fresh green turf, blue sky,
+  camel and cream tones.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image

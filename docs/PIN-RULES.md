@@ -208,6 +208,11 @@ events cannot come out as recolours of each other:
 - No direct-to-camera smiling
 - Natural posture and natural hands. Nothing stiff, nothing arranged
 - Signage, banners and number plates blurred or out of focus, never legible
+- **Never describe a minor.** Image models refuse any prompt naming a child,
+  a teenager or an age under 18, and five prompts in the first batch were
+  rejected for it. A pin about children's admission shows the tickets, the
+  picnic or the empty gate instead. The fact belongs in the text, not the
+  photograph
 - Photograph and type occupy separate zones, joined by a 150 to 220 pixel fade.
   Never text over a photograph. Never a hard rule between them
 - No text within 60px of any edge
