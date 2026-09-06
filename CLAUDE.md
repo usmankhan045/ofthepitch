@@ -283,6 +283,11 @@ Three findings that contradict the obvious approach:
   brand palette. **Pins are a separate design system from the site's dark ink
   article cards. Never reuse the OG card design as a pin.**
 
+**`docs/PIN-RULES.md` is binding on every pin.** No formulaic titles, six
+genuinely distinct angles per article, every on-image word quoted in the
+prompt, outfits specified to fabric and cut, #FAF7F1 ground on all of them,
+and the url as the only branding. Read it before writing a single pin.
+
 `docs/PIN-PROCESS.md` is how a batch gets made: angles, hand-written titles,
 outfit-level prompt detail, and the variation rules that stop two pins looking
 alike. `docs/PINS-FULL-BATCH.md` is the racing cluster's 90 pins, six per

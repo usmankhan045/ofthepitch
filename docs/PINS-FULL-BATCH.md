@@ -12,6 +12,7 @@ field sits in its own block so VS Code gives it a copy button.
 > the link later does not bring it back. The dates below already account for
 > the publishing schedule in `content-queue/schedule.json`.
 
+Binding standard for every pin: [PIN-RULES.md](./PIN-RULES.md).
 Process and design rules: [PIN-PROCESS.md](./PIN-PROCESS.md).
 Keyword data behind the angles: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
 

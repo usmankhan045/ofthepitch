@@ -3,6 +3,10 @@
 How a batch of pins gets made. Follow this and every pin comes out different
 from the last, which is the whole point.
 
+> **Read [PIN-RULES.md](./PIN-RULES.md) first.** It is the standard every pin
+> must meet, and it is binding. This file is the working method for producing
+> a batch that meets it.
+
 Strategy and keyword data: [PINTEREST-STRATEGY.md](./PINTEREST-STRATEGY.md).
 The racing cluster's 90 pins: [PINS-FULL-BATCH.md](./PINS-FULL-BATCH.md).
 
