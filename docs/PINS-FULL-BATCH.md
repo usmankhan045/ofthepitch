@@ -86,8 +86,12 @@ board with a gap is a second placement, not duplicate creative.
 
 ## 2026-09-05 · Which Royal Ascot enclosure is worth the money
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -123,20 +127,17 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  Royal Ascot racegoers, one woman in three-quarter profile in the foreg
-  round so a face is visible, the rest seen from behind facing the grand
-  stand. Women in knee-length day dresses in powder blue, blush, cream a
-  nd buttermilk, wide-brimmed hats and sinamay headpieces, small structu
-  red handbags. Men in charcoal morning suits and black top hats.
+  Royal Ascot racegoers, one woman in three-quarter profile in the
+  foreg round so a face is visible, the rest seen from behind facing
+  the grand stand. Women in knee-length day dresses in powder blue,
+  blush, cream a nd buttermilk, wide-brimmed hats and sinamay
+  headpieces, small structured handbags. Men in charcoal morning suits
+  and black top hats.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -146,8 +147,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-05 · You can bring your own champagne to Royal Ascot
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -183,19 +188,15 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  An open wicker picnic hamper on a tartan wool blanket laid on cut gras
-  s, a bottle of champagne and two coupe glasses beside it, a folded str
-  aw hat at the edge of the frame. Two women in pale summer dresses sitt
-  ing just behind, out of focus. Warm afternoon light.
+  An open wicker picnic hamper on a tartan wool blanket laid on cut
+  grass, a bottle of champagne and two coupe glasses beside it, a
+  folded str aw hat at the edge of the frame. Two women in pale summer
+  dresses sitt ing just behind, out of focus. Warm afternoon light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -205,8 +206,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-05 · What time Royal Ascot actually starts
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -242,18 +247,14 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A close crop of an ornate racecourse clock face in white and black aga
-  inst a clear blue sky, the grandstand roofline just visible beneath it
-  . Bright midday light, clean and graphic.
+  A close crop of an ornate racecourse clock face in white and black
+  aga inst a clear blue sky, the grandstand roofline just visible
+  beneath it . Bright midday light, clean and graphic.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -263,8 +264,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-06 · Children go free at Royal Ascot, up to four per adult
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -300,20 +305,16 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A family walking together on grass at Royal Ascot seen from behind and
-   slightly to the side. Mother in a powder-blue midi dress with a match
-  ing wide-brimmed hat, a girl of about ten in a simple cream dress, a b
-  oy in grey shorts, a navy blazer and a tie. Grandstand soft in the bac
-  kground, bright June light.
+  A family walking together on grass at Royal Ascot seen from behind
+  and slightly to the side. Mother in a powder-blue midi dress with a
+  match ing wide-brimmed hat, a girl of about ten in a simple cream
+  dress, a b oy in grey shorts, a navy blazer and a tie. Grandstand
+  soft in the bac kground, bright June light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -323,8 +324,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-06 · The Royal Enclosure cannot be bought at any price
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -360,19 +365,15 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A man in a charcoal morning suit with tails and a black silk top hat, 
-  photographed from behind and slightly to one side, shoulders and hat f
-  illing the upper frame. Beyond him, blurred women in pale hats and dre
-  sses. Bright summer light, shallow depth of field.
+  A man in a charcoal morning suit with tails and a black silk top
+  hat, photographed from behind and slightly to one side, shoulders
+  and hat f illing the upper frame. Beyond him, blurred women in pale
+  hats and dre sses. Bright summer light, shallow depth of field.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -382,8 +383,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-06 · Getting to Ascot: your Oyster card will not work
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-enclosures-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-enclosures-guide
+```
 
 **Title**
 ```
@@ -419,19 +424,16 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  Racegoers walking away from a small English railway station on a brigh
-  t morning, seen from behind. Two women in knee-length floral and cream
-   dresses with hats, a man in a grey morning suit carrying a top hat. P
-  latform railings and leafy trees either side, long morning shadows.
+  Racegoers walking away from a small English railway station on a
+  bright morning, seen from behind. Two women in knee-length floral
+  and cream dresses with hats, a man in a grey morning suit carrying a
+  top hat. P latform railings and leafy trees either side, long
+  morning shadows.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -447,8 +449,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-07 · Four things banned at Royal Ascot that people still turn up in
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -484,23 +490,19 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  The entrance gate at Royal Ascot with racegoers arriving. In the foreg
-  round two women walking in, seen from behind and three-quarter view. O
-  ne in a tailored buttermilk-yellow midi dress with cap sleeves and a m
-  atching wide-brimmed hat. One in a pale blue floral tea dress with a c
-  ream sinamay headpiece and a small ivory clutch. Behind them men in ch
-  arcoal morning suits and black top hats. A steward in a hi-vis vest to
-   one side. Ornate black ironwork, flowers in planters, bright morning 
-  light.
+  The entrance gate at Royal Ascot with racegoers arriving. In the
+  foreg round two women walking in, seen from behind and three-quarter
+  view. O ne in a tailored buttermilk-yellow midi dress with cap
+  sleeves and a m atching wide-brimmed hat. One in a pale blue floral
+  tea dress with a c ream sinamay headpiece and a small ivory clutch.
+  Behind them men in ch arcoal morning suits and black top hats. A
+  steward in a hi-vis vest to one side. Ornate black ironwork, flowers
+  in planters, bright morning light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -510,8 +512,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-07 · Your fascinator will get you stopped in one enclosure
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -547,20 +553,16 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A close crop of a woman's head and shoulders from behind and to one si
-  de, wearing a sculptural cream sinamay headpiece with a fine feather c
-  url, hair in a low chignon. Blurred pastel crowd well behind. Soft bri
-  ght summer light, shallow depth of field, editorial fashion photograph
-  y.
+  A close crop of a woman's head and shoulders from behind and to one
+  si de, wearing a sculptural cream sinamay headpiece with a fine
+  feather c url, hair in a low chignon. Blurred pastel crowd well
+  behind. Soft bright summer light, shallow depth of field, editorial
+  fashion photograph y.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -570,8 +572,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-07 · Sashes and tiaras count as fancy dress at Ascot
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -607,20 +613,16 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A group of four women standing together at a racecourse, seen in three
-  -quarter view, in tailored knee-length dresses in blush, mint, cream a
-  nd pale lemon with structured hats. Elegant and restrained styling, no
-   novelty items, no slogans. Bright summer light, soft background of cr
-  owd and white marquees.
+  A group of four women standing together at a racecourse, seen in
+  three -quarter view, in tailored knee-length dresses in blush, mint,
+  cream a nd pale lemon with structured hats. Elegant and restrained
+  styling, no novelty items, no slogans. Bright summer light, soft
+  background of crowd and white marquees.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -630,8 +632,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-08 · Bow ties are refused in the Queen Anne Enclosure
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -667,19 +673,16 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A tight detail crop of a man's chest and shoulders in a dove-grey morn
-  ing coat over a pale buttermilk waistcoat and a plain silk necktie, a 
-  folded pocket square just visible. No face in frame. Warm summer dayli
-  ght, crisp fabric texture, editorial menswear photography.
+  A tight detail crop of a man's chest and shoulders in a dove-grey
+  morn ing coat over a pale buttermilk waistcoat and a plain silk
+  necktie, a folded pocket square just visible. No face in frame. Warm
+  summer daylight, crisp fabric texture, editorial menswear
+  photography.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -689,8 +692,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-08 · Buying from a resale site can get you refused at the gate
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -726,19 +733,15 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A short queue of racegoers at a racecourse turnstile seen from behind,
-   women in pale summer dresses and hats, men in morning suits, a stewar
-  d in a bowler hat checking a ticket at the front. Warm morning light, 
-  ornate ironwork and bunting above the entrance.
+  A short queue of racegoers at a racecourse turnstile seen from
+  behind, women in pale summer dresses and hats, men in morning suits,
+  a steward in a bowler hat checking a ticket at the front. Warm
+  morning light, ornate ironwork and bunting above the entrance.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -748,8 +751,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-08 · Things people think are banned at Ascot but are not
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/what-gets-you-turned-away-at-the-races
+```
 
 **Title**
 ```
@@ -785,19 +792,15 @@ Text on the pin, in this order:
   "Full guide -> ofthepitch.com"
 
 Photograph:
-  A woman photographed from behind in a cream open-backed midi dress wit
-  h wide shoulder straps and a wide-brimmed ivory hat, one hand holding 
-  a small clutch. Blurred pastel crowd and white marquees beyond. Bright
-   summer light, elegant editorial fashion photography.
+  A woman photographed from behind in a cream open-backed midi dress
+  wit h wide shoulder straps and a wide-brimmed ivory hat, one hand
+  holding a small clutch. Blurred pastel crowd and white marquees
+  beyond. Bright summer light, elegant editorial fashion photography.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
 
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
@@ -813,8 +816,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-09 · Cheltenham has no dress code. Here's what people actually wear
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -842,41 +849,54 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Cheltenham has no dress code. Here's what people actually wear"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The Jockey Club publishes no formal dress code for the Festival, which surprises most first-timers."
+   "Fancy dress is banned in the Club Enclosure, and one thing is refused at every British racecourse."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A woman at a British winter racecourse, shot from mid-thigh up, three-
-  quarter angle, looking slightly off camera. A knee-length herringbone 
-  tweed coat in warm brown and oatmeal worn open over a fine-knit charco
-  al roll neck. A wide-brimmed felt fedora in deep olive with a grosgrai
-  n band. Small gold drop earrings, a tan leather crossbody bag with a b
-  rass buckle, leather gloves held in one hand. Overcast March daylight,
-   crowd blurred well behind in muted browns and camel.
+  A woman at a British winter racecourse, shot from mid-thigh up,
+  three- quarter angle, looking slightly off camera. A knee-length
+  herringbone tweed coat in warm brown and oatmeal worn open over a
+  fine-knit charcoal roll neck. A wide-brimmed felt fedora in deep
+  olive with a grosgrain band. Small gold drop earrings, a tan leather
+  crossbody bag with a b rass buckle, leather gloves held in one hand.
+  Overcast March daylight, crowd blurred well behind in muted browns
+  and camel.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-09 · What to actually wear to Cheltenham in March
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -904,39 +924,52 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What to actually wear to Cheltenham in March"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Layers, thermals and gloves."
+   "The racecourse's own guidance warns that most car parks still mean a walk, so footwear has to suit the ground."
+   "Bare legs and thin fabrics are what people regret by the third race."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An overhead flat lay on dark oak of a folded brown herringbone tweed c
-  oat, tan leather gloves, a rolled olive wool scarf, a deep green felt 
-  fedora and a pair of polished brown leather ankle boots. Arranged with
-   generous space between objects. Soft directional daylight, warm autum
-  nal palette.
+  An overhead flat lay on dark oak of a folded brown herringbone tweed
+  c oat, tan leather gloves, a rolled olive wool scarf, a deep green
+  felt fedora and a pair of polished brown leather ankle boots.
+  Arranged with generous space between objects. Soft directional
+  daylight, warm autumnal palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-09 · The three Cheltenham enclosures, and what each one gets you
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -964,38 +997,50 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The three Cheltenham enclosures, and what each one gets you"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Club is the premium public option with the main grandstand and the winning post, and it also includes all the Tattersalls areas."
+   "Best Mate sits opposite the grandstand by the finish line and is the one groups pick."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  The Cheltenham grandstand seen from across the course, packed with spe
-  ctators in dark winter coats, tweed and camel, hats and scarves. The C
-  otswold hills soft behind. Flat overcast March light, muted palette of
-   brown, grey and green.
+  The Cheltenham grandstand seen from across the course, packed with
+  spe ctators in dark winter coats, tweed and camel, hats and scarves.
+  The C otswold hills soft behind. Flat overcast March light, muted
+  palette of brown, grey and green.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-10 · Four days at Cheltenham, and what happens on each
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -1023,38 +1068,50 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Four days at Cheltenham, and what happens on each"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Champion Day opens it, Ladies Day follows, St Patrick's Thursday brings the Irish crowd and Gold Cup Day closes it."
+   "Twenty-eight races across the four, and the noise at the first is what people remember."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers seen from behind at the rail of a jump racecourse, in tweed 
-  coats, quilted jackets and felt hats, watching horses take a fence in 
-  the middle distance. Cold March air, breath just visible, muted brown 
-  and green palette, overcast light.
+  Racegoers seen from behind at the rail of a jump racecourse, in
+  tweed coats, quilted jackets and felt hats, watching horses take a
+  fence in the middle distance. Cold March air, breath just visible,
+  muted brown and green palette, overcast light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-10 · Cheltenham or Royal Ascot: they are not the same day out
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -1082,39 +1139,52 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Cheltenham or Royal Ascot: they are not the same day out"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Cheltenham is March, jump racing, no dress code and a crowd there for the sport."
+   "Ascot is June, flat racing, enforced dress codes and an occasion first."
+   "If you feel the cold, start with Ascot. One has 28 races, the other a Royal Procession."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two racecourse scenes side by side in one frame, divided cleanly down 
-  the middle. Left: winter racegoers in brown tweed coats and felt hats 
-  under grey light. Right: summer racegoers in pastel dresses and wide-b
-  rimmed hats under blue sky. Same composition and eye level on both hal
-  ves.
+  Two racecourse scenes side by side in one frame, divided cleanly
+  down the middle. Left: winter racegoers in brown tweed coats and
+  felt hats under grey light. Right: summer racegoers in pastel
+  dresses and wide-b rimmed hats under blue sky. Same composition and
+  eye level on both hal ves.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-10 · What the Cheltenham roar actually sounds like
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/cheltenham-festival-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/cheltenham-festival-guide
+```
 
 **Title**
 ```
@@ -1142,32 +1212,40 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "CHELTENHAM FESTIVAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What the Cheltenham roar actually sounds like"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The noise that goes up as the first race starts is the thing people describe when they come back."
+   "Beyond the racing there is a shopping village, live music and an after party, which is why the day runs long."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A dense racecourse crowd photographed from slightly above, spectators 
-  in dark winter coats, tweed and camel, some with arms raised, faces tu
-  rned toward the track. Grandstand structure behind. Flat March dayligh
-  t, energetic but muted palette.
+  A dense racecourse crowd photographed from slightly above,
+  spectators in dark winter coats, tweed and camel, some with arms
+  raised, faces tu rned toward the track. Grandstand structure behind.
+  Flat March daylight, energetic but muted palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # What a Day at Royal Ascot Really Costs
@@ -1178,8 +1256,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-11 · Royal Ascot parking is £45. Every other raceday it's free
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1207,40 +1289,53 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Royal Ascot parking is £45. Every other raceday it's free"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Parking must be bought in advance for the Royal meeting and costs more on the day."
+   "Pre-booking closes about a week before, and accessible spaces go earlier."
+   "Windsor tickets start at £25, so parking can cost more than getting in."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A couple walking away from parked cars across grass toward the Royal A
-  scot grandstand, seen from behind at a distance. She wears a fitted sa
-  ge-green midi dress with a matching wide-brimmed hat and carries a sma
-  ll tan handbag. He wears a charcoal morning suit with tails and a blac
-  k top hat, a folded jacket over one arm. Cars in soft focus either sid
-  e, summer daylight.
+  A couple walking away from parked cars across grass toward the Royal
+  A scot grandstand, seen from behind at a distance. She wears a
+  fitted sa ge-green midi dress with a matching wide-brimmed hat and
+  carries a sma ll tan handbag. He wears a charcoal morning suit with
+  tails and a black top hat, a folded jacket over one arm. Cars in
+  soft focus either sid e, summer daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-11 · A Royal Ascot ticket starts at £25
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1268,38 +1363,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "A Royal Ascot ticket starts at £25"
+
+3. Beneath it, these lines in smaller grey serif:
+   "That is the Windsor Enclosure, which has no formal dress code and lets you bring a picnic."
+   "Queen Anne is £80 with a suit and necktie required."
+   "The gap between those two days is bigger than the price suggests."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two women sitting on a tartan blanket on cut grass at a racecourse, in
-   simple cotton summer dresses in cream and pale blue, straw hats set d
-  own beside them, a picnic hamper open nearby. Relaxed and unposed. War
-  m afternoon light, soft crowd well behind.
+  Two women sitting on a tartan blanket on cut grass at a racecourse,
+  in simple cotton summer dresses in cream and pale blue, straw hats
+  set d own beside them, a picnic hamper open nearby. Relaxed and
+  unposed. War m afternoon light, soft crowd well behind.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-11 · The cheapest way to do Royal Ascot properly
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1327,38 +1435,52 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The cheapest way to do Royal Ascot properly"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Book a Windsor ticket early, take the train, bring a picnic and a bottle of champagne."
+   "You lose Parade Ring access, which matters if seeing the horses up close is the reason you are going."
+   "Best price tickets close months before the meeting."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An overhead view of a picnic laid on a tartan blanket on grass: an ope
-  n wicker hamper, two coupe glasses, strawberries in a bowl, a folded l
-  inen napkin and a wide-brimmed straw hat set to one side. Racegoers sm
-  all and out of focus in the distance. Warm bright daylight.
+  An overhead view of a picnic laid on a tartan blanket on grass: an
+  ope n wicker hamper, two coupe glasses, strawberries in a bowl, a
+  folded l inen napkin and a wide-brimmed straw hat set to one side.
+  Racegoers small and out of focus in the distance. Warm bright
+  daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-12 · What the clothes actually cost at Royal Ascot
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1386,38 +1508,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What the clothes actually cost at Royal Ascot"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Nothing in the Windsor Enclosure, which has no dress code."
+   "Queen Anne needs a suit and tie or a dress with straps and a hat."
+   "The Royal Enclosure needs morning dress, and hiring is the normal route rather than buying."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A tailor's fitting room with a rail of charcoal and dove-grey morning 
-  coats, pale waistcoats hanging beside them, and a row of black silk to
-  p hats on a shelf above. Warm indoor light, wood and brass fittings, n
-  o people. Editorial menswear photography.
+  A tailor's fitting room with a rail of charcoal and dove-grey
+  morning coats, pale waistcoats hanging beside them, and a row of
+  black silk to p hats on a shelf above. Warm indoor light, wood and
+  brass fittings, n o people. Editorial menswear photography.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-12 · Children get into Royal Ascot free
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1445,38 +1580,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Children get into Royal Ascot free"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Under 18s enter the Queen Anne, Village and Windsor Enclosures without a ticket, up to four per adult."
+   "That makes a family day out cost less than most sporting fixtures, as long as you avoid the Royal Enclosure."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A girl of about eight in a simple cream cotton dress and a boy of abou
-  t ten in a navy blazer and grey shorts walking alongside two adults at
-   a summer racecourse, all seen from behind. Grandstand and pale marque
-  es soft in the background, bright June light.
+  A girl of about eight in a simple cream cotton dress and a boy of
+  about ten in a navy blazer and grey shorts walking alongside two
+  adults at a summer racecourse, all seen from behind. Grandstand and
+  pale marque es soft in the background, bright June light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-12 · Train or drive to Ascot: which actually costs less
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/royal-ascot-cost-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/royal-ascot-cost-guide
+```
 
 **Title**
 ```
@@ -1504,32 +1651,40 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Train or drive to Ascot: which actually costs less"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Waterloo to Ascot takes about 52 minutes and the station is a seven minute walk away."
+   "Against £45 for parking plus fuel, the train usually wins for one or two people and loses for a car of four."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers on a London station platform about to board a train, women i
-  n knee-length summer dresses carrying wide-brimmed hats, men in grey m
-  orning suits. Seen from a low three-quarter angle along the platform. 
-  Bright morning light through the station roof.
+  Racegoers on a London station platform about to board a train, women
+  i n knee-length summer dresses carrying wide-brimmed hats, men in
+  grey m orning suits. Seen from a low three-quarter angle along the
+  platform. Bright morning light through the station roof.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Your First Time at the Races: How the Day Actually Works
@@ -1540,8 +1695,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-13 · A raceday is seven hours long and about twenty minutes of it is racing
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1569,38 +1728,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "A raceday is seven hours long and about twenty minutes of it is racing"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Gates open at 10.30am, the first race is at 2.30pm, the last at 6.10pm."
+   "Once you know that ratio the day makes sense: it is an outdoor social event that happens to have racing in it."
+   "Cloakrooms open with the gates in every enclosure."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers standing in loose groups on a mown lawn at a summer racecour
-  se, drinks in hand, in pale dresses, hats and light suits. Grandstand 
-  and white marquees behind. Late afternoon light, long soft shadows, re
-  laxed and social.
+  Racegoers standing in loose groups on a mown lawn at a summer
+  racecourse, drinks in hand, in pale dresses, hats and light suits.
+  Grandstand and white marquees behind. Late afternoon light, long
+  soft shadows, re laxed and social.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-13 · You do not have to bet to enjoy a day at the races
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1628,38 +1800,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You do not have to bet to enjoy a day at the races"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Plenty of people never place one."
+   "If you want a reason to care about the next four minutes, pick a horse by the colours the jockey is wearing."
+   "It does exactly the same job as a bet. There is a minimum stake but never an obligation."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A close overhead view of an open printed racecard and a slim pen resti
-  ng on a weathered wooden rail, a gloved hand just entering the frame a
-  t one edge. Soft natural daylight, shallow depth of field, warm paper 
-  tones.
+  A close overhead view of an open printed racecard and a slim pen
+  resting on a weathered wooden rail, a gloved hand just entering the
+  frame a t one edge. Soft natural daylight, shallow depth of field,
+  warm paper tones.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-13 · Find your horse by the colours, not the name
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1687,38 +1872,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Find your horse by the colours, not the name"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The silks a jockey wears identify the owner and are the only reliable way to pick out one horse at distance."
+   "Trying to follow the whole field is what makes racing feel impenetrable."
+   "Even regular racegoers do not follow the whole field."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Three jockeys in brightly coloured racing silks, emerald and gold, sca
-  rlet and white, royal blue with hoops, riding toward the camera on a t
-  urf track. Motion in the horses' legs, crowd blurred beyond the rail. 
-  Bright daylight, sharp on the silks.
+  Three jockeys in brightly coloured racing silks, emerald and gold,
+  scarlet and white, royal blue with hoops, riding toward the camera
+  on a t urf track. Motion in the horses' legs, crowd blurred beyond
+  the rail. Bright daylight, sharp on the silks.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-14 · What to actually bring to your first raceday
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1746,38 +1944,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What to actually bring to your first raceday"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Shoes you can stand in for six hours on grass, a layer for the weather, photo ID if you look under 25, and a paper train ticket for Ascot because contactless does not work on that line."
+   "Some on the day car parks take cash only."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An overhead flat lay on natural linen of a pair of low nude court shoe
-  s, a small structured clutch bag, folded sunglasses, a soft cream pash
-  mina and a printed paper ticket. Generous space between objects. Soft 
-  diffused daylight, calm neutral palette.
+  An overhead flat lay on natural linen of a pair of low nude court
+  shoe s, a small structured clutch bag, folded sunglasses, a soft
+  cream pash mina and a printed paper ticket. Generous space between
+  objects. Soft diffused daylight, calm neutral palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-14 · Arrive two hours before the first race, not at the gates
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1805,38 +2015,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Arrive two hours before the first race, not at the gates"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Gates open four hours ahead of racing."
+   "Two hours is enough to get in, eat, find your bearings and see the horses, without standing around for half a day."
+   "Cloakrooms open with the gates in every enclosure."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Ornate black ironwork racecourse gates standing open in early morning 
-  light, the first racegoers walking through in ones and twos, women in 
-  summer dresses and hats, a steward to one side. Long morning shadows a
-  cross the path, flowers in planters.
+  Ornate black ironwork racecourse gates standing open in early
+  morning light, the first racegoers walking through in ones and twos,
+  women in summer dresses and hats, a steward to one side. Long
+  morning shadows a cross the path, flowers in planters.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-14 · The mistake almost every first-timer makes
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/first-time-at-the-races`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/first-time-at-the-races
+```
 
 **Title**
 ```
@@ -1864,32 +2087,40 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The mistake almost every first-timer makes"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Buying the ticket on the name rather than what it includes."
+   "The grander enclosure is not automatically the better day, and at Ascot it comes with a dress code and a ban on the picnic you were planning."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A woman in a pale lemon knee-length dress and a wide-brimmed cream hat
-  , photographed from behind at the rail of a Parade Ring, watching hors
-  es being walked. Green lawn and white rail in front of her, soft crowd
-   beyond. Bright summer light.
+  A woman in a pale lemon knee-length dress and a wide-brimmed cream
+  hat , photographed from behind at the rail of a Parade Ring,
+  watching hors es being walked. Green lawn and white rail in front of
+  her, soft crowd beyond. Bright summer light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # The Grand National at Aintree: Enclosures, Dress Code and Free Parking
@@ -1900,8 +2131,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-15 · Aintree tells you to wear whatever you like
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -1929,38 +2164,51 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Aintree tells you to wear whatever you like"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The racecourse's own guidance is to come dressed to feel your best, and it names a sweatshirt, jeans and clean trainers as a perfectly good answer."
+   "Fancy dress is the exception at the Grand National Festival."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A woman at Aintree in April, shot from the waist up in three-quarter v
-  iew. A camel wool coat over a forest-green midi dress, a wide-brimmed 
-  cream hat, gold hoop earrings, a small structured navy bag. Bright bre
-  ezy April light, crowd blurred behind in camel, navy and cream.
+  A woman at Aintree in April, shot from the waist up in three-quarter
+  v iew. A camel wool coat over a forest-green midi dress, a wide-
+  brimmed cream hat, gold hoop earrings, a small structured navy bag.
+  Bright breezy April light, crowd blurred behind in camel, navy and
+  cream.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-15 · Parking is free at the Grand National
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -1988,37 +2236,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Parking is free at the Grand National"
+
+3. Beneath it, these lines in smaller grey serif:
+   "A free on-site car park runs for general admission at the Festival, and children go free too."
+   "Royal Ascot charges £45 in advance for the equivalent, which makes Aintree the cheaper day before you buy a ticket."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Cars parked in neat rows on grass at a British racecourse with the gra
-  ndstand rising behind, racegoers walking toward it in coats and hats. 
-  Bright April light, blue sky with scattered cloud, fresh green grass.
+  Cars parked in neat rows on grass at a British racecourse with the
+  gra ndstand rising behind, racegoers walking toward it in coats and
+  hats. Bright April light, blue sky with scattered cloud, fresh green
+  grass.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-15 · Two Aintree enclosures are over 21s only
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -2046,38 +2307,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Two Aintree enclosures are over 21s only"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The Platinum Lounge and the Princess Royal Seats and Gallery both are, so a family group needs general admission or one of the unrestricted stands."
+   "That is the detail that catches groups out when they book."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Spectators watching a jump race from a raised covered stand, seen from
-   behind and slightly below, in spring coats, hats and scarves. The tra
-  ck and a fence visible beyond the rail. Bright April daylight, camel a
-  nd navy palette.
+  Spectators watching a jump race from a raised covered stand, seen
+  from behind and slightly below, in spring coats, hats and scarves.
+  The tra ck and a fence visible beyond the rail. Bright April
+  daylight, camel a nd navy palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-16 · The Grand National is four and a quarter miles and thirty fences
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -2105,38 +2378,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Grand National is four and a quarter miles and thirty fences"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It is a handicap, which is why a horse at long odds can win it."
+   "The race takes the best part of ten minutes with a huge field, so pick one set of colours and watch for those rather than the whole race."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racehorses and jockeys mid-jump over a large spruce-dressed steeplecha
-  se fence, turf flying, jockeys in bright silks. Shot from track level 
-  at a slight angle. Bright April light, motion in the horses, crowd sof
-  t in the far background.
+  Racehorses and jockeys mid-jump over a large spruce-dressed
+  steeplechase fence, turf flying, jockeys in bright silks. Shot from
+  track level at a slight angle. Bright April light, motion in the
+  horses, crowd sof t in the far background.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-16 · Aintree or Cheltenham: which jump meeting to pick
 
-**Board:** Cheltenham & Jump Racing  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Cheltenham & Jump Racing
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -2164,38 +2449,51 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Aintree or Cheltenham: which jump meeting to pick"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Cheltenham is the championship meeting where the best horses in the discipline meet."
+   "Aintree has the one race the whole country watches."
+   "Neither has a dress code, and Aintree is the cheaper day."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers standing in groups on grass in front of an April racecourse 
-  grandstand, in camel and navy coats, women in wide-brimmed hats and mi
-  di dresses. Fresh green turf and white running rail beyond. Breezy bri
-  ght daylight.
+  Racegoers standing in groups on grass in front of an April
+  racecourse grandstand, in camel and navy coats, women in wide-
+  brimmed hats and mi di dresses. Fresh green turf and white running
+  rail beyond. Breezy bright daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-16 · Do not wear a football shirt to Aintree
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/grand-national-aintree-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/grand-national-aintree-guide
+```
 
 **Title**
 ```
@@ -2223,33 +2521,41 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE GRAND NATIONAL"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Do not wear a football shirt to Aintree"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The racecourse asks people to leave team kits at home, on the grounds that showing club allegiance can look antagonistic."
+   "In a Liverpool crowd on Grand National day that is not an abstract concern."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Three racegoers walking together at a spring race meeting, seen in thr
-  ee-quarter view: a woman in a forest-green midi dress and cream wide-b
-  rimmed hat, a woman in a camel coat over a cream dress, a man in a nav
-  y blazer and open-collared shirt. Elegant and relaxed, no logos or tea
-  m colours. Bright April light.
+  Three racegoers walking together at a spring race meeting, seen in
+  three-quarter view: a woman in a forest-green midi dress and cream
+  wide-b rimmed hat, a woman in a camel coat over a cream dress, a man
+  in a navy blazer and open-collared shirt. Elegant and relaxed, no
+  logos or tea m colours. Bright April light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # The Epsom Derby: The Most Relaxed of the Big Race Meetings
@@ -2260,8 +2566,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-17 · Epsom says jeans and clean trainers are fine
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2289,39 +2599,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Epsom says jeans and clean trainers are fine"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The racecourse asks people to come dressed to feel your best and names exactly that as a valid choice."
+   "The Queen Elizabeth II Stand on Derby Day is the one exception, where a smart code applies."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers standing on open downland grass at Epsom in relaxed summer c
-  lothes: a woman in a simple cotton sundress and white trainers, a man 
-  in a linen shirt and chinos, another in a light blazer without a tie. 
-  Unposed and easy. The grandstand and open sky behind. Bright June ligh
-  t.
+  Racegoers standing on open downland grass at Epsom in relaxed summer
+  c lothes: a woman in a simple cotton sundress and white trainers, a
+  man in a linen shirt and chinos, another in a light blazer without a
+  tie. Unposed and easy. The grandstand and open sky behind. Bright
+  June light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-17 · The Derby course climbs, falls and bends left
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2349,38 +2671,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Derby course climbs, falls and bends left"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Epsom Downs is not flat despite being a flat race."
+   "It rises, drops sharply and turns left at Tattenham Corner before the straight, which is why the Derby is a harder test than the distance suggests."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A wide view of the Epsom Downs racecourse sweeping away and curving le
-  ft, white running rails following the camber of the hill, open downlan
-  d and a big summer sky above. Small figures of racegoers along the rai
-  l for scale. Clear bright daylight.
+  A wide view of the Epsom Downs racecourse sweeping away and curving
+  le ft, white running rails following the camber of the hill, open
+  downland and a big summer sky above. Small figures of racegoers
+  along the rail for scale. Clear bright daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-17 · What is actually banned at Epsom
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2408,38 +2742,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What is actually banned at Epsom"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Offensive or derogatory fancy dress may be refused, and the racecourse asks people to avoid football shirts."
+   "That is the whole list for most of the course. No ban on jeans, trainers or shorts."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A relaxed crowd spread across open downland grass on Derby Day, people
-   sitting on rugs and standing in groups, in casual summer clothes, sun
-  glasses and a few straw hats. Funfair rides and marquees small in the 
-  distance. Warm afternoon light.
+  A relaxed crowd spread across open downland grass on Derby Day,
+  people sitting on rugs and standing in groups, in casual summer
+  clothes, sun glasses and a few straw hats. Funfair rides and
+  marquees small in the distance. Warm afternoon light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-18 · Epsom is the easiest first race meeting to attend
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2467,38 +2813,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Epsom is the easiest first race meeting to attend"
+
+3. Beneath it, these lines in smaller grey serif:
+   "No dress code across almost all of the course, no requirement to buy anything, and the most prestigious flat race in Britain as the reason to be there."
+   "If a dress code is what puts you off, start here."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two friends at the running rail of a racecourse seen from behind, in s
-  imple cotton summer dresses in white and pale blue, one wearing a stra
-  w sun hat, both leaning on the rail watching the track. Open downland 
-  and blue sky beyond. Warm bright light.
+  Two friends at the running rail of a racecourse seen from behind, in
+  s imple cotton summer dresses in white and pale blue, one wearing a
+  stra w sun hat, both leaning on the rail watching the track. Open
+  downland and blue sky beyond. Warm bright light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-18 · Epsom and Royal Ascot are opposite ends of the same sport
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2526,39 +2884,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Epsom and Royal Ascot are opposite ends of the same sport"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Both are flat racing and both are historic. Ascot publishes the width of an acceptable shoulder strap."
+   "Epsom publishes a sentence about being comfortable. Choose the one that matches the day you want."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two racecourse scenes side by side in one frame, divided cleanly down 
-  the middle. Left: formal Royal Ascot racegoers in morning dress and wi
-  de-brimmed hats. Right: relaxed Epsom racegoers in sundresses, shirtsl
-  eeves and trainers on open grass. Same eye level and summer light acro
-  ss both halves.
+  Two racecourse scenes side by side in one frame, divided cleanly
+  down the middle. Left: formal Royal Ascot racegoers in morning dress
+  and wi de-brimmed hats. Right: relaxed Epsom racegoers in
+  sundresses, shirtsl eeves and trainers on open grass. Same eye level
+  and summer light acro ss both halves.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-18 · One Epsom stand does have a dress code
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/epsom-derby-guide`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/epsom-derby-guide
+```
 
 **Title**
 ```
@@ -2586,32 +2956,42 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "THE EPSOM DERBY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "One Epsom stand does have a dress code"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The Queen Elizabeth II Stand on Derby Day runs a smart code while the rest of the course follows the relaxed guidance."
+   "Check which stand your ticket is for before you decide what to wear."
+   "Everywhere else follows dress to feel your best."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A smartly dressed couple on a racecourse terrace overlooking the track
-  , she in a tailored navy midi dress and a small structured hat, he in 
-  a light grey suit with an open collar. Seen from behind and to one sid
-  e, the course and crowd below them. Bright summer light.
+  A smartly dressed couple on a racecourse terrace overlooking the
+  track , she in a tailored navy midi dress and a small structured
+  hat, he in a light grey suit with an open collar. Seen from behind
+  and to one sid e, the course and crowd below them. Bright summer
+  light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # UK Racecourse Dress Codes Compared: Ascot, Cheltenham, Aintree and Epsom
@@ -2622,8 +3002,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-19 · Only one British racecourse actually enforces a dress code
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2651,39 +3035,52 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Only one British racecourse actually enforces a dress code"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Royal Ascot, and it varies by enclosure."
+   "Cheltenham, Aintree and Epsom publish no formal dress code at all."
+   "Most advice online describes Ascot's rules and implies they apply to racing generally."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Four small racecourse scenes arranged as a clean grid in one frame, ea
-  ch the same size and eye level: formal summer racegoers in morning dre
-  ss and hats, winter racegoers in tweed coats, spring racegoers in came
-  l coats, casual summer racegoers in sundresses. Consistent lighting ac
-  ross all four panels.
+  Four small racecourse scenes arranged as a clean grid in one frame,
+  ea ch the same size and eye level: formal summer racegoers in
+  morning dre ss and hats, winter racegoers in tweed coats, spring
+  racegoers in came l coats, casual summer racegoers in sundresses.
+  Consistent lighting ac ross all four panels.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-19 · Can you wear jeans to the races? It depends where
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2711,38 +3108,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Can you wear jeans to the races? It depends where"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Aintree and Epsom name jeans and clean trainers as acceptable in their own published guidance."
+   "Royal Ascot bans denim across the entire site, including the enclosure that otherwise has no dress code."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A woman at a British racecourse in dark indigo jeans, a tailored camel
-   blazer, a cream roll neck and polished brown ankle boots, a small cro
-  ssbody bag. Shot from mid-thigh up in three-quarter view. Relaxed spri
-  ng light, blurred crowd behind in muted tones.
+  A woman at a British racecourse in dark indigo jeans, a tailored
+  camel blazer, a cream roll neck and polished brown ankle boots, a
+  small cro ssbody bag. Shot from mid-thigh up in three-quarter view.
+  Relaxed spring light, blurred crowd behind in muted tones.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-19 · Trainers: fine at three racecourses, banned at one
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2770,38 +3179,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Trainers: fine at three racecourses, banned at one"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Aintree and Epsom explicitly permit clean trainers. Royal Ascot bans them site wide."
+   "Cheltenham has no rule against them but warns that the walk from the car park usually decides it for you."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A close crop from the knee down of a woman standing on cut grass in cl
-  ean white leather trainers and a flowing cream midi dress, one foot sl
-  ightly forward. Blurred racecourse rail and crowd beyond. Bright summe
-  r light, crisp detail on the shoes.
+  A close crop from the knee down of a woman standing on cut grass in
+  clean white leather trainers and a flowing cream midi dress, one
+  foot sl ightly forward. Blurred racecourse rail and crowd beyond.
+  Bright summer light, crisp detail on the shoes.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-20 · You only have to wear a hat at one meeting
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2829,38 +3250,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You only have to wear a hat at one meeting"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Royal Ascot requires headwear in the Royal, Queen Anne and Village Enclosures."
+   "Nowhere else in Britain does."
+   "The hats at Cheltenham's Ladies Day and at the Derby are a choice, not a rule."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A row of wide-brimmed hats and sculptural sinamay headpieces displayed
-   on simple wooden stands in a milliner's window, in cream, blush, navy
-   and buttermilk. Clean pale background, soft directional daylight, ele
-  gant still life.
+  A row of wide-brimmed hats and sculptural sinamay headpieces
+  displayed on simple wooden stands in a milliner's window, in cream,
+  blush, navy and buttermilk. Clean pale background, soft directional
+  daylight, elegant still life.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-20 · Where you can and cannot wear fancy dress
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2888,38 +3322,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Where you can and cannot wear fancy dress"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Epsom allows it if it is not offensive."
+   "Cheltenham allows it except in the Club Enclosure, hospitality and restaurants."
+   "Aintree does not permit it at the Grand National Festival, and Ascot bans it everywhere."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Four racecourse entrance scenes arranged as a clean vertical strip in 
-  one frame, each showing racegoers arriving in different levels of form
-  ality, from morning dress and top hats through to casual summer clothe
-  s. Consistent framing and daylight across all four.
+  Four racecourse entrance scenes arranged as a clean vertical strip
+  in one frame, each showing racegoers arriving in different levels of
+  form ality, from morning dress and top hats through to casual summer
+  clothe s. Consistent framing and daylight across all four.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-20 · The two things banned at nearly every racecourse
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/uk-racecourse-dress-codes-compared`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/uk-racecourse-dress-codes-compared
+```
 
 **Title**
 ```
@@ -2947,32 +3394,41 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "BRITISH RACECOURSES"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The two things banned at nearly every racecourse"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Offensive or derogatory outfits, which every course reserves the right to refuse."
+   "And football shirts, which Aintree and Epsom both ask people to leave at home."
+   "Neither is about formality. Every course reserves the right to refuse entry."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A small group of racegoers walking together at a British racecourse in
-   tailored spring coats, midi dresses and hats, seen in three-quarter v
-  iew. Camel, navy and cream palette, no logos or team colours anywhere.
-   Bright breezy daylight.
+  A small group of racegoers walking together at a British racecourse
+  in tailored spring coats, midi dresses and hats, seen in three-
+  quarter v iew. Camel, navy and cream palette, no logos or team
+  colours anywhere. Bright breezy daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # The Royal Enclosure Dress Code, Measured
@@ -2983,8 +3439,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-21 · The Royal Enclosure measures your shoulder straps
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3012,38 +3472,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Royal Enclosure measures your shoulder straps"
+
+3. Beneath it, these lines in smaller grey serif:
+   "One inch minimum, or 2.5cm. A headpiece needs a solid base of at least four inches."
+   "It is the only British racecourse dress code that publishes measurements, and it is enforced."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A close editorial crop of a woman's shoulder and upper arm in a cream 
-  structured dress with a wide fabric strap, the brim of a pale hat ente
-  ring the top of the frame, a single pearl earring visible. Soft bright
-   summer light, shallow depth of field, elegant and restrained.
+  A close editorial crop of a woman's shoulder and upper arm in a
+  cream structured dress with a wide fabric strap, the brim of a pale
+  hat entering the top of the frame, a single pearl earring visible.
+  Soft bright summer light, shallow depth of field, elegant and
+  restrained.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-21 · Why fascinators are refused in the Royal Enclosure
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3071,39 +3544,52 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Why fascinators are refused in the Royal Enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It is a size rule."
+   "Ascot defines a fascinator as a headpiece without a solid base of at least four inches, so anything at or above that counts as a hatinator and is fine."
+   "Below it, you are turned away."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two headpieces displayed side by side on simple pale wooden stands aga
-  inst a clean off-white background: on the left a small feathered fasci
-  nator on a thin band, on the right a wide sculptural sinamay hatinator
-   with a broad solid base. Even soft studio daylight, clear size contra
-  st.
+  Two headpieces displayed side by side on simple pale wooden stands
+  aga inst a clean off-white background: on the left a small feathered
+  fasci nator on a thin band, on the right a wide sculptural sinamay
+  hatinator with a broad solid base. Even soft studio daylight, clear
+  size contra st.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-21 · Men need morning dress and a top hat in the Royal Enclosure
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3131,38 +3617,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Men need morning dress and a top hat in the Royal Enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Black, grey or navy, with a waistcoat, a necktie, black shoes and socks over the ankle."
+   "Cravats, bow ties and neckerchiefs are all refused, and so are top hats with ribbons or feathers added."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A man in a charcoal morning suit with tails, a pale waistcoat and a bl
-  ack silk top hat, photographed from behind and slightly to one side ag
-  ainst a soft summer racecourse background. Crisp tailoring detail, war
-  m bright light, editorial menswear photography.
+  A man in a charcoal morning suit with tails, a pale waistcoat and a
+  black silk top hat, photographed from behind and slightly to one
+  side ag ainst a soft summer racecourse background. Crisp tailoring
+  detail, war m bright light, editorial menswear photography.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-22 · You can hire morning dress rather than buy it
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3190,38 +3688,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You can hire morning dress rather than buy it"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Hiring is the normal route, and Ascot names Moss as its official hire licensee."
+   "Any morning dress meeting the published requirements is acceptable, so you are not obliged to use either named supplier."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A tailor's fitting room with a rail of charcoal and dove-grey morning 
-  coats, pale waistcoats hanging beside them and a row of black silk top
-   hats on a shelf above, a tape measure draped over the rail. Warm indo
-  or light, wood and brass, no people.
+  A tailor's fitting room with a rail of charcoal and dove-grey
+  morning coats, pale waistcoats hanging beside them and a row of
+  black silk top hats on a shelf above, a tape measure draped over the
+  rail. Warm indoor light, wood and brass, no people.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-22 · Children under 10 are not allowed in the Royal Enclosure
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3249,38 +3759,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Children under 10 are not allowed in the Royal Enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Those aged 10 to 17 have to buy admission there, unlike the other enclosures where under 18s go free."
+   "Juniors get two relaxations: a fascinator with no size rule, and a lounge suit instead of morning dress."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A teenage boy in a dark navy lounge suit with a collared shirt and nec
-  ktie standing beside a teenage girl in a simple pale dress with a smal
-  l headpiece, both at a summer racecourse, seen in three-quarter view. 
-  Grandstand soft behind. Bright June light.
+  A teenage boy in a dark navy lounge suit with a collared shirt and
+  necktie standing beside a teenage girl in a simple pale dress with a
+  small headpiece, both at a summer racecourse, seen in three- quarter
+  view. Grandstand soft behind. Bright June light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-22 · You cannot buy your way into the Royal Enclosure
 
-**Board:** Royal Ascot  
-**Link:** `https://www.ofthepitch.com/royal-enclosure-dress-code`
+**Board:** Royal Ascot
+
+**Link**
+```
+https://www.ofthepitch.com/royal-enclosure-dress-code
+```
 
 **Title**
 ```
@@ -3308,32 +3830,40 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ROYAL ASCOT"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You cannot buy your way into the Royal Enclosure"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Membership needs sponsorship by two existing members and approval by His Majesty's Representative at Ascot."
+   "The enclosure dates to 1807. Queen Anne is the closest equivalent that is actually for sale."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An ornate black and gold wrought iron gate at the entrance to an exclu
-  sive racecourse enclosure, closed, with manicured flowers in planters 
-  either side and blurred figures in morning dress beyond. Bright summer
-   light, shallow depth of field, no legible signage.
+  An ornate black and gold wrought iron gate at the entrance to an
+  exclusive racecourse enclosure, closed, with manicured flowers in
+  planters either side and blurred figures in morning dress beyond.
+  Bright summer light, shallow depth of field, no legible signage.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Racing Terms Explained for People Who Do Not Follow Racing
@@ -3344,8 +3874,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-23 · What the going actually means
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3373,38 +3907,51 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What the going actually means"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It is the state of the ground, and rain moves it from firm toward heavy."
+   "Firm suits fast horses, heavy suits stamina."
+   "It is why favourites lose and why trainers pull horses out on the morning of a race."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A close low view of racecourse turf beside a white running rail after 
-  rain, water pooling in hoof prints, grass dark and heavy, a horse's le
-  gs blurred in motion in the background. Flat grey light, muted green a
-  nd slate palette.
+  A close low view of racecourse turf beside a white running rail
+  after rain, water pooling in hoof prints, grass dark and heavy, a
+  horse's le gs blurred in motion in the background. Flat grey light,
+  muted green a nd slate palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-23 · A furlong is an eighth of a mile
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3432,38 +3979,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "A furlong is an eighth of a mile"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Two hundred and twenty yards."
+   "Distances are given in miles and furlongs, so the Derby is a mile and a half and a sprint is five furlongs."
+   "It is what commentators count down in at the finish. It is what commentators count down at the finish."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A white and black furlong marker post standing beside a turf racecours
-  e, the white running rail stretching away into the distance behind it,
-   open green course beyond. Clean bright daylight, simple and graphic c
-  omposition.
+  A white and black furlong marker post standing beside a turf
+  racecourse, the white running rail stretching away into the distance
+  behind it, open green course beyond. Clean bright daylight, simple
+  and graphic c omposition.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-23 · The Parade Ring is where racing stops being abstract
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3491,38 +4051,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Parade Ring is where racing stops being abstract"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Horses are walked in circles before each race so you can look at them, and jockeys join them there."
+   "At Royal Ascot only the Royal and Queen Anne Enclosures reach it, which decides your ticket for you."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A racehorse being led around a parade ring by a groom in a flat cap, t
-  he horse's coat gleaming, spectators watching from behind a white rail
-   in summer dresses and hats. Green lawn, soft afternoon light, shallow
-   depth of field on the crowd.
+  A racehorse being led around a parade ring by a groom in a flat cap,
+  t he horse's coat gleaming, spectators watching from behind a white
+  rail in summer dresses and hats. Green lawn, soft afternoon light,
+  shallow depth of field on the crowd.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-24 · Why the Grand National is so hard to predict
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3550,38 +4122,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Why the Grand National is so hard to predict"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It is a handicap, which means better horses carry more weight so that in theory they all finish together."
+   "The best horse in the field is carrying the most, over the longest trip, at thirty fences."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A leather racing saddle, a numbered weight cloth and small lead weight
-  s laid out on a scrubbed wooden bench in a weighing room. Warm indoor 
-  light from a window to one side, worn leather and brass detail, no peo
-  ple.
+  A leather racing saddle, a numbered weight cloth and small lead
+  weight s laid out on a scrubbed wooden bench in a weighing room.
+  Warm indoor light from a window to one side, worn leather and brass
+  detail, no peo ple.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-24 · Follow the colours, not the horse
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3609,38 +4193,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Follow the colours, not the horse"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The silks a jockey wears identify the owner, and they are the only reliable way to pick one horse out at distance."
+   "Find your colours on the racecard before the off and the race becomes watchable."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A row of brightly coloured racing silks hanging on brass hooks in a ch
-  anging room, emerald and gold, scarlet and white, royal blue with hoop
-  s, cerise with a sash. Clean pale wall behind, soft even daylight, gra
-  phic and colourful.
+  A row of brightly coloured racing silks hanging on brass hooks in a
+  ch anging room, emerald and gold, scarlet and white, royal blue with
+  hoop s, cerise with a sash. Clean pale wall behind, soft even
+  daylight, gra phic and colourful.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-24 · Each way, explained in one line
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-terms-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-terms-explained
+```
 
 **Title**
 ```
@@ -3668,31 +4264,40 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING EXPLAINED"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Each way, explained in one line"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Half your stake on the horse to win, half on it to place in the top few."
+   "It costs twice a straight bet because it is two bets, and it is the one that keeps a first-timer interested longest."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A blank betting slip and a short pen resting on a weathered wooden led
-  ge at a racecourse, the green track and white rail blurred well beyond
-  . Soft natural daylight, shallow depth of field, warm neutral tones.
+  A blank betting slip and a short pen resting on a weathered wooden
+  led ge at a racecourse, the green track and white rail blurred well
+  beyond . Soft natural daylight, shallow depth of field, warm neutral
+  tones.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # An Ordinary Ascot Raceday vs Royal Ascot: Same Course, Different Day
@@ -3703,8 +4308,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-25 · Ascot runs 26 racedays a year and only five are Royal Ascot
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -3732,38 +4341,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Ascot runs 26 racedays a year and only five are Royal Ascot"
+
+3. Beneath it, these lines in smaller grey serif:
+   "On the other 21 the parking is free, the dress code is far lighter and children still go free."
+   "Same course, same grandstand, same view of the same track, for a fraction of what June costs."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A racecourse grandstand on an ordinary weekday afternoon, only lightly
-   filled, a scattering of spectators along the rail in coats and casual
-   clothes. Empty seats visible, green track in the foreground. Soft ove
-  rcast daylight, calm and unhurried.
+  A racecourse grandstand on an ordinary weekday afternoon, only
+  lightly filled, a scattering of spectators along the rail in coats
+  and casual clothes. Empty seats visible, green track in the
+  foreground. Soft ove rcast daylight, calm and unhurried.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-25 · The Queen Anne Enclosure changes rank depending on the day
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -3791,39 +4412,52 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Queen Anne Enclosure changes rank depending on the day"
+
+3. Beneath it, these lines in smaller grey serif:
+   "At Royal Ascot it is the premier public enclosure."
+   "On an ordinary raceday it is the entry level one, and King Edward VII is the premier."
+   "Book on the name and you get a different day than you expected."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two racecourse enclosure entrances shown side by side in one frame, di
-  vided cleanly: on the left a busy formal entrance with racegoers in mo
-  rning dress and hats, on the right the same style of entrance quiet wi
-  th a handful of people in ordinary coats. Matched framing and daylight
-  .
+  Two racecourse enclosure entrances shown side by side in one frame,
+  di vided cleanly: on the left a busy formal entrance with racegoers
+  in mo rning dress and hats, on the right the same style of entrance
+  quiet wi th a handful of people in ordinary coats. Matched framing
+  and daylight .
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-25 · Parking is free at Ascot on every day except five
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -3851,37 +4485,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Parking is free at Ascot on every day except five"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Free on all racedays through both the Flat and Jump seasons, and it cannot be pre-booked."
+   "Car parks open at 9am. Only Royal Ascot charges, at £45 in advance and more on the day."
+   "It cannot be pre-booked on an ordinary raceday."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Cars parked in loose rows on grass beside a British racecourse on a qu
-  iet raceday, the grandstand visible behind, only a few people walking 
-  toward it. Overcast soft daylight, muted green and grey palette.
+  Cars parked in loose rows on grass beside a British racecourse on a
+  quiet raceday, the grandstand visible behind, only a few people
+  walking toward it. Overcast soft daylight, muted green and grey
+  palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-26 · Gate times at Ascot change with the season
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -3909,38 +4557,50 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Gate times at Ascot change with the season"
+
+3. Beneath it, these lines in smaller grey serif:
+   "10.45am through the Jumps season from November to February, 11am through the Flat season from March to October."
+   "Champions Day and Royal Ascot are the exceptions, both opening at 10.30am."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racecourse entrance gates standing open on a cold morning, mist lying 
-  over the green track behind them, a steward in a heavy coat by the tur
-  nstile. Flat grey winter light, muted palette, breath visible in the a
-  ir.
+  Racecourse entrance gates standing open on a cold morning, mist
+  lying over the green track behind them, a steward in a heavy coat by
+  the tur nstile. Flat grey winter light, muted palette, breath
+  visible in the a ir.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-26 · You can upgrade your racecourse ticket on the day
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -3968,38 +4628,51 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "You can upgrade your racecourse ticket on the day"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot allows upgrades to a more premium enclosure at the Ticket Office, subject to availability."
+   "Buy the cheaper one, see how the day feels, and move up if you want the better view."
+   "Hospitality upgrades go through a separate team."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A racecourse ticket office window in a brick and timber building, a sm
-  artly dressed racegoer in a coat being served at the glass, printed si
-  gnage blurred and unreadable. Soft daylight, warm architectural detail
-  , unhurried.
+  A racecourse ticket office window in a brick and timber building, a
+  sm artly dressed racegoer in a coat being served at the glass,
+  printed si gnage blurred and unreadable. Soft daylight, warm
+  architectural detail , unhurried.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-26 · Your ticket might need a badge as well
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/ordinary-raceday-vs-royal-ascot
+```
 
 **Title**
 ```
@@ -4027,32 +4700,40 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "ASCOT RACEDAYS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Your ticket might need a badge as well"
+
+3. Beneath it, these lines in smaller grey serif:
+   "King Edward VII ticket holders, Fine Dining guests, box guests and members all need one alongside the ticket."
+   "Ascot warns badges may not arrive with your digital tickets, so a gap is not a problem."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A metal racecourse member's badge on a worn leather strap resting on f
-  olded brown tweed, brass and enamel catching the light, no legible tex
-  t or numbers. Close overhead crop, soft directional daylight, rich tex
-  ture.
+  A metal racecourse member's badge on a worn leather strap resting on
+  f olded brown tweed, brass and enamel catching the light, no legible
+  tex t or numbers. Close overhead crop, soft directional daylight,
+  rich tex ture.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Racecourse Tickets Explained: Enclosures, Badges and What You Are Buying
@@ -4063,8 +4744,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-27 · A racecourse ticket buys an area, not a seat
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4092,38 +4777,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "A racecourse ticket buys an area, not a seat"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The enclosure decides where you can stand, whether you reach the Parade Ring, what you have to wear and whether you can bring food in."
+   "Those four things do not move together, which is where people go wrong."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A printed racecourse map and an admission ticket laid out flat on a sc
-  rubbed wooden table beside a pair of folded sunglasses, all text on th
-  e map blurred and unreadable. Soft overhead daylight, warm neutral ton
-  es, clean still life.
+  A printed racecourse map and an admission ticket laid out flat on a
+  sc rubbed wooden table beside a pair of folded sunglasses, all text
+  on th e map blurred and unreadable. Soft overhead daylight, warm
+  neutral ton es, clean still life.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-27 · Enclosure names do not mean the same thing everywhere
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4151,38 +4848,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Enclosure names do not mean the same thing everywhere"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Cheltenham has Club, Tattersalls and Best Mate. Aintree has named stands."
+   "Ascot has four enclosures in June and two the rest of the year. Never assume the name tells you the rank."
+   "Read what an enclosure includes, never what it is called."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A cluster of wooden directional signposts pointing different ways at a
-   racecourse, arms plain and unlettered, against a bright summer sky wi
-  th the grandstand roofline behind. Clean graphic composition, warm day
-  light.
+  A cluster of wooden directional signposts pointing different ways at
+  a racecourse, arms plain and unlettered, against a bright summer sky
+  wi th the grandstand roofline behind. Clean graphic composition,
+  warm day light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-27 · Children often do not need a racecourse ticket at all
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4210,38 +4920,51 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Children often do not need a racecourse ticket at all"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot admits under 18s free with an adult, up to four per adult at the Royal meeting."
+   "Aintree gives free entry with general admission."
+   "The exceptions are the over 21s areas and the Royal Enclosure."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A child of about seven in a smart navy coat holding an adult's hand at
-   a racecourse entrance, both seen from behind, walking toward the turn
-  stiles. Other racegoers soft in the background. Bright spring daylight
-  , warm and unposed.
+  A child of about seven in a smart navy coat holding an adult's hand
+  at a racecourse entrance, both seen from behind, walking toward the
+  turn stiles. Other racegoers soft in the background. Bright spring
+  daylight , warm and unposed.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-28 · Buy on the day and you will usually get in
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4269,38 +4992,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Buy on the day and you will usually get in"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot sells at the Ticket Office and takes cash and card."
+   "For an ordinary midweek card walking up is fine."
+   "For Royal Ascot, Cheltenham or the National, book ahead, and book early because it is cheaper."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A short queue of racegoers at a racecourse ticket window on a bright m
-  orning, in summer dresses, hats and light suits, seen from behind at a
-   slight angle. Brick and timber building, flowers in planters, warm mo
-  rning light.
+  A short queue of racegoers at a racecourse ticket window on a bright
+  m orning, in summer dresses, hats and light suits, seen from behind
+  at a slight angle. Brick and timber building, flowers in planters,
+  warm mo rning light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-28 · A ticket in someone else's name is fine at Ascot
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4328,38 +5064,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "A ticket in someone else's name is fine at Ascot"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The lead booker's name is only a reference for tracking the booking and does not affect entry, and Ascot says guests may gift tickets to family or friends."
+   "That is more relaxed than most ticketing."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two friends arriving together at a racecourse entrance, in knee-length
-   summer dresses in blush and cream with wide-brimmed hats, one holding
-   a ticket. Seen in three-quarter view, ornate gates behind. Bright mor
-  ning light.
+  Two friends arriving together at a racecourse entrance, in knee-
+  length summer dresses in blush and cream with wide-brimmed hats, one
+  holding a ticket. Seen in three-quarter view, ornate gates behind.
+  Bright mor ning light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-28 · Never buy racecourse tickets from a resale site
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-tickets-explained`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-tickets-explained
+```
 
 **Title**
 ```
@@ -4387,32 +5135,40 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACECOURSE TICKETS"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Never buy racecourse tickets from a resale site"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Ascot enforces the right to refuse entry to anyone who bought from a tout, an exchange such as ViaGogo or an auction site."
+   "No entry and no refund, because the ticket was never valid to begin with."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A closed metal racecourse turnstile with a steward in a bowler hat and
-   dark coat standing beside it, arms behind his back, ornate ironwork a
-  bove. Early morning light, no crowd, calm and slightly formal composit
-  ion.
+  A closed metal racecourse turnstile with a steward in a bowler hat
+  and dark coat standing beside it, arms behind his back, ornate
+  ironwork a bove. Early morning light, no crowd, calm and slightly
+  formal composition.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Royal Ascot, Cheltenham, Aintree or Epsom: Which Should You Go To?
@@ -4423,8 +5179,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-09-29 · Four British race meetings, four completely different days
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4452,39 +5212,52 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Four British race meetings, four completely different days"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Royal Ascot is the occasion. Cheltenham is the sport at its most serious."
+   "The Grand National is the famous race. Epsom is the easiest to attend."
+   "Pick on what you want from the day, not on reputation."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Four racecourse scenes arranged as a clean two by two grid in one fram
-  e, each identically framed: formal summer racegoers in morning dress a
-  nd hats, winter racegoers in tweed, spring racegoers in camel coats, c
-  asual summer racegoers in sundresses. Even consistent daylight across 
-  all four panels.
+  Four racecourse scenes arranged as a clean two by two grid in one
+  fram e, each identically framed: formal summer racegoers in morning
+  dress a nd hats, winter racegoers in tweed, spring racegoers in
+  camel coats, c asual summer racegoers in sundresses. Even consistent
+  daylight across all four panels.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-29 · Which race meeting to pick for your first time
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4512,38 +5285,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Which race meeting to pick for your first time"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Epsom or an ordinary raceday at your nearest course, because neither needs any preparation."
+   "Royal Ascot's Windsor Enclosure at £25 works too, as long as you know you will not reach the Parade Ring."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two first-time racegoers at the running rail seen from behind, in rela
-  xed summer clothes, one in a simple sundress and straw hat, one in a l
-  inen shirt, both leaning forward watching the track. Green course and 
-  blurred field of horses beyond. Warm afternoon light.
+  Two first-time racegoers at the running rail seen from behind, in
+  rela xed summer clothes, one in a simple sundress and straw hat, one
+  in a l inen shirt, both leaning forward watching the track. Green
+  course and blurred field of horses beyond. Warm afternoon light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-29 · The cheapest of the big four race meetings
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4571,38 +5356,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The cheapest of the big four race meetings"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The Grand National, once you count everything."
+   "Free on-site parking with general admission and free children's entry remove the two charges that inflate a day at Royal Ascot before you have bought a ticket."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers walking across open grass from a car park toward a racecours
-  e grandstand, in spring coats and hats, cars in soft focus behind them
-  . Bright April daylight, fresh green grass, blue sky with scattered cl
-  oud.
+  Racegoers walking across open grass from a car park toward a
+  racecourse grandstand, in spring coats and hats, cars in soft focus
+  behind them . Bright April daylight, fresh green grass, blue sky
+  with scattered cl oud.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-30 · Which race meeting works best with children
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4630,38 +5427,51 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Which race meeting works best with children"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The Grand National and ordinary racedays, where entry and parking are both free."
+   "Avoid the age restricted areas: Ascot's Royal Enclosure bars under 10s and two Aintree stands are over 21s only."
+   "Under 18s go free at Ascot, four per adult."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A family group walking together at a racecourse, two adults in spring 
-  coats and two children of about eight and eleven in smart casual cloth
-  es, all seen from behind. Grandstand and green course ahead of them. B
-  right breezy April light.
+  A family group walking together at a racecourse, two adults in
+  spring coats and two children of about eight and eleven in smart
+  casual cloth es, all seen from behind. Grandstand and green course
+  ahead of them. B right breezy April light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-30 · If dress codes put you off, three of the four are fine
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4689,38 +5499,50 @@ Palette for this pin: camel, forest green, cream and navy, bright breezy April l
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "If dress codes put you off, three of the four are fine"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Cheltenham, Aintree and Epsom all publish guidance saying there is no formal dress code, and two of them name jeans and clean trainers explicitly."
+   "Royal Ascot is the only one that enforces one."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers in relaxed casual clothes at a British racecourse, a woman i
-  n dark jeans and a camel blazer, a man in a quilted jacket and chinos,
-   a woman in a simple wool dress and boots. Standing in a loose group, 
-  unposed. Bright natural daylight.
+  Racegoers in relaxed casual clothes at a British racecourse, a woman
+  i n dark jeans and a camel blazer, a man in a quilted jacket and
+  chinos, a woman in a simple wool dress and boots. Standing in a
+  loose group, unposed. Bright natural daylight.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-09-30 · Cheltenham or Ascot, if you can only do one
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/which-race-meeting-should-you-go-to`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/which-race-meeting-should-you-go-to
+```
 
 **Title**
 ```
@@ -4748,32 +5570,42 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "WHICH MEETING"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Cheltenham or Ascot, if you can only do one"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Cheltenham if the racing is the point, because it is the championship meeting of jump racing."
+   "Ascot if the day out is the point. If you feel the cold, that decision is made for you already."
+   "March in the Cotswolds is genuinely hard work."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Two racecourse scenes side by side in one frame, divided cleanly down 
-  the middle. Left: winter racegoers in brown tweed and felt hats under 
-  flat grey light. Right: summer racegoers in pastel dresses and wide-br
-  immed hats under blue sky. Matched eye level and composition.
+  Two racecourse scenes side by side in one frame, divided cleanly
+  down the middle. Left: winter racegoers in brown tweed and felt hats
+  under flat grey light. Right: summer racegoers in pastel dresses and
+  wide-br immed hats under blue sky. Matched eye level and
+  composition.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Can You Go to the Races Without Knowing Anything About Racing?
@@ -4784,8 +5616,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-10-01 · Nobody can tell it is your first time at the races
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -4813,38 +5649,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Nobody can tell it is your first time at the races"
+
+3. Beneath it, these lines in smaller grey serif:
+   "You do not need to bet, read a racecard or know a single term, and nobody will ask you anything."
+   "The only visible thing is what you wear, and three of the four big meetings have no dress code at all."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A woman standing alone at a racecourse rail in a simple pale blue midi
-   dress and a wide-brimmed cream hat, seen from behind, watching the em
-  pty track. Green turf and white rail, soft crowd well beyond. Calm war
-  m afternoon light.
+  A woman standing alone at a racecourse rail in a simple pale blue
+  midi dress and a wide-brimmed cream hat, seen from behind, watching
+  the em pty track. Green turf and white rail, soft crowd well beyond.
+  Calm war m afternoon light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-01 · Twenty minutes of racing in a seven hour day
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -4872,38 +5720,50 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Twenty minutes of racing in a seven hour day"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Gates open four hours before the first race and the races themselves take a few minutes each."
+   "Once you know that, the day makes sense: an outdoor social event that happens to have racing in it."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers standing in loose social groups on a mown lawn between races
-  , drinks in hand, in summer dresses, hats and light suits. Grandstand 
-  and white marquees behind, nobody looking at the track. Late afternoon
-   light, long soft shadows.
+  Racegoers standing in loose social groups on a mown lawn between
+  races , drinks in hand, in summer dresses, hats and light suits.
+  Grandstand and white marquees behind, nobody looking at the track.
+  Late afternoon light, long soft shadows.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-01 · Is it awkward going to the races alone?
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -4931,38 +5791,50 @@ Palette for this pin: brown, oatmeal, olive and charcoal, overcast March light.
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Is it awkward going to the races alone?"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Less than most sporting events, because seating is unreserved and the day is spent moving around rather than sitting in an assigned seat."
+   "Walk to the rail for a race, eat between them, leave when you want."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A single figure in a smart camel coat and a felt hat standing at a rac
-  ecourse rail on a quiet afternoon, seen from behind at a distance, the
-   wide green course stretching away. Overcast soft light, muted palette
-  , calm and unhurried.
+  A single figure in a smart camel coat and a felt hat standing at a
+  rac ecourse rail on a quiet afternoon, seen from behind at a
+  distance, the wide green course stretching away. Overcast soft
+  light, muted palette , calm and unhurried.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-02 · Three racing terms worth knowing before you go
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -4990,38 +5862,50 @@ Palette for this pin: off-white paper, near-black type, one burnt-orange accent.
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Three racing terms worth knowing before you go"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The colours, so you can follow your horse. The Parade Ring, because your ticket might not include access."
+   "And the going, because it is what everyone around you will be talking about all afternoon."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An open racecard, a slim pen and a pair of vintage brass binoculars la
-  id on a weathered wooden rail at a racecourse, all printed text blurre
-  d and unreadable. Soft natural daylight, warm wood and brass tones, cl
-  ean still life.
+  An open racecard, a slim pen and a pair of vintage brass binoculars
+  la id on a weathered wooden rail at a racecourse, all printed text
+  blurred and unreadable. Soft natural daylight, warm wood and brass
+  tones, clean still life.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-02 · The Parade Ring is where it stops feeling abstract
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -5049,38 +5933,51 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "The Parade Ring is where it stops feeling abstract"
+
+3. Beneath it, these lines in smaller grey serif:
+   "A racehorse thirty feet away is genuinely impressive in a way a distant field is not."
+   "If you are choosing between two tickets and one includes Parade Ring access, that is the one to buy."
+   "At Ascot only two of the four enclosures reach it."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A racehorse being walked around a parade ring by a groom, close to the
-   white rail where spectators in summer dresses and hats watch from onl
-  y a few feet away. The horse's coat gleaming, muscles visible. Warm af
-  ternoon light, shallow depth of field.
+  A racehorse being walked around a parade ring by a groom, close to
+  the white rail where spectators in summer dresses and hats watch
+  from only a few feet away. The horse's coat gleaming, muscles
+  visible. Warm af ternoon light, shallow depth of field.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-02 · Will you be bored at the races? Depends what you expect
 
-**Board:** Going To The Sport  
-**Link:** `https://www.ofthepitch.com/races-without-knowing-anything`
+**Board:** Going To The Sport
+
+**Link**
+```
+https://www.ofthepitch.com/races-without-knowing-anything
+```
 
 **Title**
 ```
@@ -5108,32 +6005,40 @@ Palette for this pin: powder blue, blush, cream and buttermilk, bright June suns
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "YOUR FIRST RACEDAY"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Will you be bored at the races? Depends what you expect"
+
+3. Beneath it, these lines in smaller grey serif:
+   "The people who do not enjoy a raceday came expecting a sporting fixture and found a social one."
+   "Go expecting a long afternoon outdoors with things happening periodically and knowing nothing does not matter."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A relaxed racecourse crowd on open grass in summer sunshine, some sitt
-  ing on rugs, others standing in groups talking, in light dresses, shir
-  tsleeves and a scattering of hats. Unposed and easy. Warm golden after
-  noon light.
+  A relaxed racecourse crowd on open grass in summer sunshine, some
+  sitt ing on rugs, others standing in groups talking, in light
+  dresses, shir tsleeves and a scattering of hats. Unposed and easy.
+  Warm golden after noon light.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 # Racing in the Rain: What Changes and What to Wear
@@ -5144,8 +6049,12 @@ edge. Nothing overlaps the footer.
 
 ## 2026-10-03 · Rain almost never stops British racing
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5173,38 +6082,50 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: one enormous answer as the hero, question small above it.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Rain almost never stops British racing"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Meetings are abandoned for waterlogging or frost, not for rain."
+   "What rain changes is the going, which changes which horses run well, and that is part of the sport rather than a problem with it."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers standing under dark umbrellas at a racecourse in steady rain
-  , in waxed jackets and boots, horses running on wet turf in the middle
-   distance beyond the rail. Flat grey light, slate and moss palette, wa
-  ter on the grass.
+  Racegoers standing under dark umbrellas at a racecourse in steady
+  rain , in waxed jackets and boots, horses running on wet turf in the
+  middle distance beyond the rail. Flat grey light, slate and moss
+  palette, wa ter on the grass.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-03 · What to wear to the races when it rains
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5232,38 +6153,51 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: a ticked checklist, five to seven rows, generous leading.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "What to wear to the races when it rains"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Layers and boots you can walk in."
+   "Cheltenham's own guidance recommends tights under trousers, thermals, a thin roll neck under a roll neck and gloves, and warns off bare legs and thin fabrics."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  An overhead flat lay on dark slate stone of a folded olive waxed cotto
-  n jacket, a pair of dark green wellington boots, a rolled oxblood wool
-   scarf, tan leather gloves and a flat tweed cap. Generous space betwee
-  n objects. Cool diffused light, rich muted palette.
+  An overhead flat lay on dark slate stone of a folded olive waxed
+  cotton jacket, a pair of dark green wellington boots, a rolled
+  oxblood wool scarf, tan leather gloves and a flat tweed cap.
+  Generous space between objects. Cool diffused light, rich muted
+  palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-03 · Can you wear wellies to the races?
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5291,38 +6225,50 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: photograph on top, type on clean paper beneath, joined by a fade.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Can you wear wellies to the races?"
+
+3. Beneath it, these lines in smaller grey serif:
+   "At Cheltenham, Aintree and Epsom yes, and they are common at winter jump meetings."
+   "At Royal Ascot trainers are banned site wide and the Royal Enclosure specifies black dress shoes, so boots are out of place."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  A close crop from the knee down of a person standing on wet grass in d
-  ark green wellington boots, the hem of a brown tweed coat just visible
-   above, water beaded on the boots. Blurred white running rail beyond. 
-  Flat grey daylight, rich texture.
+  A close crop from the knee down of a person standing on wet grass in
+  d ark green wellington boots, the hem of a brown tweed coat just
+  visible above, water beaded on the boots. Blurred white running rail
+  beyond. Flat grey daylight, rich texture.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-04 · Where you can actually shelter at a racecourse
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5350,38 +6296,51 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: a table of rows, each with a thin coloured bar on the left.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Where you can actually shelter at a racecourse"
+
+3. Beneath it, these lines in smaller grey serif:
+   "It depends entirely on your enclosure."
+   "Grandstand access is not included with every ticket, and at Royal Ascot the Windsor and Village Enclosures have none at all."
+   "Look for the word covered before you buy."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Spectators sheltering under a covered racecourse stand, seen from behi
-  nd, watching rain fall steadily on the green track beyond the open edg
-  e of the roof. Coats and umbrellas folded, warm interior shadow agains
-  t bright wet daylight outside.
+  Spectators sheltering under a covered racecourse stand, seen from
+  behind, watching rain fall steadily on the green track beyond the
+  open edg e of the roof. Coats and umbrellas folded, warm interior
+  shadow against bright wet daylight outside.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-04 · Soft ground changes which horse wins
 
-**Board:** Race Day Planning  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Planning
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5409,38 +6368,50 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: one gigantic numeral occupying a third of the pin height.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Soft ground changes which horse wins"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Firm ground is fast and suits quick horses. Heavy is demanding and suits stamina."
+   "It is why trainers withdraw horses on the morning of a race and why a wet day produces a result the form did not predict."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racehorses running through soft wet ground on a turf course, clods of 
-  turf and water thrown up behind their hooves, jockeys in mud-flecked s
-  ilks low over their necks. Shot from track level. Flat grey light, mot
-  ion and spray, muted green and slate.
+  Racehorses running through soft wet ground on a turf course, clods
+  of turf and water thrown up behind their hooves, jockeys in mud-
+  flecked s ilks low over their necks. Shot from track level. Flat
+  grey light, mot ion and spray, muted green and slate.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ## 2026-10-04 · Should you still go if the forecast is bad?
 
-**Board:** Race Day Style  
-**Link:** `https://www.ofthepitch.com/racing-in-the-rain`
+**Board:** Race Day Style
+
+**Link**
+```
+https://www.ofthepitch.com/racing-in-the-rain
+```
 
 **Title**
 ```
@@ -5468,32 +6439,41 @@ Palette for this pin: slate, moss, oxblood and cream, flat grey light after rain
 
 Composition: a short pulled sentence set large in italic serif, rule beneath.
 
-Text on the pin, in this order:
-- Small burnt-orange dot then a wide-tracked uppercase label
-- Headline set large in serif, drawn from the pin title
-- Two or three supporting lines in smaller grey serif
-- A single line in burnt orange (#CF5A2E), small serif:
-  "Full guide -> ofthepitch.com"
+PRINT EXACTLY THIS TEXT ON THE PIN, WORD FOR WORD. Do not rewrite it,
+shorten it, or add any headline, tagline or caption of your own.
+
+1. Small burnt-orange dot, then this label in wide-tracked uppercase
+   grey sans:
+   "RACING IN THE RAIN"
+
+2. The headline, set large in serif, near-black, over two or three
+   lines, breaking where it reads naturally:
+   "Should you still go if the forecast is bad?"
+
+3. Beneath it, these lines in smaller grey serif:
+   "Usually yes, if you have dressed for it."
+   "The crowd is smaller and more relaxed than a sold out summer meeting."
+   "The people who have a bad day are the ones who dressed for photographs instead of weather."
+
+4. A single line in burnt orange (#CF5A2E), small serif:
+   "Full guide -> ofthepitch.com"
+
+No other words anywhere on the image.
 
 Photograph:
-  Racegoers walking through light drizzle at a racecourse, well wrapped 
-  in waxed jackets, wool coats and scarves, one holding a dark umbrella.
-   Seen from behind and slightly to one side, grandstand soft in the mis
-  t behind. Flat grey light, muted palette.
+  Racegoers walking through light drizzle at a racecourse, well
+  wrapped in waxed jackets, wool coats and scarves, one holding a dark
+  umbrella. Seen from behind and slightly to one side, grandstand soft
+  in the mist behind. Flat grey light, muted palette.
 
   The photograph must merge into the paper: fade its edge over 150 to
   220 pixels so there is no hard rule or rectangle edge between image
   and background.
 
-Bottom-left corner: small burnt-orange rounded square containing "OP"
-in white, then "Of The Pitch" in bold serif and "ofthepitch.com" in
-small grey sans beneath it, sitting on clean paper rather than on the
-photograph.
-
 No logos or branded clothing. Editorial styling, not stock photography.
 No direct-to-camera smiling. Any signage, banners or number plates must
 be blurred or out of focus, never legible. No text within 60px of the
-edge. Nothing overlaps the footer.
+edge.
 ```
 
 ---
