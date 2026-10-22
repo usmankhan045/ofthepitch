@@ -95,16 +95,19 @@ export function StatCard({
 
 export function StatusPill({ status }: { status: string }) {
   const published = status === "published";
+  const scheduled = status === "scheduled";
   return (
     <span
       className={cn(
         "stamp inline-block rounded-full border-2 px-2.5 py-0.5",
         published
           ? "border-success bg-success/15 text-success"
-          : "border-muted bg-background text-muted"
+          : scheduled
+            ? "border-accent-ink bg-accent/15 text-accent-ink"
+            : "border-muted bg-background text-muted"
       )}
     >
-      {published ? "Live" : "Draft"}
+      {published ? "Live" : scheduled ? "Scheduled" : "Draft"}
     </span>
   );
 }

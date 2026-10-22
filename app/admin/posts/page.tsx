@@ -11,6 +11,7 @@ import {
   SuccessBanner,
   inputClass,
 } from "../ui";
+import { adminCategoryLabel } from "@/lib/admin/category-label";
 
 export const dynamic = "force-dynamic";
 
@@ -38,7 +39,9 @@ export default async function PostsPage({
   const sp = await searchParams;
 
   const status =
-    sp.status === "published" || sp.status === "draft" ? sp.status : "all";
+    sp.status === "published" || sp.status === "scheduled" || sp.status === "draft"
+      ? sp.status
+      : "all";
   const page = Math.max(1, Number(sp.page) || 1);
   const offset = (page - 1) * PAGE_SIZE;
 
@@ -107,6 +110,7 @@ export default async function PostsPage({
           >
             <option value="">All</option>
             <option value="published">Live</option>
+            <option value="scheduled">Scheduled</option>
             <option value="draft">Draft</option>
           </select>
         </div>
@@ -124,7 +128,7 @@ export default async function PostsPage({
             <option value="">All</option>
             {categories.map((c) => (
               <option key={c.id} value={c.id}>
-                {c.name}
+                {adminCategoryLabel(c, categories)}
               </option>
             ))}
           </select>
@@ -203,7 +207,7 @@ export default async function PostsPage({
                           type="submit"
                           className="stamp rounded-md border-2 border-line px-2 py-1 text-muted transition-colors hover:border-text hover:text-text"
                         >
-                          {post.status === "published" ? "Unpublish" : "Publish"}
+                          {post.status === "published" ? "Unpublish" : "Publish now"}
                         </button>
                       </form>
 

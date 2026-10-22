@@ -41,12 +41,14 @@ const PostUpdateSchema = z.object({
   quick_answer: z.string().nullable().optional(),
   category_id: z.string().uuid().nullable().optional(),
   audience_tags: z.array(z.string()).optional(),
-  status: z.enum(["draft", "published"]).optional(),
+  status: z.enum(["draft", "scheduled", "published"]).optional(),
   seo_title: z.string().nullable().optional(),
   seo_description: z.string().nullable().optional(),
   faq_items: z.array(FaqItemSchema).optional(),
   featured_image_url: z.string().url().nullable().optional(),
+  featured_image_alt: z.string().max(500).nullable().optional(),
   published_at: z.string().nullable().optional(),
+  publish_at: z.string().datetime({ offset: true }).nullable().optional(),
 });
 
 type PostPatch = z.infer<typeof PostUpdateSchema>;
@@ -66,7 +68,9 @@ function mergeIntoInput(existing: ExistingPost, patch: PostPatch): PostInput {
     category_id:
       patch.category_id !== undefined ? patch.category_id : existing.category_id,
     audience_tags: patch.audience_tags ?? existing.audience_tags ?? [],
-    status: patch.status ?? (existing.status as "draft" | "published"),
+    status:
+      patch.status ??
+      (existing.status as "draft" | "scheduled" | "published"),
     seo_title:
       patch.seo_title !== undefined ? patch.seo_title : existing.seo_title,
     seo_description:
@@ -78,10 +82,16 @@ function mergeIntoInput(existing: ExistingPost, patch: PostPatch): PostInput {
       patch.featured_image_url !== undefined
         ? patch.featured_image_url
         : existing.featured_image_url,
+    featured_image_alt:
+      patch.featured_image_alt !== undefined
+        ? patch.featured_image_alt
+        : existing.featured_image_alt,
     published_at:
       patch.published_at !== undefined
         ? patch.published_at
         : existing.published_at,
+    publish_at:
+      patch.publish_at !== undefined ? patch.publish_at : existing.publish_at,
   };
 }
 

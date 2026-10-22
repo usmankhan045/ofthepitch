@@ -15,7 +15,7 @@ import type { Category, FaqItem, Page, Post } from "@/lib/queries";
  * query here would read (or a mutation would corrupt) someone else's data.
  */
 
-export type PostStatus = "draft" | "published";
+export type PostStatus = "draft" | "scheduled" | "published";
 
 export interface AdminPostListItem extends Post {
   categories?: { slug: string; name: string } | null;
@@ -149,6 +149,7 @@ export async function getPageById(id: string): Promise<Page | null> {
 export interface DashboardStats {
   totalPosts: number;
   published: number;
+  scheduled: number;
   drafts: number;
   pages: number;
   categories: number;
@@ -199,7 +200,8 @@ export async function getDashboardStats(): Promise<DashboardStats> {
   return {
     totalPosts: posts.length,
     published: posts.filter((p) => p.status === "published").length,
-    drafts: posts.filter((p) => p.status !== "published").length,
+    scheduled: posts.filter((p) => p.status === "scheduled").length,
+    drafts: posts.filter((p) => p.status === "draft").length,
     pages: pagesRes.count ?? 0,
     categories: catsRes.count ?? 0,
     // subscribers table may not be readable in every environment; treat as 0.

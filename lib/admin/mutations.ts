@@ -56,7 +56,7 @@ export const PostInputSchema = z.object({
   quick_answer: z.string().max(1000).optional().nullable(),
   category_id: z.string().uuid().nullable().optional(),
   audience_tags: z.array(z.string()).default([]),
-  status: z.enum(["draft", "published"]).default("draft"),
+  status: z.enum(["draft", "scheduled", "published"]).default("draft"),
   seo_title: z.string().max(120).optional().nullable(),
   seo_description: z.string().max(320).optional().nullable(),
   faq_items: z.array(FaqItemSchema).default([]),
@@ -65,7 +65,9 @@ export const PostInputSchema = z.object({
     .url("Featured image must be a full URL.")
     .nullable()
     .optional(),
+  featured_image_alt: z.string().max(500).nullable().optional(),
   published_at: z.string().nullable().optional(),
+  publish_at: z.string().datetime({ offset: true }).nullable().optional(),
 });
 
 export const PageInputSchema = z.object({
@@ -170,6 +172,10 @@ export async function createPost(input: PostInput) {
   }
   const data = parsed.data;
 
+  if (data.status === "scheduled" && !data.publish_at) {
+    throw new AdminError("Choose a Publish At time for a scheduled post.", "publish_at");
+  }
+
   await assertValidMdx(data.content, "content");
   await assertSlugFree("posts", data.slug);
 
@@ -179,8 +185,8 @@ export async function createPost(input: PostInput) {
   const payload = {
     ...data,
     site_id: siteId,
-    published_at:
-      data.status === "published" ? data.published_at ?? now : data.published_at ?? null,
+    published_at: data.status === "published" ? data.published_at ?? now : null,
+    publish_at: data.status === "scheduled" ? data.publish_at : null,
     updated_at: now,
   };
 
@@ -210,6 +216,10 @@ export async function updatePost(id: string, input: PostInput) {
   }
   const data = parsed.data;
 
+  if (data.status === "scheduled" && !data.publish_at) {
+    throw new AdminError("Choose a Publish At time for a scheduled post.", "publish_at");
+  }
+
   await assertValidMdx(data.content, "content");
   await assertSlugFree("posts", data.slug, id);
 
@@ -220,25 +230,32 @@ export async function updatePost(id: string, input: PostInput) {
   // too, or the previous path keeps serving a stale cached page.
   const { data: before } = await db
     .from("posts")
-    .select("slug, status, published_at")
+    .select("slug, status, published_at, publish_at")
     .eq("site_id", siteId)
     .eq("id", id)
     .maybeSingle();
 
   if (!before) throw new AdminError("Post not found for this site.");
 
-  const prev = before as { slug: string; status: string; published_at: string | null };
+  const prev = before as {
+    slug: string;
+    status: string;
+    published_at: string | null;
+    publish_at: string | null;
+  };
   const now = new Date().toISOString();
 
   // Stamp published_at the first time a post actually goes live, and don't
   // overwrite an existing date on later edits.
   let publishedAt = data.published_at ?? prev.published_at;
   if (data.status === "published" && !publishedAt) publishedAt = now;
+  if (data.status === "scheduled") publishedAt = null;
 
   const payload = {
     ...data,
     site_id: siteId,
     published_at: publishedAt,
+    publish_at: data.status === "scheduled" ? data.publish_at : null,
     // posts.updated_at has no DB trigger — it must be set explicitly.
     updated_at: now,
   };

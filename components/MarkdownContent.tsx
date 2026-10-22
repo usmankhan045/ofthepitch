@@ -65,15 +65,53 @@ export interface PrintableRef {
   description: string | null;
 }
 
-const mdxComponents = {
-  h2: ({ children, ...props }: ComponentPropsWithoutRef<"h2">) => (
-    <h2
-      className="font-display text-2xl sm:text-3xl font-bold text-text mt-12 mb-4 leading-snug"
-      {...props}
-    >
-      {children}
-    </h2>
-  ),
+export interface TableOfContentsItem {
+  id: string;
+  title: string;
+}
+
+function headingSlug(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "section";
+}
+
+/** Extract Markdown H2s and allocate stable, duplicate-safe anchor ids. */
+export function extractH2Headings(content: string): TableOfContentsItem[] {
+  const headings: TableOfContentsItem[] = [];
+  const counts = new Map<string, number>();
+  let fenced = false;
+
+  for (const line of content.split(/\r?\n/)) {
+    if (/^\s*(```|~~~)/.test(line)) {
+      fenced = !fenced;
+      continue;
+    }
+    if (fenced) continue;
+
+    const match = line.match(/^\s*##(?!#)\s+(.+?)(?:\s+#+)?\s*$/);
+    if (!match) continue;
+    const title = match[1]
+      .replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/[*_`~]/g, "")
+      .replace(/<[^>]+>/g, "")
+      .trim();
+    if (!title) continue;
+
+    const base = headingSlug(title);
+    const occurrence = (counts.get(base) ?? 0) + 1;
+    counts.set(base, occurrence);
+    headings.push({ id: occurrence === 1 ? base : `${base}-${occurrence}`, title });
+  }
+
+  return headings;
+}
+
+const baseMdxComponents = {
   h3: ({ children, ...props }: ComponentPropsWithoutRef<"h3">) => (
     <h3
       className="font-display text-xl font-semibold text-text mt-8 mb-3 leading-snug"
@@ -241,9 +279,23 @@ export async function MarkdownContent({
   printables = [],
 }: MarkdownContentProps) {
   const processed = await unlinkUnpublished(expandShortcodes(content));
+  const headings = extractH2Headings(processed);
+  let h2Index = 0;
 
   const components = {
-    ...mdxComponents,
+    ...baseMdxComponents,
+    h2: ({ children, ...props }: ComponentPropsWithoutRef<"h2">) => {
+      const id = headings[h2Index++]?.id;
+      return (
+        <h2
+          id={id}
+          className="scroll-mt-24 font-display text-2xl sm:text-3xl font-bold text-text mt-12 mb-4 leading-snug"
+          {...props}
+        >
+          {children}
+        </h2>
+      );
+    },
     InlinePrintable: makeInlinePrintable(printables),
   };
 

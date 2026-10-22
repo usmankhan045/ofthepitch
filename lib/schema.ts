@@ -8,7 +8,7 @@ const BASE_URL = `https://${siteConfig.domain}`;
 // Stable @id anchors so Google/LLMs can merge these into single entities
 // across every page instead of re-declaring them inline each time.
 const ORG_ID = `${BASE_URL}/#organization`;
-const PERSON_ID = `${BASE_URL}/about#person`;
+const PERSON_ID = `${BASE_URL}${siteConfig.author.url}#person`;
 const LOGO_URL = `${BASE_URL}/logo.png`;
 // /og-default.jpg is the site-level social card in public/. It was referenced
 // here long before the file existed, so every schema node that fell back to it
@@ -55,22 +55,13 @@ export function organizationSchema() {
     founder: { "@id": PERSON_ID },
     email: siteConfig.contact.email,
     knowsAbout: [
-      "FIFA World Cup 2026",
-      "Football travel",
-      "Visa and entry requirements",
-      "Stadium and fan zone logistics",
-      "Match tickets and hospitality",
-      "Football broadcasting rights",
+      "Sports travel",
+      "Tennis venues and tickets",
+      "Horse racing enclosures and dress codes",
+      "Formula 1 circuits and grandstands",
+      "Ski resort planning",
+      "Football grounds and matchdays",
     ],
-    areaServed: [
-      { "@type": "Country", name: "United States" },
-      { "@type": "Country", name: "Canada" },
-      { "@type": "Country", name: "Mexico" },
-    ],
-    audience: {
-      "@type": "Audience",
-      audienceType: "Football fans travelling to or following the 2026 World Cup",
-    },
     publishingPrinciples: `${BASE_URL}/editorial-policy`,
     sameAs: Object.values(siteConfig.social).filter(Boolean),
   };
@@ -84,19 +75,19 @@ export function personSchema() {
     "@id": PERSON_ID,
     name: siteConfig.author.name,
     url: `${BASE_URL}${siteConfig.author.url}`,
-    // The author is the editorial team, not a photographed individual, and
-    // author.photo points at a file that has never existed. The logo is the
-    // honest image for this entity and it actually resolves.
-    image: LOGO_URL,
+    image: siteConfig.author.photo.startsWith("http")
+      ? siteConfig.author.photo
+      : `${BASE_URL}${siteConfig.author.photo}`,
     jobTitle: siteConfig.author.role,
     description: siteConfig.author.shortBio,
     worksFor: { "@id": ORG_ID },
     knowsAbout: [
-      "FIFA World Cup 2026",
-      "Football travel",
-      "Visa and entry requirements",
-      "Stadium and fan zone logistics",
-      "Match tickets and hospitality",
+      "Sports travel",
+      "Tennis",
+      "Horse racing",
+      "Formula 1",
+      "Skiing",
+      "Football",
     ],
     ...(siteConfig.author.sameAs.length > 0 && {
       sameAs: [...siteConfig.author.sameAs],
@@ -106,9 +97,19 @@ export function personSchema() {
 
 export function articleSchema(post: Post) {
   const url = `${BASE_URL}${postPath(post.slug)}`;
+  const imageUrl = post.featured_image_url
+    ? post.featured_image_url.startsWith("http")
+      ? post.featured_image_url
+      : `${BASE_URL}${post.featured_image_url}`
+    : absolutePreviewImageUrl({
+        title: post.title,
+        slug: post.slug,
+        featured_image_url: post.featured_image_url,
+        categories: post.categories,
+      });
   return {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "NewsArticle",
     "@id": `${url}#article`,
     headline: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
@@ -116,19 +117,20 @@ export function articleSchema(post: Post) {
     // Always emit an ABSOLUTE image URL. Posts without an uploaded image get
     // the generated card from /api/og, the same one the OG tags use, so the
     // schema image and the social preview never disagree.
-    image: post.featured_image_url
-      ? post.featured_image_url.startsWith("http")
-        ? post.featured_image_url
-        : `${BASE_URL}${post.featured_image_url}`
-      : absolutePreviewImageUrl({
-          title: post.title,
-          slug: post.slug,
-          featured_image_url: post.featured_image_url,
-          categories: post.categories,
-        }),
+    image: {
+      "@type": "ImageObject",
+      url: imageUrl,
+      ...(!post.featured_image_url && { width: 1200, height: 675 }),
+      caption: post.featured_image_alt ?? post.title,
+    },
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
-    author: { "@id": PERSON_ID },
+    author: {
+      "@type": "Person",
+      "@id": PERSON_ID,
+      name: siteConfig.author.name,
+      url: `${BASE_URL}${siteConfig.author.url}`,
+    },
     publisher: { "@id": ORG_ID },
     // Reference the WebSite node (defined on every page) rather than the Blog
     // node (only defined on /blog) so the on-page graph has no dangling @id.

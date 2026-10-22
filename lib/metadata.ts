@@ -18,7 +18,7 @@ export function ogImages(
     {
       url: resolved,
       width: 1200,
-      height: 630,
+      height: 675,
       alt,
       // /api/og re-encodes to JPEG before returning, so everything this
       // helper serves is JPEG apart from an uploaded .png.

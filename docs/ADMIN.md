@@ -137,8 +137,8 @@ redirect in `next.config.ts` alongside the existing migration redirects.
 | Route | What it does |
 |---|---|
 | `/admin` | Counts, recently edited, and a worst-first queue of thin posts |
-| `/admin/posts` | Search, filter by status/category, paginate, publish/unpublish inline |
-| `/admin/posts/new`, `/admin/posts/[id]` | Full editor: body, FAQ, SEO, image, live card preview |
+| `/admin/posts` | Search, filter by draft/scheduled/live status and category, paginate, publish/unpublish inline |
+| `/admin/posts/new`, `/admin/posts/[id]` | Full editor: body, FAQ, SEO, image alt text, scheduled publishing and live card preview |
 | `/admin/categories` | Inline create/edit/delete (refuses to delete a category that still has posts) |
 | `/admin/pages` | DB-backed pages served at `/<slug>` |
 | `/admin/printables` | Free downloads: create, upload PDF, attach to posts |

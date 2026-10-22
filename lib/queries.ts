@@ -15,6 +15,7 @@ export interface Post {
   content: string | null;
   quick_answer: string | null;
   featured_image_url: string | null;
+  featured_image_alt: string | null;
   category_id: string | null;
   audience_tags: string[];
   status: string;
@@ -22,6 +23,7 @@ export interface Post {
   seo_description: string | null;
   faq_items: FaqItem[];
   published_at: string | null;
+  publish_at: string | null;
   created_at: string;
   updated_at: string;
   categories?: { slug: string; name: string } | null;
@@ -67,6 +69,7 @@ export async function getPublishedPosts(options?: {
   categoryIds?: string[];
   audienceTag?: string;
   search?: string;
+  publishedSince?: string;
 }): Promise<Post[]> {
   const siteId = await getCurrentSiteId();
 
@@ -76,6 +79,7 @@ export async function getPublishedPosts(options?: {
     .eq("site_id", siteId)
     .eq("status", "published")
     .not("published_at", "is", null)
+    .lte("published_at", new Date().toISOString())
     .order("published_at", { ascending: false });
 
   if (options?.categoryIds?.length) {
@@ -97,6 +101,10 @@ export async function getPublishedPosts(options?: {
     }
   }
 
+  if (options?.publishedSince) {
+    query = query.gte("published_at", options.publishedSince);
+  }
+
   if (options?.limit) query = query.limit(options.limit);
   if (options?.offset) query = query.range(options.offset, (options.offset + (options.limit ?? 10)) - 1);
 
@@ -114,6 +122,8 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
     .eq("site_id", siteId)
     .eq("slug", slug)
     .eq("status", "published")
+    .not("published_at", "is", null)
+    .lte("published_at", new Date().toISOString())
     .single();
 
   if (error?.code === "PGRST116") return null; // not found
@@ -272,6 +282,18 @@ export async function getPageBySlug(slug: string): Promise<Page | null> {
   if (error?.code === "PGRST116") return null;
   if (error) throw error;
   return data as Page;
+}
+
+export async function getPages(): Promise<Page[]> {
+  const siteId = await getCurrentSiteId();
+  const { data, error } = await supabaseAdmin
+    .from("pages")
+    .select("*")
+    .eq("site_id", siteId)
+    .order("slug");
+
+  if (error) throw error;
+  return (data ?? []) as Page[];
 }
 
 // ── Subscribers ──────────────────────────────────────────────────────────────

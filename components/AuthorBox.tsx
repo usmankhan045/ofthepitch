@@ -22,9 +22,9 @@ export function AuthorBox() {
             />
           </div>
           <div>
-            <p className="text-xs font-mono uppercase tracking-wide text-muted/60 mb-1">
-              Written by
-            </p>
+            <h2 className="text-xs font-mono uppercase tracking-wide text-muted/60 mb-1">
+              About the author
+            </h2>
             <p className="font-display text-lg font-semibold text-text">
               <Link href={siteConfig.author.url} className="hover:text-primary transition-colors">
                 {siteConfig.author.name}
@@ -37,12 +37,12 @@ export function AuthorBox() {
               {siteConfig.author.shortBio}
             </p>
             <p className="mt-3 text-xs text-muted/70 leading-relaxed">
-              Reviewed and edited per our{" "}
+              Written and edited per our{" "}
               <Link href="/editorial-policy" className="underline underline-offset-2 hover:text-primary transition-colors">
                 editorial standards
               </Link>
-              . {siteConfig.name} is not a licensed financial advisor; this is
-              educational information, not personalized advice.
+              . Venue rules, prices and schedules can change, so check the
+              organiser&rsquo;s current guidance before travelling.
             </p>
             <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
               <Link

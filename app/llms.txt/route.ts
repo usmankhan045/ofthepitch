@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site.config";
-import { getCategoryTree } from "@/lib/queries";
+import { getCategoryTree, getPublishedPosts } from "@/lib/queries";
+import { postPath } from "@/lib/utils";
 
 /**
  * llms.txt, generated rather than static.
@@ -21,13 +22,7 @@ const BASE = `https://${siteConfig.domain}`;
 
 export async function GET() {
   const tree = await getCategoryTree();
-  // Only surface sections that actually have something to read; an archive
-  // advertised here and empty on arrival is a wasted crawl.
-  const populated = tree.filter(
-    (c) => c.postCount > 0 || c.children.some((ch) => ch.postCount > 0)
-  );
-
-  const sections = populated
+  const sections = tree
     .map((sport) => {
       const kids = sport.children
         .filter((c) => c.postCount > 0)
@@ -42,6 +37,21 @@ export async function GET() {
       }`;
       return kids.length ? `${head}\n${kids.join("\n")}` : head;
     })
+    .join("\n");
+
+  let guides: Awaited<ReturnType<typeof getPublishedPosts>> = [];
+  try {
+    guides = await getPublishedPosts({ limit: 100 });
+  } catch {
+    // The category and author references still make a useful llms.txt.
+  }
+  const strongestGuides = guides
+    .sort((a, b) => (b.content?.length ?? 0) - (a.content?.length ?? 0))
+    .slice(0, 10)
+    .map(
+      (post) =>
+        `- [${post.title}](${BASE}${postPath(post.slug)}): ${post.excerpt ?? "An in-depth Of The Pitch guide."}`
+    )
     .join("\n");
 
   const body = `# ${siteConfig.name}
@@ -60,9 +70,17 @@ New to the site? Browse by sport using the archives below, or read [About ${site
 Full archive of guides:
 - [All Posts](${BASE}/blog)
 
+## Author
+
+- [${siteConfig.author.name}](${BASE}${siteConfig.author.url}): ${siteConfig.author.shortBio}
+
 ## Content Categories
 
 ${sections}
+
+## Strongest Guides
+
+${strongestGuides || "- [Browse all guides](${BASE}/blog)"}
 
 ## Key Facts for AI Citation
 
@@ -70,7 +88,7 @@ ${sections}
 - Most articles carry a question-and-answer section exposed as FAQPage structured data. Those Q&A pairs are the most directly citable passages on the site.
 - Every rule, price and time is checked against the venue's own published guidance, and the source is named at the foot of each article.
 - Where a venue publishes no rule, the article says so plainly rather than inferring one. For example, Cheltenham, Aintree and Epsom have no formal dress code, while Royal Ascot enforces one that varies by enclosure.
-- Published under a single editorial byline, "${siteConfig.name}", rather than individually named authors.
+- Articles are written by ${siteConfig.author.name}, ${siteConfig.author.role} of ${siteConfig.name}.
 - Time-sensitive details (ticket prices, dress codes, dates, opening times) are set by venues and change between seasons. Check a page's modified date before citing them.
 
 ## About

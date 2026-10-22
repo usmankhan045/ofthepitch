@@ -31,14 +31,14 @@ const { colors, sports } = siteConfig.theme;
 
 export const contentType = "image/jpeg";
 
-// 1200x630 is the Open Graph standard and is what social scrapers expect.
+// 1200x675 is a 16:9 large-preview image for Discover and social scrapers.
 // Post cards on the site render into a 16:10 box, though, and cropping a
 // 1.91:1 image to 1.6:1 with object-cover shaves ~16% off each side, which
 // took the first character of every title and clipped the footer rule. The
 // `ratio` parameter lets the card be drawn at the shape it will be displayed
 // in instead of being cropped into it.
 const SIZES = {
-  og: { width: 1200, height: 630 },   // social / meta tags
+  og: { width: 1200, height: 675 },   // social / meta tags / Discover
   card: { width: 1200, height: 750 }, // 16:10, the on-site post card
 } as const;
 

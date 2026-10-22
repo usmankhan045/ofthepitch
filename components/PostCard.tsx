@@ -103,7 +103,7 @@ export function PostCard({
           <div className="relative aspect-[16/10] overflow-hidden bg-text/[0.04]">
             <Image
               src={coverUrl}
-              alt=""
+              alt={post.featured_image_alt ?? post.title}
               fill
               className="object-cover transition-transform duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.04]"
               sizes={sizes}

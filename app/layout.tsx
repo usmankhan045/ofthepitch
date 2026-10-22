@@ -41,7 +41,8 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    "max-image-preview": "large",
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
@@ -84,6 +85,12 @@ export default async function RootLayout({
         />
         {/* Machine-readable content license (RSL 1.0) for AI/LLM crawlers */}
         <link rel="license" href="/rsl.xml" type="application/rsl+xml" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`${siteConfig.name} RSS feed`}
+          href="/feed.xml"
+        />
         <JsonLd data={[websiteSchema(), organizationSchema(), personSchema()]} />
       </head>
       <body className="flex flex-col min-h-full antialiased bg-background text-text">

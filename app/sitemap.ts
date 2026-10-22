@@ -1,6 +1,11 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site.config";
-import { getPublishedPosts, getCategoryTree, getPrintables } from "@/lib/queries";
+import {
+  getPublishedPosts,
+  getCategories,
+  getPages,
+  getPrintables,
+} from "@/lib/queries";
 import { postPath } from "@/lib/utils";
 
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -24,11 +29,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/editorial-policy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE_URL}/affiliate-disclosure`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE_URL}/contact`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/privacy-policy`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/terms-of-use`, changeFrequency: "yearly", priority: 0.3 },
+    ...(siteConfig.features.printables
+      ? [{ url: `${BASE_URL}/printables`, changeFrequency: "weekly" as const, priority: 0.7 }]
+      : []),
   ];
 
   // Dynamic: posts and categories — fall back to empty if DB not configured
   let postRoutes: MetadataRoute.Sitemap = [];
   let categoryRoutes: MetadataRoute.Sitemap = [];
+  let pageRoutes: MetadataRoute.Sitemap = [];
   let printableRoutes: MetadataRoute.Sitemap = [];
 
   try {
@@ -45,20 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   try {
-    // Only archives that actually list something. The relaunch created a
-    // category per sport plus subcategories, and most have no published posts
-    // yet, so listing every category would have submitted 17 empty pages that
-    // render "No posts". A sitemap full of empty archives is a quality signal
-    // against the whole site, and it is the first thing a new Search Console
-    // property would crawl.
-    const tree = await getCategoryTree();
-    const populated = tree.flatMap((parent) => {
-      const kids = parent.children.filter((c) => c.postCount > 0);
-      const parentTotal =
-        parent.postCount + parent.children.reduce((n, c) => n + c.postCount, 0);
-      return [...(parentTotal > 0 ? [parent] : []), ...kids];
-    });
-    categoryRoutes = populated.map((cat) => ({
+    const categories = await getCategories();
+    categoryRoutes = categories.map((cat) => ({
       url: `${BASE_URL}/category/${cat.slug}`,
       changeFrequency: "weekly" as const,
       priority: 0.7,
@@ -67,28 +66,38 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("[sitemap] failed to load categories:", err);
   }
 
+  try {
+    const staticSlugs = new Set([
+      "about",
+      "contact",
+      "privacy-policy",
+      "terms-of-use",
+      "editorial-policy",
+      "affiliate-disclosure",
+    ]);
+    const pages = await getPages();
+    pageRoutes = pages
+      .filter((page) => !staticSlugs.has(page.slug))
+      .map((page) => ({
+        url: `${BASE_URL}/${page.slug}`,
+        lastModified: page.updated_at,
+        changeFrequency: "monthly" as const,
+        priority: 0.5,
+      }));
+  } catch (err) {
+    console.error("[sitemap] failed to load pages:", err);
+  }
+
 
   if (siteConfig.features.printables) {
     try {
       const printables = await getPrintables();
-      // The listing page only earns a sitemap entry once it lists something.
-      // The feature flag is on but no printables exist yet, so /printables
-      // renders an empty page; submitting it would be another thin URL.
-      printableRoutes = printables.length
-        ? [
-            {
-              url: `${BASE_URL}/printables`,
-              changeFrequency: "weekly" as const,
-              priority: 0.7,
-            },
-            ...printables.map((p) => ({
+      printableRoutes = printables.map((p) => ({
               url: `${BASE_URL}/printables/${p.slug}`,
               lastModified: p.updated_at ?? p.created_at,
               changeFrequency: "monthly" as const,
               priority: 0.7,
-            })),
-          ]
-        : [];
+            }));
     } catch (err) {
       // Table may predate migration 005 — omit rather than fail the sitemap.
       console.error("[sitemap] failed to load printables:", err);
@@ -99,6 +108,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticRoutes,
     ...postRoutes,
     ...categoryRoutes,
+    ...pageRoutes,
     ...printableRoutes,
   ];
 }

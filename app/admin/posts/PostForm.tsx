@@ -9,6 +9,7 @@ import type { Category, FaqItem } from "@/lib/queries";
 import { cn } from "@/lib/utils";
 import { ErrorBanner, Field, SuccessBanner, inputClass } from "../ui";
 import { PrintablePicker } from "./PrintablePicker";
+import { adminCategoryLabel } from "@/lib/admin/category-label";
 
 const initialState: ActionState = {};
 
@@ -21,6 +22,15 @@ function slugify(input: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 200);
+}
+
+function karachiDateTimeValue(iso: string | null | undefined): string {
+  if (!iso) return "";
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Date(date.getTime() + 5 * 60 * 60 * 1000)
+    .toISOString()
+    .slice(0, 16);
 }
 
 export default function PostForm({
@@ -266,8 +276,23 @@ export default function PostForm({
                 className={inputClass}
               >
                 <option value="draft">Draft</option>
+                <option value="scheduled">Scheduled</option>
                 <option value="published">Published</option>
               </select>
+            </Field>
+
+            <Field
+              label="Publish At"
+              htmlFor="publish_at"
+              hint="Required when status is Scheduled. Timezone: Pakistan (UTC+5)."
+            >
+              <input
+                id="publish_at"
+                name="publish_at"
+                type="datetime-local"
+                defaultValue={karachiDateTimeValue(post?.publish_at)}
+                className={inputClass}
+              />
             </Field>
 
             <Field label="Category" htmlFor="category_id">
@@ -280,7 +305,7 @@ export default function PostForm({
                 <option value="">No category</option>
                 {categories.map((c) => (
                   <option key={c.id} value={c.id}>
-                    {c.name}
+                    {adminCategoryLabel(c, categories)}
                   </option>
                 ))}
               </select>
@@ -342,7 +367,7 @@ export default function PostForm({
           </div>
 
           <Field
-            label="Image URL"
+            label="Preview Image URL"
             htmlFor="featured_image_url"
             hint={
               imageUrl
@@ -358,6 +383,20 @@ export default function PostForm({
               onChange={(e) => setImageUrl(e.target.value)}
               placeholder="https://…"
               className={cn(inputClass, "font-mono text-xs")}
+            />
+          </Field>
+
+          <Field
+            label="Image Alt Text"
+            htmlFor="featured_image_alt"
+            hint="Describe the image for readers who cannot see it. Used on the featured image and as og:image:alt."
+          >
+            <input
+              id="featured_image_alt"
+              name="featured_image_alt"
+              defaultValue={post?.featured_image_alt ?? ""}
+              placeholder="Spectators watching from the main grandstand"
+              className={inputClass}
             />
           </Field>
 

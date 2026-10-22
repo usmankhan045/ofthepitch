@@ -19,7 +19,7 @@ import {
   SectionDivider,
   PrintableCallout,
 } from "@/components/ui";
-import { MarkdownContent } from "@/components/MarkdownContent";
+import { MarkdownContent, extractH2Headings } from "@/components/MarkdownContent";
 import { JsonLd } from "@/components/JsonLd";
 import { AuthorBox } from "@/components/AuthorBox";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
@@ -103,7 +103,10 @@ export async function generateMetadata({
         authors: [siteConfig.author.name],
         // Absolute URL, and the generated card when no image was chosen, so a
         // shared link always previews with artwork rather than the site default.
-        images: ogImages(absolutePreviewImageUrl(post), title),
+        images: ogImages(
+          absolutePreviewImageUrl(post),
+          post.featured_image_alt ?? title
+        ),
       },
       twitter: {
         title,
@@ -170,17 +173,20 @@ export default async function BlogPostPage({
   }
 
   const hasFaq = post.faq_items && post.faq_items.length > 0;
+  const tableOfContents = post.content ? extractH2Headings(post.content) : [];
 
-  // Show a visible "Updated" date only when the post was genuinely edited well
-  // after publication (>7 days), so the freshness signal is real, not synthetic.
   const publishedAt = post.published_at ? new Date(post.published_at) : null;
   const modifiedAt = post.updated_at ? new Date(post.updated_at) : null;
-  const showUpdated =
-    !!publishedAt &&
-    !!modifiedAt &&
-    modifiedAt.getTime() - publishedAt.getTime() > 7 * 24 * 60 * 60 * 1000;
   const fmtDate = (d: Date) =>
-    d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    d.toLocaleString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone: "Asia/Karachi",
+      timeZoneName: "short",
+    });
 
   const schemas = [
     articleSchema(post),
@@ -259,18 +265,21 @@ export default async function BlogPostPage({
               >
                 {siteConfig.author.name}
               </Link>
-              , {siteConfig.author.role}
             </span>
             {publishedAt && (
               <>
                 <span aria-hidden>·</span>
-                <span>{fmtDate(publishedAt)}</span>
+                <time dateTime={publishedAt.toISOString()}>
+                  Published {fmtDate(publishedAt)}
+                </time>
               </>
             )}
-            {showUpdated && modifiedAt && (
+            {modifiedAt && (
               <>
                 <span aria-hidden>·</span>
-                <span className="text-success/80">Updated {fmtDate(modifiedAt)}</span>
+                <time dateTime={modifiedAt.toISOString()} className="text-success/80">
+                  Updated {fmtDate(modifiedAt)}
+                </time>
               </>
             )}
           </div>
@@ -278,20 +287,19 @@ export default async function BlogPostPage({
       </section>
 
       {/* ── Featured image ─────────────────────────────────────────────────── */}
-      {/* Falls back to a generated card when no image was chosen, so every post
-          has a hero. The 1200x630 ratio matches what /api/og produces. */}
+      {/* Falls back to a generated 1200x675 card when no image was chosen. */}
       <Container width="narrow" className="mt-2">
         <div
           className={cn(
             "relative w-full overflow-hidden rounded-2xl bg-primary/[0.05] shadow-sm",
             post.featured_image_url
               ? "aspect-[16/9] max-h-[420px]"
-              : "aspect-[1200/630]"
+              : "aspect-[16/9]"
           )}
         >
           <Image
             src={previewImageUrl(post)}
-            alt={post.featured_image_url ? post.title : ""}
+            alt={post.featured_image_alt ?? post.title}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
@@ -328,6 +336,35 @@ export default async function BlogPostPage({
                 {post.quick_answer}
               </p>
             </div>
+          )}
+
+          {tableOfContents.length > 0 && (
+            <nav
+              aria-labelledby="table-of-contents-heading"
+              className="mb-10 rounded-xl border border-line bg-surface p-5 sm:p-6"
+            >
+              <h2
+                id="table-of-contents-heading"
+                className="font-display text-xl font-bold text-text"
+              >
+                In this guide
+              </h2>
+              <ol className="mt-4 grid gap-2 sm:grid-cols-2">
+                {tableOfContents.map((item, index) => (
+                  <li key={item.id} className="flex gap-2 text-sm leading-snug">
+                    <span aria-hidden className="font-mono text-muted/60">
+                      {String(index + 1).padStart(2, "0")}.
+                    </span>
+                    <a
+                      href={`#${item.id}`}
+                      className="text-text/80 underline decoration-line underline-offset-4 hover:text-primary"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
           )}
 
           {/* Main content */}

@@ -22,12 +22,14 @@ const PostCreateSchema = z.object({
   quick_answer: z.string().optional(),
   category_id: z.string().uuid().nullable().optional(),
   audience_tags: z.array(z.string()).default([]),
-  status: z.enum(["draft", "published"]).default("draft"),
+  status: z.enum(["draft", "scheduled", "published"]).default("draft"),
   seo_title: z.string().optional(),
   seo_description: z.string().optional(),
   faq_items: z.array(FaqItemSchema).default([]),
   featured_image_url: z.string().url().nullable().optional(),
+  featured_image_alt: z.string().max(500).nullable().optional(),
   published_at: z.string().nullable().optional(),
+  publish_at: z.string().datetime({ offset: true }).nullable().optional(),
 });
 
 export async function GET(request: NextRequest) {

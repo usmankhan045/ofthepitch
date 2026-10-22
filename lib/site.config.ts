@@ -23,24 +23,20 @@ export const siteConfig = {
   niche: "Sports travel guides for tennis, racing, Formula 1, skiing and football. Dress codes, tickets, venues and what a trip really costs.",
 
   // ── AUTHORSHIP / E-E-A-T ─────────────────────────────────────────────────
-  // Migrated from WordPress, where every post was bylined to a single editorial
-  // account rather than a named person. Kept as-is so existing bylines and the
-  // /author/ofthepitch-editorial archive keep resolving. Replacing this with a
-  // real named editor is the single biggest E-E-A-T upgrade available here.
+  // A single named author is used consistently in visible bylines, metadata,
+  // author pages and structured data. Keep this object as the source of truth.
   author: {
-    name: "Of The Pitch",
-    slug: "ofthepitch-editorial",
-    role: "Editorial Team",
-    // Points at the site mark, not a portrait: the byline is an editorial team
-    // rather than a person. The previous path had no file behind it, so the
-    // author box, homepage and author archive all rendered a broken image.
+    name: "Muhammad Usman",
+    slug: "muhammad-usman",
+    role: "Founder & Editor",
+    // Use the site mark until a public author portrait is supplied.
     photo: "/logo.png",
     sameAs: [] as readonly string[],
-    url: "/author/ofthepitch-editorial",
+    url: "/author/muhammad-usman",
     shortBio:
-      "Of The Pitch covers what a venue actually enforces, what a ticket tier really includes, where to stay, and what the day costs.",
+      "Muhammad Usman is the founder and editor of Of The Pitch. He researches the practical details that decide whether a sports trip works, from venue rules and ticket access to travel, accommodation and real costs.",
     longBio:
-      "Of The Pitch is an independent guide to attending tennis, horse racing, Formula 1, skiing and football. We cover the parts that decide whether a trip works. What a venue's dress code actually enforces versus what people assume. Which enclosure or grandstand a ticket really admits you to. How to get there, where to stay, and what the day genuinely costs. Every rule is checked against the venue's own published guidance, and we say plainly when a venue has no rule at all.",
+      "Muhammad Usman is the founder and editor of Of The Pitch, an independent guide to attending tennis, horse racing, Formula 1, skiing and football. He covers the details that decide whether a trip works: what a venue actually enforces, what a ticket tier includes, how to get there, where to stay and what the day genuinely costs. Every rule is checked against the venue's own published guidance, and he says plainly when a venue has no rule at all.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────

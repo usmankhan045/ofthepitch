@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-// Publishes queued blog posts that are "due" (scheduled time has passed) and are
-// not already in the database. Idempotent: the DB is the source of truth for
-// what is already live, so re-runs, delayed runs and overlapping runs never
-// double-post. Driven by a GitHub Actions cron.
+// Publishes both CMS-scheduled rows and file-queued articles that are due.
+// Idempotent: CMS updates require status=scheduled and queued inserts use the
+// site's unique slug, so delayed or overlapping cron runs cannot double-post.
 //
 // This mirrors the drip-publisher on spendwisecents, deliberately. The queue
 // lives in files committed to the repo rather than as 'scheduled' rows in the
@@ -106,6 +105,12 @@ async function main() {
   const schedule = JSON.parse(await readFile(join(QUEUE, "schedule.json"), "utf8"));
   const now = Date.now();
 
+  // First publish rows scheduled in the CMS. Keep this independent from the
+  // file queue below: an editorial post should go live even when no queued
+  // article is due on the same tick.
+  const cmsPublishedRows = await publishCmsScheduled(new Date(now).toISOString());
+  if (cmsPublishedRows.length) await revalidate(cmsPublishedRows);
+
   // Slugs already in the DB, whatever their status — never re-insert.
   const existingRes = await fetch(
     `${BASE}/rest/v1/posts?site_id=eq.${SITE_ID}&select=slug`,
@@ -176,6 +181,7 @@ async function main() {
       // Left NULL on purpose: the post page falls back to a generated card from
       // /api/og, and the dashboard's "missing image" count stays truthful.
       featured_image_url: a.featured_image_url ?? null,
+      featured_image_alt: a.featured_image_alt ?? null,
       published_at: when,
     };
 
@@ -213,6 +219,82 @@ async function main() {
   }
 }
 
+async function publishCmsScheduled(nowIso) {
+  const query = new URLSearchParams({
+    site_id: `eq.${SITE_ID}`,
+    status: "eq.scheduled",
+    publish_at: `lte.${nowIso}`,
+    select: "id,slug,publish_at,category_id",
+    order: "publish_at.asc",
+  });
+  const dueRes = await fetch(`${BASE}/rest/v1/posts?${query}`, { headers: auth });
+  if (!dueRes.ok) {
+    const detail = await dueRes.text();
+    // During a rolling deployment the workflow can run before the migration is
+    // applied. Do not block the existing file queue, but leave a loud signal.
+    console.error(`CMS schedule lookup failed: ${dueRes.status} ${detail.slice(0, 300)}`);
+    return [];
+  }
+
+  const due = await dueRes.json();
+  if (due.length === 0) return [];
+  console.log(`${due.length} CMS-scheduled post(s) due`);
+  if (DRY_RUN) {
+    for (const post of due) {
+      console.log(`would publish CMS post ${post.slug} (${post.publish_at})`);
+    }
+    return [];
+  }
+
+  const publishedRows = [];
+  for (const post of due) {
+    const patchQuery = new URLSearchParams({
+      site_id: `eq.${SITE_ID}`,
+      id: `eq.${post.id}`,
+      status: "eq.scheduled",
+    });
+    const res = await fetch(`${BASE}/rest/v1/posts?${patchQuery}`, {
+      method: "PATCH",
+      headers: {
+        ...auth,
+        "Content-Type": "application/json",
+        Prefer: "return=representation",
+      },
+      body: JSON.stringify({
+        status: "published",
+        published_at: post.publish_at,
+        publish_at: null,
+        updated_at: new Date().toISOString(),
+      }),
+    });
+    if (!res.ok) {
+      console.error(`CMS publish failed for ${post.slug}: ${res.status} ${(await res.text()).slice(0, 300)}`);
+      continue;
+    }
+
+    const rows = await res.json();
+    // Another overlapping run may have won the conditional update.
+    if (rows.length === 0) continue;
+
+    let category = null;
+    if (post.category_id) {
+      const catQuery = new URLSearchParams({
+        site_id: `eq.${SITE_ID}`,
+        id: `eq.${post.category_id}`,
+        select: "slug",
+      });
+      const catRes = await fetch(`${BASE}/rest/v1/categories?${catQuery}`, { headers: auth });
+      const [cat] = catRes.ok ? await catRes.json() : [];
+      category = cat?.slug ?? null;
+    }
+
+    publishedRows.push({ slug: post.slug, category });
+    console.log(`published CMS post ${post.slug} (${post.publish_at})`);
+  }
+
+  return publishedRows;
+}
+
 /**
  * Asks the running site to rebuild the pages a new post appears on. Posts live
  * at the site root, never under /blog/<slug>, so the post path is just /<slug>.
@@ -230,6 +312,7 @@ async function revalidate(rows) {
   // A post in a subcategory also shows on its parent's archive, so refresh both.
   const cats = new Set();
   for (const { category } of rows) {
+    if (!category) continue;
     cats.add(category);
     const res = await fetch(
       `${BASE}/rest/v1/categories?site_id=eq.${SITE_ID}&slug=eq.${category}&select=parent_id`,
@@ -248,6 +331,7 @@ async function revalidate(rows) {
   const paths = [
     "/",
     "/blog",
+    "/author/muhammad-usman",
     ...rows.map((r) => `/${r.slug}`),
     ...[...cats].map((c) => `/category/${c}`),
   ];

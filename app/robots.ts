@@ -57,7 +57,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow,
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/news-sitemap.xml`],
     // Bare hostname (no scheme) — the Host directive expects a hostname only.
     host: siteConfig.domain,
   };

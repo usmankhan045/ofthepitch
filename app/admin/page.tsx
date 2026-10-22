@@ -24,12 +24,17 @@ export default async function AdminDashboard() {
         action={<LinkButton href="/admin/posts/new">New post</LinkButton>}
       />
 
-      <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
+      <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-7">
         <StatCard label="Posts" value={stats.totalPosts} href="/admin/posts" />
         <StatCard
           label="Live"
           value={stats.published}
           href="/admin/posts?status=published"
+        />
+        <StatCard
+          label="Scheduled"
+          value={stats.scheduled}
+          href="/admin/posts?status=scheduled"
         />
         <StatCard
           label="Drafts"

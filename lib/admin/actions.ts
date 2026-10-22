@@ -164,6 +164,12 @@ function parsePrintableIds(fd: FormData): string[] {
 }
 
 function postInputFromForm(fd: FormData): PostInput {
+  const publishAtLocal = str(fd, "publish_at");
+  // The CMS operator works in Asia/Karachi. datetime-local deliberately has no
+  // zone, so make that zone explicit before storing an unambiguous UTC instant.
+  const publishAt = publishAtLocal
+    ? new Date(`${publishAtLocal}:00+05:00`).toISOString()
+    : null;
   return {
     title: String(fd.get("title") ?? "").trim(),
     slug: String(fd.get("slug") ?? "").trim(),
@@ -172,7 +178,12 @@ function postInputFromForm(fd: FormData): PostInput {
     quick_answer: str(fd, "quick_answer"),
     category_id: str(fd, "category_id"),
     audience_tags: parseTags(fd),
-    status: fd.get("status") === "published" ? "published" : "draft",
+    status:
+      fd.get("status") === "published"
+        ? "published"
+        : fd.get("status") === "scheduled"
+          ? "scheduled"
+          : "draft",
     seo_title: str(fd, "seo_title"),
     seo_description: str(fd, "seo_description"),
     faq_items: parseFaq(fd),
@@ -180,6 +191,8 @@ function postInputFromForm(fd: FormData): PostInput {
     // We store NULL rather than the generated URL, so the DB keeps recording
     // that nobody actually chose an image.
     featured_image_url: str(fd, "featured_image_url"),
+    featured_image_alt: str(fd, "featured_image_alt"),
+    publish_at: publishAt,
   };
 }
 
@@ -258,7 +271,9 @@ export async function togglePostStatusAction(formData: FormData): Promise<void> 
     seo_description: post.seo_description,
     faq_items: post.faq_items ?? [],
     featured_image_url: post.featured_image_url,
+    featured_image_alt: post.featured_image_alt,
     published_at: post.published_at,
+    publish_at: post.publish_at,
   });
 
   revalidatePath("/admin/posts");

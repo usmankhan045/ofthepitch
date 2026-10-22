@@ -9,6 +9,7 @@ import type { Category } from "@/lib/queries";
 import { cn } from "@/lib/utils";
 import { ErrorBanner, Field, SuccessBanner, inputClass } from "../ui";
 import { FileUploadField } from "../FileUploadField";
+import { adminCategoryLabel } from "@/lib/admin/category-label";
 
 const initialState: ActionState = {};
 
@@ -144,7 +145,7 @@ export default function PrintableForm({
                 <option value="">No category</option>
                 {categories.map((c) => (
                   <option key={c.id} value={c.id}>
-                    {c.name}
+                    {adminCategoryLabel(c, categories)}
                   </option>
                 ))}
               </select>
